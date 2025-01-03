@@ -7,6 +7,7 @@ import org.jsoup.nodes.Element;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,7 +15,10 @@ public class AnkiDeckImporter {
 
     DecksDatabase db = DecksDatabase.getInstance();
 
+    private String directory;
     public void importAnkiDeck(String filePath, String imageDirectory) {
+
+        directory = imageDirectory;
 
         // Create the new deck
         Deck newDeck = new Deck();
@@ -41,23 +45,27 @@ public class AnkiDeckImporter {
                 String notetype = columns[1];
                 String deck = columns[2];
                 String frontHtml = columns[3];
-                String back = columns[4]; // Example for additional fields
+                String backArtist = cleanHtmlTags(columns[4]);
+                String backTitle = cleanHtmlTags(columns[5]);
+                String backYear = columns[7];
 
                 // Extract the image
                 String imagePath = extractImagePath(frontHtml);
 
+                String fullImagePath = createFullImagePath(imagePath, imageDirectory);
+
                 // Create a new card object
-                cards.add(new Card(guid, notetype, deck, frontHtml, back, imagePath));
+                cards.add(new Card(guid, notetype, deck, fullImagePath, backArtist, backTitle, backYear));
+
+                System.out.println("Full image path: " + fullImagePath);
 
                 // Add all cards to the new deck
                 cards.forEach(newDeck::add);
 
                 // Set the name of the deck
                 newDeck.setName(deck);
-            }
 
-            // Print the cards for debugging
-            //cards.forEach(System.out::println);
+            }
 
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -65,10 +73,47 @@ public class AnkiDeckImporter {
     }
 
     private static String extractImagePath(String html) {
-        // Parse the HTML content to extract the src attribute of <img>
-        Document doc = Jsoup.parse(html);
+        // Clean up extra quotes and trim whitespace
+        String cleanedHtml = html.replace("\"\"", "\"").trim();  // Replace "" with "
+
+        // Parse the cleaned HTML content
+        Document doc = Jsoup.parse(cleanedHtml);
+
+        // Debug: Print the cleaned HTML and parsed document
+        System.out.println("Cleaned HTML: " + cleanedHtml);
+        System.out.println("Parsed HTML: " + doc);
+
+        // Select the first <img> element
         Element img = doc.selectFirst("img");
-        return img != null ? img.attr("src") : null;
+
+        // Check if an <img> tag is found and extract the src attribute
+        if (img != null) {
+            String imagePath = img.attr("src");
+
+            // Debug: Print the extracted image path
+            System.out.println("Extracted Image Path: " + imagePath);
+
+            return imagePath;
+        } else {
+            System.out.println("No <img> tag found in the HTML.");
+        }
+
+        // Return null if no image is found
+        return null;
     }
+
+    private String createFullImagePath(String imageName, String imagePath) {
+        // Combine
+        String fullImagePath = Paths.get(imagePath, imageName).toString();
+        return fullImagePath;
+    }
+
+    public static String cleanHtmlTags(String input) {
+        if (input == null) {
+            return "";
+        }
+        return input.replaceAll("<[^>]*>", "").trim();
+    }
+
 
 }
