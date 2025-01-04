@@ -3,7 +3,12 @@ package org.example.ankiprojekt;
 import lombok.Getter;
 import lombok.Setter;
 
-public class Card {
+import java.io.Serializable;
+
+public class Card implements Serializable {
+
+    private static final long serialVersionUID = 3L;
+
     @Getter
     String guid, notetype, deck, imagePath, backArtist, backTitle, backYear;
 
@@ -12,7 +17,7 @@ public class Card {
     @Setter @Getter
     private boolean answered;
     @Getter @Setter
-    Learned learnedAmount;
+    Learned learnedType;
     public Card(String guid, String notetype, String deck, String imagePath, String backArtist, String backTitle, String backYear) {
         this.guid = guid;
         this.notetype = notetype;
@@ -22,7 +27,7 @@ public class Card {
         this.backTitle = backTitle;
         this.backYear = backYear;
         this.answered = false;
-        learnedAmount = null;
+        learnedType = null;
     }
 
     @Override

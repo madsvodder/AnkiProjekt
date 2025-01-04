@@ -3,26 +3,19 @@ package org.example.ankiprojekt;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class Deck {
+public class Deck implements Serializable {
+
+    private static final long serialVersionUID = 2L;
 
     ArrayList<Card> deck = new ArrayList<Card>();
 
     @Setter
     String name;
-
-    public Deck() {
-        this.name = "BlankNameDeck";
-    }
-
-    // Constructor for duplicating
-    public Deck(Deck original) {
-        this.name = original.name;
-        this.deck = new ArrayList<>(original.deck);
-    }
 
     public List<Card> getDeck() {
         return deck;

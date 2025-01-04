@@ -6,11 +6,9 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
-import lombok.Setter;
 
 import java.nio.file.Paths;
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class InGameController {
 
@@ -31,8 +29,18 @@ public class InGameController {
 
     @FXML
     private HBox hbox_AnswerOptions;
+
+    @FXML
+    private Label label_delvistKorrektAmount;
+
+    @FXML
+    private Label label_ikkeKorrektAmount;
+
     @FXML
     private Label label_korrektAmount;
+
+    @FXML
+    private Label label_næstenKorrektAmount;
 
     // Reference to the selected deck
     Deck selectedDeck;
@@ -54,13 +62,15 @@ public class InGameController {
         btn_ShowAnswer.setVisible(false);
         btn_StartGame.setVisible(true);
 
-        //card.setLearnedAmount(null);
-        //card.setAnswered(false);
-
         // Add all cards to the available cards array
         availableCards.addAll(selectedDeck.getDeck());
 
+        // Remove cards which are already correct
+        availableCards.removeIf(card -> card.getLearnedType() == Card.Learned.Korrekt);
+
         System.out.println("Deck size" + selectedDeck.getDeck().size());
+
+        updateStats();
     }
     @FXML
     public void startGame() {
@@ -116,20 +126,17 @@ public class InGameController {
 
     @FXML
     private void korrekt() {
-        currentCard.setLearnedAmount(Card.Learned.Korrekt);
+        currentCard.setLearnedType(Card.Learned.Korrekt);
         currentCard.setAnswered(true);
 
-        // Remove the card, if it is correct
+
         availableCards.remove(currentCard);
-        System.out.println("Available cards: " + availableCards.size());
 
-        updateStats(); // Opdatér statistikkerne
+        updateStats();
 
-        // Check if there is any cards left, which are not correct
         if (availableCards.isEmpty()) {
-            System.out.println("No more cards left");
+            System.out.println("Game complete!");
         } else {
-            System.out.println("There are still cards left");
             showRandomCard();
         }
     }
@@ -137,7 +144,8 @@ public class InGameController {
     @FXML
     private void næstenKorrekt() {
         // Set the enum on the card
-        currentCard.setLearnedAmount(Card.Learned.NæstenKorrekt);
+        currentCard.setLearnedType(Card.Learned.NæstenKorrekt);
+        currentCard.setAnswered(true);
 
         updateStats(); // Opdatér statistikkerne
 
@@ -147,7 +155,8 @@ public class InGameController {
     @FXML
     private void delvistKorrekt() {
         // Set the enum on the card
-        currentCard.setLearnedAmount(Card.Learned.DelvistKorrekt);
+        currentCard.setLearnedType(Card.Learned.DelvistKorrekt);
+        currentCard.setAnswered(true);
 
         updateStats(); // Opdatér statistikkerne
 
@@ -157,7 +166,8 @@ public class InGameController {
     @FXML
     private void ikkeKorrekt() {
         // Set the enum on the card
-        currentCard.setLearnedAmount(Card.Learned.IkkeKorrekt);
+        currentCard.setLearnedType(Card.Learned.IkkeKorrekt);
+        currentCard.setAnswered(true);
 
         updateStats(); // Opdatér statistikkerne
 
@@ -165,27 +175,34 @@ public class InGameController {
     }
 
     private void updateStats() {
-        // Initialiser tællingen med alle Card.Learned-værdier sat til 0
-        Map<Card.Learned, Long> learnedCounts = new HashMap<>();
-        for (Card.Learned value : Card.Learned.values()) {
-            learnedCounts.put(value, 0L);
+        for (Card card : selectedDeck.getDeck()) {
+            if (card.getLearnedType() == Card.Learned.Korrekt) {
+                label_korrektAmount.setText("Korrekt: " + getLearnedAmount(Card.Learned.Korrekt));
+            }
+
+            if (card.getLearnedType() == Card.Learned.NæstenKorrekt) {
+                label_næstenKorrektAmount.setText("Næsten Korrekt: " + getLearnedAmount(Card.Learned.NæstenKorrekt));
+            }
+
+            if (card.getLearnedType() == Card.Learned.DelvistKorrekt) {
+                label_delvistKorrektAmount.setText("Delvist Korrekt: " + getLearnedAmount(Card.Learned.DelvistKorrekt));
+            }
+
+            if (card.getLearnedType() == Card.Learned.IkkeKorrekt) {
+                label_ikkeKorrektAmount.setText("Ikke Korrekt: " + getLearnedAmount(Card.Learned.IkkeKorrekt));
+            }
         }
+    }
 
-        // Brug Stream til at tælle LearnedAmount-værdier og opdatere mappen
-        selectedDeck.getDeck().stream()
-                .filter(card -> card.getLearnedAmount() != null) // Filtrér ud kort uden værdi
-                .forEach(card -> learnedCounts.put(
-                        card.getLearnedAmount(),
-                        learnedCounts.get(card.getLearnedAmount()) + 1
-                ));
+    public int getLearnedAmount(Card.Learned learnedAmount) {
 
-        // Byg en streng med resultaterne
-        String stats = learnedCounts.entrySet().stream()
-                .map(entry -> entry.getKey().name() + ": " + entry.getValue())
-                .collect(Collectors.joining(", "));
+        int amount = 0;
 
-        // Udskriv/montér statistikken
-        System.out.println("Stats: " + stats);
-        label_korrektAmount.setText("Stats: " + stats);
+        for (Card card : selectedDeck.getDeck()) {
+            if (card.getLearnedType() == learnedAmount) {
+                amount++;
+            }
+        }
+        return amount;
     }
 }

@@ -8,8 +8,7 @@ import javafx.scene.layout.BorderPane;
 import javafx.stage.DirectoryChooser;
 import javafx.stage.FileChooser;
 
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 
 public class HelloController {
     @FXML
@@ -30,16 +29,16 @@ public class HelloController {
 
     AnkiDeckImporter importer = new AnkiDeckImporter();
 
-
-
-
     public void initialize() {
+
         LV_Decks.setOnMouseClicked(event -> {
             if (event.getClickCount() == 2) {
                 Deck d = LV_Decks.getSelectionModel().getSelectedItem();
                 switchToGameView(d);
             }
         });
+
+        load();
     }
 
     private void switchToGameView(Deck selectedDeck) {
@@ -97,4 +96,56 @@ public class HelloController {
         // Refresh the decks list
         populateDecks();
     }
+
+    @FXML
+    public void save() {
+
+        // Create the FileOutputStream
+        try (FileOutputStream fos = new FileOutputStream("output.dat");) {
+
+            // Create the ObjectOutputStream
+            ObjectOutputStream oos = new ObjectOutputStream(fos);
+
+            // Write the database object
+            oos.writeObject(db);
+
+            System.out.println("Saved!");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    public void load() {
+
+        if (!doesSaveFileExist()) {
+            System.out.println("No save file found!");
+            return;
+        }
+
+        // Create the FileInputStream
+        try (FileInputStream fileInputStream = new FileInputStream("output.dat");) {
+
+            // Create the ObjectInputStream
+            ObjectInputStream oip = new ObjectInputStream(fileInputStream);
+
+            // Read the database object from the .dat file
+            DecksDatabase database = (DecksDatabase) oip.readObject();
+
+            // Set the database to the loaded database
+            db = database;
+
+            // Repopulate / refresh
+            populateDecks();
+
+        } catch (IOException | ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    // Helper methods //
+    private boolean doesSaveFileExist() {
+        return new File("output.dat").exists();
+    }
+
 }

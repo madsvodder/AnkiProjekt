@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.ankiprojekt.InGameController">
+<BorderPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="547.0" prefWidth="944.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.ankiprojekt.InGameController">
    <center>
       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
          <children>
@@ -57,9 +57,12 @@
       </VBox>
    </bottom>
    <top>
-      <HBox BorderPane.alignment="CENTER">
+      <HBox alignment="CENTER" spacing="100.0" BorderPane.alignment="CENTER">
          <children>
-            <Label fx:id="label_korrektAmount" text="Label" />
+            <Label fx:id="label_korrektAmount" text="Korrekt: 0" />
+            <Label fx:id="label_næstenKorrektAmount" layoutX="10.0" layoutY="10.0" text="Næsten korrekt: 0" />
+            <Label fx:id="label_delvistKorrektAmount" layoutX="38.0" layoutY="10.0" text="Delvist korrekt: 0" />
+            <Label fx:id="label_ikkeKorrektAmount" layoutX="66.0" layoutY="10.0" text="Ikke korrekt: 0" />
          </children>
       </HBox>
    </top>

@@ -2,9 +2,12 @@ package org.example.ankiprojekt;
 
 import lombok.Getter;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class DecksDatabase {
+public class DecksDatabase implements Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     // The single instance of this class
     private static DecksDatabase instance;
