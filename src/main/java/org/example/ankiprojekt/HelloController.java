@@ -53,7 +53,7 @@ public class HelloController {
 
             // Optional: Get the controller of the ingame-view if needed
             InGameController gameController = fxmlLoader.getController();
-            gameController.setSelectedDeck(selectedDeck);
+            gameController.customInit(selectedDeck);
 
         } catch (IOException e) {
             e.printStackTrace();

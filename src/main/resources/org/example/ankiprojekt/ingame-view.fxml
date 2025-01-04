@@ -35,14 +35,14 @@
          <children>
             <HBox alignment="CENTER">
                <children>
-                  <Button mnemonicParsing="false" onAction="#showAnswer" text="Show Answer" />
+                  <Button fx:id="btn_ShowAnswer" mnemonicParsing="false" onAction="#showAnswer" text="Show Answer" />
                   <Button fx:id="btn_StartGame" layoutX="267.0" layoutY="20.0" mnemonicParsing="false" onAction="#startGame" text="Start Game" />
                </children>
                <padding>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </padding>
             </HBox>
-            <HBox fx:id="hbox_AnswerOptions" alignment="CENTER" layoutX="10.0" layoutY="10.0" spacing="10.0" visible="false">
+            <HBox fx:id="hbox_AnswerOptions" alignment="CENTER" layoutX="10.0" layoutY="10.0" spacing="10.0">
                <padding>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </padding>
@@ -56,4 +56,11 @@
          </children>
       </VBox>
    </bottom>
+   <top>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="label_korrektAmount" text="Label" />
+         </children>
+      </HBox>
+   </top>
 </BorderPane>

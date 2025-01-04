@@ -28,7 +28,7 @@ public class AnkiDeckImporter {
 
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
             String line;
-            List<Card> cards = new ArrayList<Card>();
+            List<Card> cards = new ArrayList<>();
 
             // Skip the metadata lines
             while ((line = br.readLine()) != null) {
@@ -58,13 +58,14 @@ public class AnkiDeckImporter {
                 cards.add(new Card(guid, notetype, deck, fullImagePath, backArtist, backTitle, backYear));
 
                 System.out.println("Full image path: " + fullImagePath);
+            }
 
-                // Add all cards to the new deck
-                cards.forEach(newDeck::add);
+            // Add all cards to the new deck after processing the file
+            cards.forEach(newDeck::add);
 
-                // Set the name of the deck
-                newDeck.setName(deck);
-
+            // Set the name of the deck (assuming all cards have the same deck name)
+            if (!cards.isEmpty()) {
+                newDeck.setName(cards.get(0).getDeck());
             }
 
         } catch (IOException e) {
