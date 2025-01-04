@@ -42,8 +42,6 @@ public class InGameController {
     // Opret en liste til at gemme kort, der ikke er "Korrekt"
     List<Card> availableCards = new ArrayList<>();
 
-    @Setter
-    private int amountOfKorrektCards = 0;
 
     public void customInit(Deck selectedDeck) {
 
@@ -127,11 +125,13 @@ public class InGameController {
 
         updateStats(); // Opdatér statistikkerne
 
-        // If the card is correct, dont show it again
-
-        showRandomCard();
-
-
+        // Check if there is any cards left, which are not correct
+        if (availableCards.isEmpty()) {
+            System.out.println("No more cards left");
+        } else {
+            System.out.println("There are still cards left");
+            showRandomCard();
+        }
     }
 
     @FXML
