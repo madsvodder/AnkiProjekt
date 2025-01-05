@@ -97,26 +97,22 @@ public class InGameController {
     }
 
     private void showRandomCard() {
-        // Try to select a random card from the available cards
-        currentCard = getRandomUnlearnedCard(selectedDeck.getAvailableCards());
+        List<Card> allCards = new ArrayList<>(selectedDeck.getAvailableCards());
+        allCards.addAll(pendingCards);
+
+        // Find et tilfældigt ulært kort
+        currentCard = getRandomUnlearnedCard(allCards);
 
         if (currentCard == null) {
-            // If no unlearned cards are available, try pending cards
-            currentCard = getRandomUnlearnedCard(pendingCards);
-
-            if (currentCard == null) {
-                // If no unlearned cards exist in either list, finish the game
-                System.out.println("No more unlearned cards available. Finishing game");
-                finishGame();
-                return;
-            }
-
-            System.out.println("No more available cards. Showing cards from pending array");
+            System.out.println("No more unlearned cards available. Finishing game");
+            finishGame();
+            return;
         }
 
-        // Show card information
+        // Vis kortet
         displayCard(currentCard);
     }
+
 
     private Card getRandomUnlearnedCard(List<Card> cards) {
         List<Card> unlearnedCards = cards.stream()
@@ -160,17 +156,15 @@ public class InGameController {
         currentCard.setLearnedType(Card.Learned.NæstenKorrekt);
         currentCard.setAnswered(true);
 
-        if (!isCurrentCardInPendingList()) {
-            // Move card to waiting list (1min)
-            selectedDeck.getAvailableCards().remove(currentCard);
-            pendingCards.add(currentCard);
+       if (!isCurrentCardInPendingList()) {
+           pendingCards.add(currentCard);
 
-            // Make the scheduler show the card again after 1 min
-            scheduler.schedule(() -> {
-                pendingCards.remove(currentCard);
-                selectedDeck.getAvailableCards().add(currentCard);
-            }, 10, TimeUnit.MINUTES);
-        }
+           int randomDelay = new Random().nextInt(10) + 1;
+           scheduler.schedule(() -> {
+               pendingCards.remove(currentCard);
+               selectedDeck.getAvailableCards().add(currentCard);
+           }, randomDelay, TimeUnit.MINUTES);
+       }
 
         updateStats(); // Opdatér statistikkerne
 
@@ -184,15 +178,13 @@ public class InGameController {
         currentCard.setAnswered(true);
 
         if (!isCurrentCardInPendingList()) {
-            // Move card to waiting list (1min)
-            selectedDeck.getAvailableCards().remove(currentCard);
             pendingCards.add(currentCard);
 
-            // Make the scheduler show the card again after 1 min
+            int randomDelay = new Random().nextInt(5) + 1;
             scheduler.schedule(() -> {
                 pendingCards.remove(currentCard);
                 selectedDeck.getAvailableCards().add(currentCard);
-            }, 5, TimeUnit.MINUTES);
+            }, randomDelay, TimeUnit.MINUTES);
         }
 
         updateStats(); // Opdatér statistikkerne
@@ -207,15 +199,13 @@ public class InGameController {
         currentCard.setAnswered(true);
 
         if (!isCurrentCardInPendingList()) {
-            // Move card to waiting list (1min)
-            selectedDeck.getAvailableCards().remove(currentCard);
             pendingCards.add(currentCard);
 
-            // Make the scheduler show the card again after 1 min
+            int randomDelay = new Random().nextInt(2) + 1;
             scheduler.schedule(() -> {
                 pendingCards.remove(currentCard);
                 selectedDeck.getAvailableCards().add(currentCard);
-            }, 1, TimeUnit.MINUTES);
+            }, randomDelay, TimeUnit.MINUTES);
         }
 
         updateStats(); // Opdatér statistikkerne
