@@ -176,7 +176,7 @@ public class InGameController {
 
     @FXML
     private void ikkeKorrekt() {
-        handleCardAction(Card.Learned.IkkeKorrekt, 10, TimeUnit.SECONDS);
+        handleCardAction(Card.Learned.IkkeKorrekt, 10, TimeUnit.MINUTES);
     }
 
     private void handleCardAction(Card.Learned status, long delay, TimeUnit unit) {
