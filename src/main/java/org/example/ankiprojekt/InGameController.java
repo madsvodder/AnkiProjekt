@@ -65,6 +65,9 @@ public class InGameController {
     // whey will be moved back to the available cards arraylist.
     private final List<Card> pendingCards = new ArrayList<>();
 
+    // Cards to show FIRST
+    private List<Card> frontCards = new ArrayList<>();
+
     private void calculateCardsLeft() {
         int cardsLeft = 0;
         for (Card card : selectedDeck.getDeckDemplate()) {
@@ -92,16 +95,22 @@ public class InGameController {
 
     @FXML
     private void showAnswer() {
-        label_Answer.setText(currentCard.getBackArtist() + " " + currentCard.getBackTitle() + " " + currentCard.getBackYear()); // Set the text for the answer label
+        label_Answer.setVisible(true);
+        //label_Answer.setText(currentCard.getBackArtist() + " " + currentCard.getBackTitle() + " " + currentCard.getBackYear()); // Set the text for the answer label
         hbox_AnswerOptions.setVisible(true);
     }
 
     private void showRandomCard() {
-        List<Card> allCards = new ArrayList<>(selectedDeck.getAvailableCards());
-        allCards.addAll(pendingCards);
+        // Hvis der er kort i frontCards, vises de som højeste prioritet
+        if (!frontCards.isEmpty()) {
+            System.out.println("Showing front card: " + frontCards.get(0));
+            displayCard(frontCards.get(0));
+            Card card = frontCards.remove(0); // Fjern kortet, når det vises
+            return;
+        }
 
         // Find et tilfældigt ulært kort
-        currentCard = getRandomUnlearnedCard(allCards);
+        currentCard = getRandomUnlearnedCard(selectedDeck.getAvailableCards());
 
         if (currentCard == null) {
             System.out.println("No more unlearned cards available. Finishing game");
@@ -109,7 +118,7 @@ public class InGameController {
             return;
         }
 
-        // Vis kortet
+        // Vis tilfældigt kort
         displayCard(currentCard);
     }
 
@@ -128,13 +137,18 @@ public class InGameController {
     }
 
     private void displayCard(Card card) {
+
+        if (card != null) {
+            label_Answer.setText("Artist: " + card.getBackArtist() + " Title: " + card.getBackTitle());
+        }
+
         if (card.getImagePath() != null) {
             String fileUrl = "file:///" + Paths.get(card.getImagePath()).toUri().getPath();
             img_Image.setImage(new Image(fileUrl));
         }
 
         hbox_AnswerOptions.setVisible(false);
-        label_Answer.setText("");
+        label_Answer.setVisible(false);
     }
 
 
@@ -152,66 +166,47 @@ public class InGameController {
 
     @FXML
     private void næstenKorrekt() {
-        // Set the enum on the card
-        currentCard.setLearnedType(Card.Learned.NæstenKorrekt);
-        currentCard.setAnswered(true);
-
-       if (!isCurrentCardInPendingList()) {
-           pendingCards.add(currentCard);
-
-           int randomDelay = new Random().nextInt(10) + 1;
-           scheduler.schedule(() -> {
-               pendingCards.remove(currentCard);
-               selectedDeck.getAvailableCards().add(currentCard);
-           }, randomDelay, TimeUnit.MINUTES);
-       }
-
-        updateStats(); // Opdatér statistikkerne
-
-        showRandomCard();
+        handleCardAction(Card.Learned.NæstenKorrekt, 5, TimeUnit.MINUTES);
     }
 
     @FXML
     private void delvistKorrekt() {
-        // Set the enum on the card
-        currentCard.setLearnedType(Card.Learned.DelvistKorrekt);
-        currentCard.setAnswered(true);
-
-        if (!isCurrentCardInPendingList()) {
-            pendingCards.add(currentCard);
-
-            int randomDelay = new Random().nextInt(5) + 1;
-            scheduler.schedule(() -> {
-                pendingCards.remove(currentCard);
-                selectedDeck.getAvailableCards().add(currentCard);
-            }, randomDelay, TimeUnit.MINUTES);
-        }
-
-        updateStats(); // Opdatér statistikkerne
-
-        showRandomCard();
+        handleCardAction(Card.Learned.DelvistKorrekt, 2, TimeUnit.MINUTES);
     }
 
     @FXML
     private void ikkeKorrekt() {
-        // Set the enum on the card
-        currentCard.setLearnedType(Card.Learned.IkkeKorrekt);
-        currentCard.setAnswered(true);
+        handleCardAction(Card.Learned.IkkeKorrekt, 10, TimeUnit.SECONDS);
+    }
 
-        if (!isCurrentCardInPendingList()) {
-            pendingCards.add(currentCard);
+    private void handleCardAction(Card.Learned status, long delay, TimeUnit unit) {
+        Card cardToProcess = currentCard;
+        cardToProcess.setLearnedType(status);
+        cardToProcess.setAnswered(true);
 
-            int randomDelay = new Random().nextInt(2) + 1;
-            scheduler.schedule(() -> {
-                pendingCards.remove(currentCard);
-                selectedDeck.getAvailableCards().add(currentCard);
-            }, randomDelay, TimeUnit.MINUTES);
+        if (!isCardInList(pendingCards, cardToProcess)) {
+            pendingCards.add(cardToProcess);
+            scheduleCardReturn(cardToProcess, delay, unit);
         }
 
-        updateStats(); // Opdatér statistikkerne
-
+        updateStats();
         showRandomCard();
     }
+
+    private boolean isCardInList(List<Card> cardList, Card cardToCheck) {
+        return cardList.stream().anyMatch(card -> card.equals(cardToCheck));
+    }
+
+    private void scheduleCardReturn(Card card, long delay, TimeUnit unit) {
+        scheduler.schedule(() -> {
+            synchronized (frontCards) {
+                pendingCards.remove(card);
+                frontCards.add(card);
+                System.out.println("Card added to frontCards after timeout: " + card);
+            }
+        }, delay, unit);
+    }
+
 
     private void updateStats() {
         for (Card card : selectedDeck.getDeckDemplate()) {
@@ -358,6 +353,7 @@ public class InGameController {
         selectedDeck.getUnavailableCards().clear();
         selectedDeck.getAvailableCards().clear();
         pendingCards.clear();
+        frontCards.clear();
 
         // Reset all cards in the deck
         for (Card card : selectedDeck.getDeckDemplate()) {
