@@ -25,7 +25,7 @@ public class HelloController {
     @FXML
     private BorderPane borderPane_Main;
 
-    DecksDatabase db = DecksDatabase.getInstance();
+    //DecksDatabase db = DecksDatabase.getInstance();
 
     AnkiDeckImporter importer = new AnkiDeckImporter();
 
@@ -34,6 +34,12 @@ public class HelloController {
         LV_Decks.setOnMouseClicked(event -> {
             if (event.getClickCount() == 2) {
                 Deck d = LV_Decks.getSelectionModel().getSelectedItem();
+
+                if (d == null) {
+                    System.out.println("No deck selected!");
+                    return;
+                }
+
                 switchToGameView(d);
             }
         });
@@ -60,11 +66,13 @@ public class HelloController {
         }
     }
 
-    private void populateDecks() {
+    public void populateDecks() {
         LV_Decks.getItems().clear();
-        LV_Decks.getItems().addAll(db.getDecks());
-        System.out.println("Decks: " + db.getDecks());
+        LV_Decks.getItems().addAll(DecksDatabase.getInstance().getDecks());
+        System.out.println("Decks: " + DecksDatabase.getInstance().getDecks());
     }
+
+
 
     @FXML
     private void importAnkiDeck() {
@@ -95,57 +103,21 @@ public class HelloController {
 
         // Refresh the decks list
         populateDecks();
+
+        // Save
+        save();
     }
 
     @FXML
-    public void save() {
-
-        // Create the FileOutputStream
-        try (FileOutputStream fos = new FileOutputStream("output.dat");) {
-
-            // Create the ObjectOutputStream
-            ObjectOutputStream oos = new ObjectOutputStream(fos);
-
-            // Write the database object
-            oos.writeObject(db);
-
-            System.out.println("Saved!");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    private void save() {
+        DataSaver.getInstance().save();
     }
 
     @FXML
     public void load() {
-
-        if (!doesSaveFileExist()) {
-            System.out.println("No save file found!");
-            return;
-        }
-
-        // Create the FileInputStream
-        try (FileInputStream fileInputStream = new FileInputStream("output.dat");) {
-
-            // Create the ObjectInputStream
-            ObjectInputStream oip = new ObjectInputStream(fileInputStream);
-
-            // Read the database object from the .dat file
-            DecksDatabase database = (DecksDatabase) oip.readObject();
-
-            // Set the database to the loaded database
-            db = database;
-
-            // Repopulate / refresh
-            populateDecks();
-
-        } catch (IOException | ClassNotFoundException e) {
-            throw new RuntimeException(e);
-        }
+        DataSaver.getInstance().load(); // Loads and sets the singleton instance
+        populateDecks(); // Refreshes the ListView with the updated database
     }
 
-    // Helper methods //
-    private boolean doesSaveFileExist() {
-        return new File("output.dat").exists();
-    }
 
 }

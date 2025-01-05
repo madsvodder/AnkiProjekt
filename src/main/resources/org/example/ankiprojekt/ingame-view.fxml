@@ -57,13 +57,25 @@
       </VBox>
    </bottom>
    <top>
-      <HBox alignment="CENTER" spacing="100.0" BorderPane.alignment="CENTER">
+      <VBox BorderPane.alignment="CENTER">
          <children>
-            <Label fx:id="label_korrektAmount" text="Korrekt: 0" />
-            <Label fx:id="label_næstenKorrektAmount" layoutX="10.0" layoutY="10.0" text="Næsten korrekt: 0" />
-            <Label fx:id="label_delvistKorrektAmount" layoutX="38.0" layoutY="10.0" text="Delvist korrekt: 0" />
-            <Label fx:id="label_ikkeKorrektAmount" layoutX="66.0" layoutY="10.0" text="Ikke korrekt: 0" />
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button layoutX="74.0" layoutY="10.0" mnemonicParsing="false" onAction="#backToMainMenu" text="Menu" />
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#restartGame" text="Genstart Spil" />
+                  <Button layoutX="57.0" layoutY="10.0" mnemonicParsing="false" onAction="#surrender" text="Giv op" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" spacing="100.0">
+               <children>
+                  <Label fx:id="label_korrektAmount" text="Korrekt: 0" />
+                  <Label fx:id="label_næstenKorrektAmount" layoutX="10.0" layoutY="10.0" text="Næsten korrekt: 0" />
+                  <Label fx:id="label_delvistKorrektAmount" layoutX="38.0" layoutY="10.0" text="Delvist korrekt: 0" />
+                  <Label fx:id="label_ikkeKorrektAmount" layoutX="66.0" layoutY="10.0" text="Ikke korrekt: 0" />
+                  <Label fx:id="label_doneAmount" text="Kort tilbage: 0" />
+               </children>
+            </HBox>
          </children>
-      </HBox>
+      </VBox>
    </top>
 </BorderPane>
