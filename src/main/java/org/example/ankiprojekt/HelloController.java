@@ -1,10 +1,13 @@
 package org.example.ankiprojekt;
 
+import javafx.beans.property.SimpleIntegerProperty;
+import javafx.beans.property.SimpleObjectProperty;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseButton;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
@@ -32,6 +35,9 @@ public class HelloController {
     private ListView<Deck> LV_Decks;
 
     @FXML
+    private TableView<Deck> tbview_decks;
+
+    @FXML
     private BorderPane borderPane_Main;
 
     @Setter
@@ -40,39 +46,52 @@ public class HelloController {
     AnkiDeckImporter importer = new AnkiDeckImporter();
 
     public void initialize() {
-
-        LV_Decks.setOnMouseClicked(event -> {
-            if (event.getButton() == MouseButton.PRIMARY && event.getClickCount() == 2) {
-                // Dobbeltklik med venstre musetast
-                Deck d = LV_Decks.getSelectionModel().getSelectedItem();
-
-                if (d == null) {
-                    System.out.println("No deck selected!");
-                    return;
-                }
-
-                switchToGameView(d);
-            } else if (event.getButton() == MouseButton.SECONDARY) {
-                // Højreklik
-                Deck d = LV_Decks.getSelectionModel().getSelectedItem();
-
-                if (d == null) {
-                    System.out.println("No deck selected!");
-                    return;
-                }
-
-                // Kalder editDeck-metoden for at redigere det valgte deck
-                editDeck(d);
-            }
-        });
-
+        initializeTableView();
         load();
     }
 
+    private void initializeTableView() {
+        TableColumn<Deck, String> columnName = new TableColumn<>("Navn");
+        columnName.setCellValueFactory(new PropertyValueFactory<>("name"));
+
+        TableColumn<Deck, Integer> columnSize = new TableColumn<>("Kort mængde");
+        columnSize.setCellValueFactory(cellData -> new SimpleIntegerProperty(cellData.getValue().getDeckDemplate().size()).asObject());
+
+        TableColumn<Deck, Integer> columnLearned = new TableColumn<>("Kort lært");
+        columnLearned.setCellValueFactory(cellData -> new SimpleObjectProperty<>(cellData.getValue().getAmountOfLearnedCards()));
+
+        TableColumn<Deck, String> columnLearnedPercent = new TableColumn<>("%");
+        columnLearnedPercent.setCellValueFactory(cellData -> new SimpleObjectProperty<>(cellData.getValue().getPercentageOfLearnedCards()));
+
+        tbview_decks.getColumns().add(columnName);
+        tbview_decks.getColumns().add(columnSize);
+        tbview_decks.getColumns().add(columnLearned);
+        tbview_decks.getColumns().add(columnLearnedPercent);
+
+        tbview_decks.setRowFactory(tv -> {
+            TableRow<Deck> row = new TableRow<>();
+            row.setOnMouseClicked(event -> {
+                Deck selectedDeck = row.getItem();
+                if (selectedDeck == null) {
+                    System.out.println("No deck selected!");
+                    return;
+                }
+
+                if (event.getButton() == MouseButton.PRIMARY && event.getClickCount() == 2) {
+                    // Dobbeltklik
+                    switchToGameView(selectedDeck);
+                } else if (event.getButton() == MouseButton.SECONDARY) {
+                    // Højreklik
+                    editDeck(selectedDeck);
+                }
+            });
+            return row;
+        });
+    }
     private void editDeck(Deck selectedDeck) {
         // Create a new stage for the popup
         Stage popupStage = new Stage();
-        popupStage.setTitle("Add cards to deck");
+        popupStage.setTitle("Remove cards in deck");
         popupStage.initModality(Modality.APPLICATION_MODAL); // Block events to other windows
         popupStage.initOwner(ownerStage); // Set the owner stage
 
@@ -110,6 +129,8 @@ public class HelloController {
 
             popupStage.close(); // Close the popup
         });
+
+        cancelButton.setOnAction(e -> popupStage.close());
 
         VBox popupLayout = new VBox(10, listviewLabel, checkListView, okButton, cancelButton);
 
@@ -174,6 +195,8 @@ public class HelloController {
 
                 Deck d = comboBox_Decks.getSelectionModel().getSelectedItem();
 
+                c.setDeckName(d.name);
+
                 d.add(c);
 
             } else {
@@ -220,9 +243,17 @@ public class HelloController {
         }
     }
 
+    /*
     public void populateDecks() {
         LV_Decks.getItems().clear();
         LV_Decks.getItems().addAll(DecksDatabase.getInstance().getDecks());
+        System.out.println("Decks: " + DecksDatabase.getInstance().getDecks());
+    }
+*/
+
+    public void populateDecks() {
+        tbview_decks.getItems().clear();
+        tbview_decks.getItems().addAll(DecksDatabase.getInstance().getDecks());
         System.out.println("Decks: " + DecksDatabase.getInstance().getDecks());
     }
 

@@ -3,11 +3,12 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
 <BorderPane fx:id="borderPane_Main" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.ankiprojekt.HelloController">
@@ -18,10 +19,13 @@
           </padding>
       
           <Label fx:id="welcomeText" />
-          <Button onAction="#onHelloButtonClick" text="Hello!" />
-         <ListView fx:id="LV_Decks" prefHeight="200.0" prefWidth="200.0" />
-         <Button layoutX="626.0" layoutY="254.0" onAction="#createNewDeck" text="Create Deck" />
-         <Button layoutX="610.0" layoutY="496.0" onAction="#createNewCard" text="Create Card" />
+         <TableView fx:id="tbview_decks" prefHeight="200.0" prefWidth="200.0" />
+         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="25.0">
+            <children>
+               <Button mnemonicParsing="false" onAction="#importAnkiDeck" text="Import Deck" />
+               <Button onAction="#createNewDeck" text="Opret Deck" />
+            </children>
+         </HBox>
       </VBox>
    </center>
    <top>
@@ -29,7 +33,6 @@
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
-              <MenuItem mnemonicParsing="false" onAction="#importAnkiDeck" text="Import Deck" />
                   <MenuItem mnemonicParsing="false" onAction="#save" text="Save" />
                   <MenuItem mnemonicParsing="false" onAction="#load" text="Load" />
             </items>

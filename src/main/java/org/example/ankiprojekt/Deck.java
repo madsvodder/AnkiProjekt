@@ -21,7 +21,7 @@ public class Deck implements Serializable {
     @Getter
     List<Card> unavailableCards = new ArrayList<>();
 
-    @Setter
+    @Setter @Getter
     String name;
 
     public List<Card> getDeckDemplate() {
@@ -37,12 +37,27 @@ public class Deck implements Serializable {
         deckDemplate.remove(card);
     }
 
+    public int getAmountOfLearnedCards() {
+        if (deckDemplate == null || unavailableCards == null) {
+            return 0; // Hvis én af listerne er null, returnér 0
+        }
+
+        int learnedCards = 0;
+
+        for (Card card : unavailableCards) {
+            if (card.getLearnedType() == Card.Learned.Korrekt);
+            learnedCards++;
+        }
+
+        return learnedCards;
+    }
+
     @Override
     public String toString() {
         return name + "         " + getPercentageOfLearnedCards() + "%";
     }
 
-    private String getPercentageOfLearnedCards() {
+    public String getPercentageOfLearnedCards() {
         if (deckDemplate.isEmpty()) {
             return "0.00";
         }
