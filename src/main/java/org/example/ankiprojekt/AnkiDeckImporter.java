@@ -66,7 +66,13 @@ public class AnkiDeckImporter {
                     String fullImagePath = createFullImagePath(imagePath, imageDirectory);
 
                     // Create a new card object
-                    cards.add(new Card(guid, notetype, deck, fullImagePath, backArtist, backTitle, backYear));
+
+                    Card card = new Card(guid, notetype, deck, fullImagePath, backArtist, backTitle, backYear);
+
+                    setCardQuestions(card);
+
+                    cards.add(card);
+
                 } catch (Exception e) {
                     LOGGER.log(Level.SEVERE, "Error reading line: " + line, e);
                 }
@@ -78,7 +84,7 @@ public class AnkiDeckImporter {
             // Set the name of the deck. Using the first card,
             // since they all SHOULD have the same name
             if (!cards.isEmpty()) {
-                newDeck.setName(cards.get(0).getDeck());
+                newDeck.setName(cards.get(0).getDeckName());
             }
 
         } catch (IOException e) {
@@ -87,6 +93,11 @@ public class AnkiDeckImporter {
         }
     }
 
+    private void setCardQuestions(Card card) {
+        if (card.getNotetype().equals("Art")) {
+            card.setQuestion("Artist?");
+        }
+    }
     private static String extractImagePath(String html) {
 
         try {

@@ -20,6 +20,8 @@
           <Label fx:id="welcomeText" />
           <Button onAction="#onHelloButtonClick" text="Hello!" />
          <ListView fx:id="LV_Decks" prefHeight="200.0" prefWidth="200.0" />
+         <Button layoutX="626.0" layoutY="254.0" onAction="#createNewDeck" text="Create Deck" />
+         <Button layoutX="610.0" layoutY="496.0" onAction="#createNewCard" text="Create Card" />
       </VBox>
    </center>
    <top>

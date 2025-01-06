@@ -1,9 +1,9 @@
 module org.example.ankiprojekt {
     requires javafx.fxml;
-    requires java.desktop;
     requires transitive org.jsoup;
     requires static lombok;
     requires atlantafx.base;
+    requires org.controlsfx.controls;
     requires java.logging;
 
 

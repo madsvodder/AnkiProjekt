@@ -96,7 +96,7 @@ public class InGameController {
     @FXML
     private void showAnswer() {
         label_Answer.setVisible(true);
-        //label_Answer.setText(currentCard.getBackArtist() + " " + currentCard.getBackTitle() + " " + currentCard.getBackYear()); // Set the text for the answer label
+        //label_Answer.setText(currentCard.getBackAnswer1() + " " + currentCard.getBackAnswer2() + " " + currentCard.getBackAnswer3()); // Set the text for the answer label
         hbox_AnswerOptions.setVisible(true);
     }
 
@@ -139,13 +139,20 @@ public class InGameController {
     private void displayCard(Card card) {
 
         if (card != null) {
-            label_Answer.setText("Artist: " + card.getBackArtist() + " Title: " + card.getBackTitle());
+            label_Answer.setText(
+                      card.getBackAnswer1() + "\n"
+                    + card.getBackAnswer2() + "\n"
+                    + card.getBackAnswer3() + "\n"
+            );
         }
 
         if (card.getImagePath() != null) {
             String fileUrl = "file:///" + Paths.get(card.getImagePath()).toUri().getPath();
             img_Image.setImage(new Image(fileUrl));
         }
+
+        label_Top.setText(currentCard.getQuestion());
+        System.out.println("Card Question: " + currentCard.getQuestion());
 
         hbox_AnswerOptions.setVisible(false);
         label_Answer.setVisible(false);
@@ -280,12 +287,6 @@ public class InGameController {
             if (selectedDeck.getAvailableCards().isEmpty()) {
                 finishGame();
                 return;
-            }
-
-            // Indstil spørgsmålet baseret på korttypen
-            if (!selectedDeck.getDeckDemplate().isEmpty() &&
-                    Objects.equals(selectedDeck.getDeckDemplate().getFirst().getNotetype(), "Art")) {
-                label_Top.setText("Artist?");
             }
 
             // Vis og skjul UI-elementerne

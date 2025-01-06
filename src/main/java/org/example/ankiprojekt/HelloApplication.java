@@ -15,6 +15,7 @@ public class HelloApplication extends Application {
         Application.setUserAgentStylesheet(new PrimerDark().getUserAgentStylesheet());
         Scene scene = new Scene(fxmlLoader.load());
         HelloController controller = fxmlLoader.getController();
+        controller.setOwnerStage(stage);
         stage.setTitle("Hello!");
         stage.setScene(scene);
         stage.show();
