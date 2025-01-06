@@ -28,13 +28,14 @@ public class HelloApplication extends Application {
         }
     }
 
+    /*
     @Override
     public void init() {
         // Call the loading process early to ensure data is loaded before any access
         DataSaver.getInstance().load();
         System.out.println("App initialized and data loaded.");
     }
-
+    */
     public static void main(String[] args) {
         launch();
     }

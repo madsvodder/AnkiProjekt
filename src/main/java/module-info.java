@@ -4,6 +4,7 @@ module org.example.ankiprojekt {
     requires transitive org.jsoup;
     requires static lombok;
     requires atlantafx.base;
+    requires java.logging;
 
 
     opens org.example.ankiprojekt to javafx.fxml;

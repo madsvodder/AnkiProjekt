@@ -27,7 +27,6 @@ public class DecksDatabase implements Serializable {
         if (instance == null) {
             instance = new DecksDatabase(); // Create a new instance if none exists
         }
-        System.out.println("Accessing DecksDatabase instance: " + instance.decks);
         return instance;
     }
 
