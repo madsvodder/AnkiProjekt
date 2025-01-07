@@ -25,6 +25,8 @@ public class DataSaver {
 
             // Write the database object
             oos.writeObject(DecksDatabase.getInstance());
+            oos.writeObject(UserDatabase.getInstance());
+            oos.flush();
 
             System.out.println("Saved!");
         } catch (IOException e) {
@@ -42,9 +44,11 @@ public class DataSaver {
              ObjectInputStream oip = new ObjectInputStream(fileInputStream)) {
 
             DecksDatabase loadedDatabase = (DecksDatabase) oip.readObject();
+            UserDatabase loadedUserDatabase = (UserDatabase) oip.readObject();
 
             // Set the loaded instance and reinitialize observable list
             DecksDatabase.setInstance(loadedDatabase);
+            UserDatabase.setInstance(loadedUserDatabase);
 
             System.out.println("Data loaded!");
 

@@ -11,12 +11,15 @@ import java.io.IOException;
 public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("userselect-view.fxml"));
         Application.setUserAgentStylesheet(new PrimerDark().getUserAgentStylesheet());
         Scene scene = new Scene(fxmlLoader.load());
-        HelloController controller = fxmlLoader.getController();
+        UserSelectController controller = fxmlLoader.getController();
         controller.setOwnerStage(stage);
-        stage.setTitle("Hello!");
+        controller.refresh();
+        //HelloController controller = fxmlLoader.getController();
+        //controller.setOwnerStage(stage);
+        stage.setTitle("Anki projekt");
         stage.setScene(scene);
         stage.show();
     }
@@ -24,9 +27,7 @@ public class HelloApplication extends Application {
     @Override
     public void stop() {
         System.out.println("Application is closing. Saving data...");
-        if (!DecksDatabase.getInstance().getDecks().isEmpty()) {
-            DataSaver.getInstance().save(); // Gem KUN hvis der er data at gemme
-        }
+        DataSaver.getInstance().save();
     }
 
     /*
