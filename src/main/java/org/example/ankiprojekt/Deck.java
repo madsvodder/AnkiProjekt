@@ -30,9 +30,11 @@ public class Deck implements Serializable {
 
 
     public void add(Card card) {
-        card.resetCard();
-        deckDemplate.add(card);
+        Card clonedCard = card.clone(); // Lav en kopi af kortet
+        clonedCard.resetCard();         // Sørg for at nulstille status
+        deckDemplate.add(clonedCard);
     }
+
 
     public void remove(Card card) {
         card.resetCard();

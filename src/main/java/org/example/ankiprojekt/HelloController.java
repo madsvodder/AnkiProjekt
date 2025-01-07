@@ -283,7 +283,7 @@ public class HelloController {
         CheckListView<Card> checkListUserCards = new CheckListView<>();
 
         for (Card card : DecksDatabase.getInstance().getUserCards()) {
-            if (!selectedDeck.doesDeckContainCard(card)) {
+            if (!selectedDeck.doesDeckContainCard(card) && !DecksDatabase.getInstance().isCardInAnyDeck(card)) {
                 checkListUserCards.getItems().add(card);
             }
         }

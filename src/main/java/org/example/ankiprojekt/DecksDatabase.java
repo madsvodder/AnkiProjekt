@@ -34,6 +34,14 @@ public class DecksDatabase implements Serializable {
         return instance;
     }
 
+    public boolean isCardInAnyDeck(Card card) {
+        for (Deck deck : decks) {
+            if (deck.doesDeckContainCard(card)) {
+                return true;
+            }
+        }
+        return false;
+    }
 
     public void addDeck(Deck deck) {
         decks.add(deck);

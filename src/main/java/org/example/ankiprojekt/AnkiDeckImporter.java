@@ -84,7 +84,7 @@ public class AnkiDeckImporter {
             // Set the name of the deck. Using the first card,
             // since they all SHOULD have the same name
             if (!cards.isEmpty()) {
-                newDeck.setName(cards.get(0).getDeckName());
+                newDeck.setName(cards.getFirst().getDeckName());
             }
 
         } catch (IOException e) {

@@ -41,6 +41,12 @@ public class Card implements Serializable {
         learnedType = null;
     }
 
+    @Override
+    public Card clone() {
+        return new Card(this.guid, this.notetype, this.deckName, this.imagePath,
+                this.backAnswer1, this.backAnswer2, this.backAnswer3);
+    }
+
     public void resetCard() {
         answered = false;
         learnedType = null;
