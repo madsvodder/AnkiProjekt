@@ -43,7 +43,7 @@ public class Card implements Serializable {
 
     @Override
     public Card clone() {
-        return new Card(this.guid, this.notetype, this.deckName, this.imagePath,
+        return new Card(this.guid, this.imagePath, this.question,
                 this.backAnswer1, this.backAnswer2, this.backAnswer3);
     }
 

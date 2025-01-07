@@ -16,19 +16,15 @@ public class DataSaver {
 
     @FXML
     public void save() {
+        try (FileOutputStream fos = new FileOutputStream("output.dat");
+             ObjectOutputStream oos = new ObjectOutputStream(fos)) {
 
-        // Create the FileOutputStream
-        try (FileOutputStream fos = new FileOutputStream("output.dat");) {
-
-            // Create the ObjectOutputStream
-            ObjectOutputStream oos = new ObjectOutputStream(fos);
-
-            // Write the database object
-            oos.writeObject(DecksDatabase.getInstance());
+            // Gem hele UserDatabase inkl. hver brugers DecksDatabase
             oos.writeObject(UserDatabase.getInstance());
-            oos.flush();
 
+            oos.flush();
             System.out.println("Saved!");
+
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -43,17 +39,13 @@ public class DataSaver {
         try (FileInputStream fileInputStream = new FileInputStream("output.dat");
              ObjectInputStream oip = new ObjectInputStream(fileInputStream)) {
 
-            DecksDatabase loadedDatabase = (DecksDatabase) oip.readObject();
             UserDatabase loadedUserDatabase = (UserDatabase) oip.readObject();
-
-            // Set the loaded instance and reinitialize observable list
-            DecksDatabase.setInstance(loadedDatabase);
             UserDatabase.setInstance(loadedUserDatabase);
 
             System.out.println("Data loaded!");
 
         } catch (IOException | ClassNotFoundException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
     }
 

@@ -20,6 +20,7 @@ public class UserSelectController {
     @FXML
     private ListView<User> listview_userList;
 
+    @FXML
     public void initialize() {
         DataSaver.getInstance().load();
         listview_userList.setOnMouseClicked(mouseEvent -> {
@@ -27,25 +28,28 @@ public class UserSelectController {
                 User user = listview_userList.getSelectionModel().getSelectedItem();
                 if (user != null) {
                     try {
-                        // Close the old / this window
+                        // Sæt den aktive bruger globalt (eksempel via UserDatabase eller en static variabel)
+                        UserDatabase.getInstance().setActiveUser(user);
+
+                        // Luk det gamle vindue
                         ownerStage.close();
 
-                        // Load the new FXML
+                        // Load den nye visning
                         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("hello-view.fxml"));
                         Parent root = fxmlLoader.load();
 
-                        // Get the controller and load
                         HelloController helloController = fxmlLoader.getController();
+
+                        // Hent brugerens DecksDatabase for visningel
+                        helloController.setDecksDatabase(user.getDecksDatabase());
                         helloController.load();
 
-                        // Create the new stage
                         Stage newStage = new Stage();
                         Scene scene = new Scene(root);
                         newStage.setScene(scene);
                         newStage.setTitle("Hello View");
                         newStage.show();
 
-                        // Set the new owner stage
                         ownerStage = newStage;
 
                     } catch (Exception e) {
@@ -97,6 +101,7 @@ public class UserSelectController {
                 User user = new User(nameTextField.getText());
                 UserDatabase.getInstance().addUser(user);
                 System.out.println("Added new user: " + user);
+                DataSaver.getInstance().save();
                 refresh();
                 popupStage.close();
             };
@@ -120,6 +125,7 @@ public class UserSelectController {
             User user = listview_userList.getSelectionModel().getSelectedItem();
             UserDatabase.getInstance().removeUser(user);
             System.out.println("Removed user: " + user);
+            DataSaver.getInstance().save();
             refresh();
         }
     }

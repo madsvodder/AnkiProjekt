@@ -27,7 +27,8 @@ public class AnkiDeckImporter {
         Deck newDeck = new Deck();
 
         // add the deck to the database
-        DecksDatabase.getInstance().addDeck(newDeck);
+        User activeUser = UserDatabase.getInstance().getActiveUser();
+        activeUser.getDecksDatabase().addDeck(newDeck);
 
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
             String line;

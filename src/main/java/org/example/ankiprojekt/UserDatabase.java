@@ -11,6 +11,9 @@ public class UserDatabase implements Serializable {
     @Getter @Setter
     private ArrayList<User> users;
 
+    @Getter @Setter
+    private User activeUser;
+
     public UserDatabase() {
         users = new ArrayList<>();
     }

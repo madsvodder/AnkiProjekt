@@ -46,6 +46,11 @@ public class HelloController {
     @Setter
     private Stage ownerStage;
 
+    User activeUser = UserDatabase.getInstance().getActiveUser();
+
+    @Setter
+    private DecksDatabase decksDatabase = activeUser.getDecksDatabase();
+
     AnkiDeckImporter importer = new AnkiDeckImporter();
 
     public void initialize() {
@@ -110,7 +115,7 @@ public class HelloController {
                     System.out.println("No deck selected!");
                     return;
                 } else {
-                    DecksDatabase.getInstance().removeDeck(selectedDeck);
+                    decksDatabase.removeDeck(selectedDeck);
                     populateDecks();
                     updateStatistics();
                     save();
@@ -140,7 +145,7 @@ public class HelloController {
     private void editDeck(Deck selectedDeck) {
         // Create a new stage for the popup
         Stage popupStage = new Stage();
-        popupStage.setTitle("Remove cards in deck");
+        popupStage.setTitle("Rediger deck");
         popupStage.initModality(Modality.APPLICATION_MODAL); // Block events to other windows
         popupStage.initOwner(ownerStage); // Set the owner stage
 
@@ -224,7 +229,7 @@ public class HelloController {
 
         CheckListView<Card> checkListView = new CheckListView<>();
 
-        checkListView.getItems().addAll(DecksDatabase.getInstance().getUserCards());
+        checkListView.getItems().addAll(decksDatabase.getUserCards());
 
         checkListView.getCheckModel().checkAll();
 
@@ -232,7 +237,7 @@ public class HelloController {
             var checkModel = checkListView.getCheckModel();
 
             // Brug en iterator for sikker fjernelse
-            var iterator = DecksDatabase.getInstance().getUserCards().iterator();
+            var iterator = decksDatabase.getUserCards().iterator();
             while (iterator.hasNext()) {
                 Card card = iterator.next();
                 if (!checkModel.isChecked(card)) {
@@ -240,7 +245,7 @@ public class HelloController {
                     System.out.println("Removed card from user database: " + card);
 
                     // Fjern kortet fra alle decks, der indeholder det
-                    for (Deck deck : DecksDatabase.getInstance().getDecks()) {
+                    for (Deck deck : decksDatabase.getDecks()) {
                         deck.remove(card);
                     }
                 }
@@ -282,8 +287,8 @@ public class HelloController {
 
         CheckListView<Card> checkListUserCards = new CheckListView<>();
 
-        for (Card card : DecksDatabase.getInstance().getUserCards()) {
-            if (!selectedDeck.doesDeckContainCard(card) && !DecksDatabase.getInstance().isCardInAnyDeck(card)) {
+        for (Card card : decksDatabase.getUserCards()) {
+            if (!selectedDeck.doesDeckContainCard(card) && !decksDatabase.isCardInAnyDeck(card)) {
                 checkListUserCards.getItems().add(card);
             }
         }
@@ -389,7 +394,7 @@ public class HelloController {
                 );
 
                 // Add the new custom card to the custom cards database
-                DecksDatabase.getInstance().getUserCards().add(c);
+                decksDatabase.getUserCards().add(c);
 
                 // Add logic to handle the created card, e.g., saving to a list or database
             } else {
@@ -438,8 +443,8 @@ public class HelloController {
 
     public void populateDecks() {
         tbview_decks.getItems().clear();
-        tbview_decks.getItems().addAll(DecksDatabase.getInstance().getDecks());
-        System.out.println("Decks: " + DecksDatabase.getInstance().getDecks());
+        tbview_decks.getItems().addAll(decksDatabase.getDecks());
+        System.out.println("Decks: " + decksDatabase.getDecks());
     }
 
     @FXML
@@ -469,7 +474,7 @@ public class HelloController {
                 return;
             }
 
-            DecksDatabase.getInstance().addDeck(handleCreateNewDeck(input));
+            decksDatabase.addDeck(handleCreateNewDeck(input));
 
             populateDecks();
 
@@ -541,10 +546,16 @@ public class HelloController {
         DataSaver.getInstance().save();
     }
 
+
+
     @FXML
     public void load() {
-        DataSaver.getInstance().load(); // Loads and sets the singleton instance
-        populateDecks(); // Refreshes the ListView with the updated database
+        // Brug den tildelte decksDatabase til at vise data
+        if (decksDatabase != null) {
+            tbview_decks.getItems().clear();
+            tbview_decks.getItems().addAll(decksDatabase.getDecks());
+            System.out.println("Loaded decks for the active user: " + decksDatabase.getDecks());
+        }
     }
 
 
