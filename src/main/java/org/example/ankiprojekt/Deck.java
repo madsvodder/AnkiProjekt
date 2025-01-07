@@ -30,13 +30,20 @@ public class Deck implements Serializable {
 
 
     public void add(Card card) {
+        card.resetCard();
         deckDemplate.add(card);
     }
 
     public void remove(Card card) {
+        card.resetCard();
         deckDemplate.remove(card);
+        availableCards.remove(card);
+        unavailableCards.remove(card);
     }
 
+    public boolean doesDeckContainCard(Card card) {
+        return deckDemplate.contains(card);
+    }
     public int getAmountOfLearnedCards() {
         if (deckDemplate == null || unavailableCards == null) {
             return 0; // Hvis én af listerne er null, returnér 0

@@ -41,9 +41,14 @@ public class Card implements Serializable {
         learnedType = null;
     }
 
+    public void resetCard() {
+        answered = false;
+        learnedType = null;
+    }
+
     @Override
     public String toString() {
-        return String.format("GUID: %s\nDeck: %s\nFront: %s\nImage Path: %s\n", guid, deckName, backAnswer2, imagePath);
+        return String.format("Spørgsmål: %s\nSvar1: %s", question, backAnswer1);
     }
 
 }

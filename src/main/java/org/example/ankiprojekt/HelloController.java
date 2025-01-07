@@ -35,6 +35,9 @@ public class HelloController {
     private ListView<Deck> LV_Decks;
 
     @FXML
+    private Label label_cardsLearned;
+
+    @FXML
     private TableView<Deck> tbview_decks;
 
     @FXML
@@ -47,9 +50,22 @@ public class HelloController {
 
     public void initialize() {
         initializeTableView();
+
         load();
+
+        updateStatistics();
     }
 
+    private void updateStatistics() {
+
+        int totalLearnedCards = Statistics.getInstance().getLearnedCards();
+        int notLearnedCards = Statistics.getInstance().getNotLearnedCards();
+
+        label_cardsLearned.setText(
+                  "Du har lært " + totalLearnedCards + " kort.\n"
+                + "Du har " + notLearnedCards + " kort tilbage."
+        );
+    }
     private void initializeTableView() {
         TableColumn<Deck, String> columnName = new TableColumn<>("Navn");
         columnName.setCellValueFactory(new PropertyValueFactory<>("name"));
@@ -70,6 +86,42 @@ public class HelloController {
 
         tbview_decks.setRowFactory(tv -> {
             TableRow<Deck> row = new TableRow<>();
+
+            // Create context menu
+            ContextMenu contextMenu = new ContextMenu();
+
+            // Create the menu items
+            MenuItem editMenuItem = new MenuItem("Rediger");
+            MenuItem removeMenuItem = new MenuItem("Fjern");
+
+            editMenuItem.setOnAction(e -> {
+                Deck selectedDeck = row.getItem();
+                if (selectedDeck == null) {
+                    System.out.println("No deck selected!");
+                    return;
+                } else {
+                    editDeck(selectedDeck);
+                }
+            });
+
+            removeMenuItem.setOnAction(e -> {
+                Deck selectedDeck = row.getItem();
+                if (selectedDeck == null) {
+                    System.out.println("No deck selected!");
+                    return;
+                } else {
+                    DecksDatabase.getInstance().removeDeck(selectedDeck);
+                    populateDecks();
+                    updateStatistics();
+                    save();
+                }
+            });
+
+            // Add the menu items to the context menu
+            contextMenu.getItems().addAll(editMenuItem, removeMenuItem);
+
+            row.setContextMenu(contextMenu);
+
             row.setOnMouseClicked(event -> {
                 Deck selectedDeck = row.getItem();
                 if (selectedDeck == null) {
@@ -80,9 +132,6 @@ public class HelloController {
                 if (event.getButton() == MouseButton.PRIMARY && event.getClickCount() == 2) {
                     // Dobbeltklik
                     switchToGameView(selectedDeck);
-                } else if (event.getButton() == MouseButton.SECONDARY) {
-                    // Højreklik
-                    editDeck(selectedDeck);
                 }
             });
             return row;
@@ -97,6 +146,7 @@ public class HelloController {
 
         Label listviewLabel = new Label("Cards in deck template:");
 
+        Button addUserCardButton = new Button("Add user card");
         Button okButton = new Button("OK");
         Button cancelButton = new Button("Cancel");
 
@@ -105,6 +155,15 @@ public class HelloController {
         checkListView.getItems().addAll(selectedDeck.getDeckDemplate());
 
         checkListView.getCheckModel().checkAll();
+
+        addUserCardButton.setOnAction(e -> {
+            addUserCardPopup(selectedDeck, () -> {
+                // Refresh the CheckListView with updated deck data
+                checkListView.getItems().clear();
+                checkListView.getItems().addAll(selectedDeck.getDeckDemplate());
+                checkListView.getCheckModel().checkAll();
+            });
+        });
 
         okButton.setOnAction(e -> {
             // Get the checklist's check model
@@ -127,17 +186,24 @@ public class HelloController {
                 }
             }
 
+            populateDecks();
+
             popupStage.close(); // Close the popup
         });
 
-        cancelButton.setOnAction(e -> popupStage.close());
+        cancelButton.setOnAction(e -> {
 
-        VBox popupLayout = new VBox(10, listviewLabel, checkListView, okButton, cancelButton);
+            populateDecks();
+
+            popupStage.close();
+        });
+
+        VBox popupLayout = new VBox(10, listviewLabel, checkListView, okButton, cancelButton, addUserCardButton);
 
         popupLayout.setStyle("-fx-padding: 20; -fx-alignment: center;");
 
         // Create and set the scene for the popup stage
-        Scene popupScene = new Scene(popupLayout, 300, 150);
+        Scene popupScene = new Scene(popupLayout, 350, 600);
         popupStage.setScene(popupScene);
 
         // Show the popup
@@ -145,60 +211,187 @@ public class HelloController {
     }
 
     @FXML
-    private void createNewCard() {
-
-        String imagePath;
-
+    private void editUserCards() {
         // Create a new stage for the popup
         Stage popupStage = new Stage();
-        popupStage.setTitle("Create new card");
+        popupStage.setTitle("Remove cards in deck");
         popupStage.initModality(Modality.APPLICATION_MODAL); // Block events to other windows
         popupStage.initOwner(ownerStage); // Set the owner stage
 
-        ComboBox<Deck> comboBox_Decks = new ComboBox<>();
-        comboBox_Decks.getItems().addAll(DecksDatabase.getInstance().getDecks());
+        Button okButton = new Button("OK");
+        Button cancelButton = new Button("Cancel");
+        Label listviewLabel = new Label("Cards in user database:");
+
+        CheckListView<Card> checkListView = new CheckListView<>();
+
+        checkListView.getItems().addAll(DecksDatabase.getInstance().getUserCards());
+
+        checkListView.getCheckModel().checkAll();
+
+        okButton.setOnAction(e -> {
+            var checkModel = checkListView.getCheckModel();
+
+            // Brug en iterator for sikker fjernelse
+            var iterator = DecksDatabase.getInstance().getUserCards().iterator();
+            while (iterator.hasNext()) {
+                Card card = iterator.next();
+                if (!checkModel.isChecked(card)) {
+                    iterator.remove(); // Fjern kortet sikkert fra listen
+                    System.out.println("Removed card from user database: " + card);
+
+                    // Fjern kortet fra alle decks, der indeholder det
+                    for (Deck deck : DecksDatabase.getInstance().getDecks()) {
+                        deck.remove(card);
+                    }
+                }
+            }
+
+            populateDecks();    // Opdater decks i visningen
+            updateStatistics(); // Opdater statistik
+            save();             // Gem ændringer
+            popupStage.close(); // Luk popup-vinduet
+        });
+
+        cancelButton.setOnAction(e -> {
+
+            populateDecks();
+
+            popupStage.close();
+        });
+
+
+        VBox popupLayout = new VBox(10, listviewLabel, checkListView, okButton, cancelButton);
+
+        popupLayout.setStyle("-fx-padding: 20; -fx-alignment: center;");
+
+        // Create and set the scene for the popup stage
+        Scene popupScene = new Scene(popupLayout, 350, 600);
+        popupStage.setScene(popupScene);
+
+        // Show the popup
+        popupStage.showAndWait();
+    }
+    private void addUserCardPopup(Deck selectedDeck, Runnable callbackAfterClose) {
+        // Create a new stage for the popup
+        Stage popupStage = new Stage();
+        popupStage.setTitle("Add card from user database");
+        popupStage.initOwner(ownerStage); // Set the owner stage
+
+        Button okButton = new Button("OK");
+        Button cancelButton = new Button("Cancel");
+
+        CheckListView<Card> checkListUserCards = new CheckListView<>();
+
+        for (Card card : DecksDatabase.getInstance().getUserCards()) {
+            if (!selectedDeck.doesDeckContainCard(card)) {
+                checkListUserCards.getItems().add(card);
+            }
+        }
+
+        okButton.setOnAction(e -> {
+
+            // Get the checklist's check model
+            var checkModel = checkListUserCards.getCheckModel();
+
+            for (Card card : checkListUserCards.getItems()) {
+                if (checkModel.isChecked(card)) {
+                    if (!selectedDeck.getDeckDemplate().contains(card)) {
+                        selectedDeck.add(card);
+                        System.out.println("Added card to deckTemplate: " + card);
+                    } else {
+                        System.out.println("Card already in deckTemplate: " + card);
+                    }
+                }
+            }
+
+            // Call the refresh callback after data modification
+            if (callbackAfterClose != null) {
+                callbackAfterClose.run();
+            }
+
+            popupStage.close(); // Close the popup
+        });
+
+        cancelButton.setOnAction(e -> {
+
+            // Call the refresh callback after data modification
+            if (callbackAfterClose != null) {
+                callbackAfterClose.run();
+            }
+
+            popupStage.close();
+        });
+
+
+        VBox popupLayout = new VBox(10, checkListUserCards, okButton, cancelButton);
+
+        Scene popupScene = new Scene(popupLayout, 300, 150);
+        popupStage.setScene(popupScene);
+        popupStage.showAndWait();
+    }
+
+    @FXML
+    private void createNewCard() {
+
+        // Create a new stage for the popup
+        Stage popupStage = new Stage();
+        popupStage.setTitle("Opret nyt kort");
+        popupStage.initModality(Modality.APPLICATION_MODAL); // Block events to other windows
+        popupStage.initOwner(ownerStage); // Set the owner stage
 
         // OK and Cancel buttons
         Button okButton = new Button("OK");
         Button cancelButton = new Button("Cancel");
+        Button addImageButton = new Button("Tilføj billede");
 
         TextField tf_question = new TextField();
-        tf_question.setPromptText("Enter question");
+        tf_question.setPromptText("Spørgsmål");
 
         TextField tf_back1 = new TextField();
-        tf_back1.setPromptText("Enter back answer line 1");
+        tf_back1.setPromptText("Svar linje 1");
 
         TextField tf_back2 = new TextField();
-        tf_back2.setPromptText("Enter back answer line 2");
+        tf_back2.setPromptText("Svar linje 2");
 
         TextField tf_back3 = new TextField();
-        tf_back3.setPromptText("Enter back answer line 3");
+        tf_back3.setPromptText("Svar linje 3");
 
-        FileChooser imageChooser = new FileChooser();
-        imageChooser.setTitle("Choose image");
-        imageChooser.getExtensionFilters().addAll(
-                new FileChooser.ExtensionFilter("Image Files", "*.jpg", "*.png")
-        );
+        // Use a mutable array to hold the image path
+        final String[] imagePath = {null};
 
-        File selectedImage = imageChooser.showOpenDialog(popupStage);
-        if (selectedImage != null) {
-            imagePath = (selectedImage.getAbsolutePath());
-        } else {
-            imagePath = "No image selected";
-        }
+        addImageButton.setOnAction(e -> {
+            FileChooser imageChooser = new FileChooser();
+            imageChooser.setTitle("Choose image");
+            imageChooser.getExtensionFilters().addAll(
+                    new FileChooser.ExtensionFilter("Image Files", "*.jpg", "*.png")
+            );
+
+            File selectedImage = imageChooser.showOpenDialog(popupStage);
+            if (selectedImage != null) {
+                imagePath[0] = selectedImage.getAbsolutePath();
+            } else {
+                imagePath[0] = "No image selected";
+            }
+        });
 
 
         okButton.setOnAction(e -> {
 
-            if (!tf_question.getText().isEmpty() && !tf_back1.getText().isEmpty() && comboBox_Decks.getSelectionModel().getSelectedItem() != null) {
-                Card c = new Card(UUID.randomUUID().toString(),  imagePath, tf_question.getText(), tf_back1.getText(), tf_back2.getText(), tf_back3.getText());
+            if (!tf_question.getText().isEmpty() && !tf_back1.getText().isEmpty()) {
+                String selectedImagePath = (imagePath[0] != null) ? imagePath[0] : "No image selected";
+                Card c = new Card(
+                        UUID.randomUUID().toString(),
+                        selectedImagePath,
+                        tf_question.getText(),
+                        tf_back1.getText(),
+                        tf_back2.getText(),
+                        tf_back3.getText()
+                );
 
-                Deck d = comboBox_Decks.getSelectionModel().getSelectedItem();
+                // Add the new custom card to the custom cards database
+                DecksDatabase.getInstance().getUserCards().add(c);
 
-                c.setDeckName(d.name);
-
-                d.add(c);
-
+                // Add logic to handle the created card, e.g., saving to a list or database
             } else {
                 Alert a = new Alert(Alert.AlertType.ERROR, "Please fill in at least question and back answer line 1!");
                 a.showAndWait();
@@ -211,9 +404,9 @@ public class HelloController {
         cancelButton.setOnAction(e -> popupStage.close());
 
         // Arrange components in a layout
-        HBox buttonsLayout = new HBox(10, okButton, cancelButton);
+        HBox buttonsLayout = new HBox(10, addImageButton, okButton, cancelButton);
         buttonsLayout.setAlignment(Pos.BASELINE_CENTER);
-        VBox popupLayout = new VBox(10, comboBox_Decks, tf_question, tf_back1, tf_back2, tf_back3, buttonsLayout);
+        VBox popupLayout = new VBox(10, tf_question, tf_back1, tf_back2, tf_back3, buttonsLayout);
 
         popupLayout.setStyle("-fx-padding: 20; -fx-alignment: center;");
 
@@ -243,33 +436,24 @@ public class HelloController {
         }
     }
 
-    /*
-    public void populateDecks() {
-        LV_Decks.getItems().clear();
-        LV_Decks.getItems().addAll(DecksDatabase.getInstance().getDecks());
-        System.out.println("Decks: " + DecksDatabase.getInstance().getDecks());
-    }
-*/
-
     public void populateDecks() {
         tbview_decks.getItems().clear();
         tbview_decks.getItems().addAll(DecksDatabase.getInstance().getDecks());
         System.out.println("Decks: " + DecksDatabase.getInstance().getDecks());
     }
 
-
     @FXML
     private void createNewDeck() {
         // Create a new stage for the popup
         Stage popupStage = new Stage();
-        popupStage.setTitle("Create new deck");
+        popupStage.setTitle("Opret nyt deck");
         popupStage.initModality(Modality.APPLICATION_MODAL); // Block events to other windows
         popupStage.initOwner(ownerStage); // Set the owner stage
 
         // TextField to input text
         TextField textField = new TextField();
-        Label label = new Label("Enter deck name:");
-        textField.setPromptText("Enter some text");
+        Label label = new Label("Deck navn:");
+        textField.setPromptText("Navn");
 
         // OK and Cancel buttons
         Button okButton = new Button("OK");

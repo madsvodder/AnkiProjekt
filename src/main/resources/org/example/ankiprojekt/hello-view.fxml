@@ -7,10 +7,13 @@
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Region?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
 <BorderPane fx:id="borderPane_Main" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.ankiprojekt.HelloController">
    <center>
@@ -21,11 +24,26 @@
       
           <Label fx:id="welcomeText" />
          <TableView fx:id="tbview_decks" prefHeight="395.0" prefWidth="1240.0" />
-         <Region prefHeight="252.0" prefWidth="1240.0" />
+         <TitledPane animated="false" text="Statistikker">
+           <content>
+             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                  <children>
+                     <Label fx:id="label_cardsLearned" text="Label">
+                        <font>
+                           <Font size="18.0" />
+                        </font>
+                     </Label>
+                  </children>
+               </AnchorPane>
+           </content>
+         </TitledPane>
+         <Region prefHeight="252.0" prefWidth="1240.0" visible="false" />
          <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="25.0">
             <children>
                <Button mnemonicParsing="false" onAction="#importAnkiDeck" text="Import Deck" />
                <Button onAction="#createNewDeck" text="Opret Deck" />
+               <Button layoutX="645.0" layoutY="20.0" onAction="#createNewCard" text="Opret nyt kort" />
+               <Button layoutX="689.0" layoutY="10.0" onAction="#editUserCards" text="Rediger kort" />
             </children>
          </HBox>
       </VBox>

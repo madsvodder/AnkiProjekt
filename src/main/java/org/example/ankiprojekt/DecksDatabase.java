@@ -5,6 +5,7 @@ import lombok.Setter;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.List;
 
 public class DecksDatabase implements Serializable {
 
@@ -16,9 +17,12 @@ public class DecksDatabase implements Serializable {
     @Getter
     private ArrayList<Deck> decks;
 
+    private ArrayList<Card> userCards;
+
     // Constructor
     private DecksDatabase() {
         decks = new ArrayList<>();
+        userCards = new ArrayList<>();
     }
 
     // Public method to get acces to the single instance
@@ -52,5 +56,12 @@ public class DecksDatabase implements Serializable {
         }
     }
 
+    // Metoden, der sikrer en ikke-null liste
+    public List<Card> getUserCards() {
+        if (userCards == null) {
+            userCards = new ArrayList<>();  // Initialiser hvis null
+        }
+        return userCards;
+    }
 
 }
