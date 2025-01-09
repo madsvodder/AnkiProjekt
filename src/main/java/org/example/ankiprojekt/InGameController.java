@@ -54,30 +54,28 @@ public class InGameController {
     // Reference to the selected deck
     Deck selectedDeck;
 
+    // Refference to the current card on the screen
     Card currentCard;
 
+    // Game state for when the user chooses to start, restart etc... //
+    public enum GameState {
+        START,
+        RESTART,
+        SURRENDER,
+        FINISH
+    }
 
-    // Scheduler service for timing cards
+    // Scheduler service for timing cards //
     private ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
 
     // Cards waiting for timeout //
-    // Cards will be moved to this arraylist, and when the time is up,
-    // whey will be moved back to the available cards arraylist.
+    // Cards will be moved to this arraylist, and when the time is up, they will be moved to the frontCards array list
     private final List<Card> pendingCards = new ArrayList<>();
 
-    // Cards to show FIRST
+    // Cards to show FIRST - Priority cards
     private List<Card> frontCards = new ArrayList<>();
 
-    private void calculateCardsLeft() {
-        int cardsLeft = 0;
-        for (Card card : selectedDeck.getDeckDemplate()) {
-            if (card.getLearnedType() != Card.Learned.Korrekt) {
-                cardsLeft++;
-            }
-        }
-        label_doneAmount.setText("Kort tilbage: " + cardsLeft);
-    }
-
+    // Initialize method!!!!! //
     public void customInit(Deck selectedDeck) {
 
         // Set the reference to the selected deck
@@ -92,6 +90,50 @@ public class InGameController {
         updateStats();
     }
 
+    // Buttons - These buttons handles the start, restart and surrender methods //
+
+    @FXML
+    private void backToMainMenu() {
+
+        if (!scheduler.isShutdown()) {
+            scheduler.shutdownNow();
+            System.out.println("Scheduler successfully shut down.");
+        }
+
+        // Gem den aktuelle tilstand
+        DataSaver.getInstance().save(); // Sørg for, at databasen bliver gemt korrekt
+
+        // Skift tilbage til hovedmenuen
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("hello-view.fxml"));
+            BorderPane mainMenuView = loader.load();
+
+            HelloController helloController = loader.getController();
+
+            // Udskift hele roden i scenen med hello-view's BorderPane
+            btn_StartGame.getScene().setRoot(mainMenuView);
+
+        } catch (IOException e) {
+            e.printStackTrace();
+            System.err.println("Failed to load hello-view.fxml");
+        }
+    }
+    @FXML
+    public void startGame() {
+        handleGameState(GameState.START);
+    }
+
+    @FXML
+    public void restartGame() {
+        handleGameState(GameState.RESTART);
+    }
+
+    @FXML
+    public void surrender() {
+        handleGameState(GameState.SURRENDER);
+    }
+
+    // Buttons - These buttons handles the user input, when the user sees a card //
 
     @FXML
     private void showAnswer() {
@@ -99,65 +141,6 @@ public class InGameController {
         //label_Answer.setText(currentCard.getBackAnswer1() + " " + currentCard.getBackAnswer2() + " " + currentCard.getBackAnswer3()); // Set the text for the answer label
         hbox_AnswerOptions.setVisible(true);
     }
-
-    private void showRandomCard() {
-        // Hvis der er kort i frontCards, vises de som højeste prioritet
-        if (!frontCards.isEmpty()) {
-            System.out.println("Showing front card: " + frontCards.get(0));
-            displayCard(frontCards.get(0));
-            Card card = frontCards.remove(0); // Fjern kortet, når det vises
-            return;
-        }
-
-        // Find et tilfældigt ulært kort
-        currentCard = getRandomUnlearnedCard(selectedDeck.getAvailableCards());
-
-        if (currentCard == null) {
-            System.out.println("No more unlearned cards available. Finishing game");
-            finishGame();
-            return;
-        }
-
-        // Vis tilfældigt kort
-        displayCard(currentCard);
-    }
-
-
-    private Card getRandomUnlearnedCard(List<Card> cards) {
-        List<Card> unlearnedCards = cards.stream()
-                .filter(card -> card.getLearnedType() != Card.Learned.Korrekt)
-                .toList();
-
-        if (unlearnedCards.isEmpty()) {
-            return null;
-        }
-
-        int rnd = new Random().nextInt(unlearnedCards.size());
-        return unlearnedCards.get(rnd);
-    }
-
-    private void displayCard(Card card) {
-
-        if (card != null) {
-            label_Answer.setText(
-                      card.getBackAnswer1() + "\n"
-                    + card.getBackAnswer2() + "\n"
-                    + card.getBackAnswer3() + "\n"
-            );
-        }
-
-        if (card.getImagePath() != null) {
-            String fileUrl = "file:///" + Paths.get(card.getImagePath()).toUri().getPath();
-            img_Image.setImage(new Image(fileUrl));
-        }
-
-        label_Top.setText(currentCard.getQuestion());
-        System.out.println("Card Question: " + currentCard.getQuestion());
-
-        hbox_AnswerOptions.setVisible(false);
-        label_Answer.setVisible(false);
-    }
-
 
     @FXML
     private void korrekt() {
@@ -184,6 +167,105 @@ public class InGameController {
     @FXML
     private void ikkeKorrekt() {
         handleCardAction(Card.Learned.IkkeKorrekt, 10, TimeUnit.MINUTES);
+    }
+    private void handleGameState(GameState state) {
+        // Ryd og nulstil kort afhængigt af tilstanden
+        switch (state) {
+            case START:
+                resetScheduler();
+                prepareDeck();
+                showRandomCard();
+                updateStats();
+                updateUIForGameStart();
+                break;
+
+            case RESTART:
+                scheduler.shutdown();
+                resetAllCards();
+                prepareDeck();
+                showRandomCard();
+                updateStats();
+                updateUIForGameStart();
+                break;
+
+            case SURRENDER:
+                resetAllCards();
+                updateStats();
+                finishGame();
+                break;
+
+            case FINISH:
+                scheduler.shutdown(); // Luk planlægger
+                hideGameUI();
+                showStatistics();
+                break;
+        }
+    }
+
+    // Helpers - The methods are helpers. Usually used for other methods in this class, but some are also standalone //
+
+    private void calculateCardsLeft() {
+        int cardsLeft = 0;
+        for (Card card : selectedDeck.getDeckDemplate()) {
+            if (card.getLearnedType() != Card.Learned.Korrekt) {
+                cardsLeft++;
+            }
+        }
+        label_doneAmount.setText("Kort tilbage: " + cardsLeft);
+    }
+    private void showRandomCard() {
+        // Hvis der er kort i frontCards, vises de som højeste prioritet
+        if (!frontCards.isEmpty()) {
+            System.out.println("Showing front card: " + frontCards.get(0));
+            displayCard(frontCards.get(0));
+            Card card = frontCards.remove(0); // Fjern kortet, når det vises
+            return;
+        }
+
+        // Find et tilfældigt ulært kort
+        currentCard = getRandomUnlearnedCard(selectedDeck.getAvailableCards());
+
+        if (currentCard == null) {
+            System.out.println("No more unlearned cards available. Finishing game");
+            finishGame();
+            return;
+        }
+
+        // Vis tilfældigt kort
+        displayCard(currentCard);
+    }
+    private Card getRandomUnlearnedCard(List<Card> cards) {
+        List<Card> unlearnedCards = cards.stream()
+                .filter(card -> card.getLearnedType() != Card.Learned.Korrekt)
+                .toList();
+
+        if (unlearnedCards.isEmpty()) {
+            return null;
+        }
+
+        int rnd = new Random().nextInt(unlearnedCards.size());
+        return unlearnedCards.get(rnd);
+    }
+    private void displayCard(Card card) {
+
+        if (card != null) {
+            label_Answer.setText(
+                      card.getBackAnswer1() + "\n"
+                    + card.getBackAnswer2() + "\n"
+                    + card.getBackAnswer3() + "\n"
+            );
+        }
+
+        if (card.getImagePath() != null) {
+            String fileUrl = "file:///" + Paths.get(card.getImagePath()).toUri().getPath();
+            img_Image.setImage(new Image(fileUrl));
+        }
+
+        label_Top.setText(currentCard.getQuestion());
+        System.out.println("Card Question: " + currentCard.getQuestion());
+
+        hbox_AnswerOptions.setVisible(false);
+        label_Answer.setVisible(false);
     }
 
     private void handleCardAction(Card.Learned status, long delay, TimeUnit unit) {
@@ -213,33 +295,6 @@ public class InGameController {
             }
         }, delay, unit);
     }
-
-
-    private void updateStats() {
-        for (Card card : selectedDeck.getDeckDemplate()) {
-            if (card.getLearnedType() == Card.Learned.Korrekt && card.isAnswered()) {
-                label_korrektAmount.setText("Korrekt: " + getLearnedAmount(Card.Learned.Korrekt));
-            }
-
-            if (card.getLearnedType() == Card.Learned.NæstenKorrekt && card.isAnswered()) {
-                label_næstenKorrektAmount.setText("Næsten Korrekt: " + getLearnedAmount(Card.Learned.NæstenKorrekt));
-            }
-
-            if (card.getLearnedType() == Card.Learned.DelvistKorrekt && card.isAnswered()) {
-                label_delvistKorrektAmount.setText("Delvist Korrekt: " + getLearnedAmount(Card.Learned.DelvistKorrekt));
-            }
-
-            if (card.getLearnedType() == Card.Learned.IkkeKorrekt && card.isAnswered()) {
-                label_ikkeKorrektAmount.setText("Ikke Korrekt: " + getLearnedAmount(Card.Learned.IkkeKorrekt));
-            }
-        }
-
-        System.out.println("Pending Cards: " + pendingCards.size());
-
-        calculateCardsLeft();
-    }
-
-    // Helpers //
     public int getLearnedAmount(Card.Learned learnedAmount) {
 
         int amount = 0;
@@ -251,7 +306,6 @@ public class InGameController {
         }
         return amount;
     }
-
     private void finishCard(Card cardToFinish) {
 
         // Set the values of the current card
@@ -262,49 +316,7 @@ public class InGameController {
         selectedDeck.getUnavailableCards().add(cardToFinish);
     }
 
-    @FXML
-    public void startGame() {
-        if (selectedDeck != null) {
-
-            // Remember! Create a new scheduler, while the old one shuts down
-            if (scheduler.isShutdown()) {
-                scheduler = Executors.newScheduledThreadPool(1);
-                System.out.println("Scheduler restarted");
-            }
-
-            // Empty the pending cards array
-            pendingCards.clear();
-
-            // Tøm de tilgængelige kort og tilføj kun ulærte kort
-            selectedDeck.getAvailableCards().clear();
-            for (Card card : selectedDeck.getDeckDemplate()) {
-                if (card.getLearnedType() != Card.Learned.Korrekt) {
-                    selectedDeck.getAvailableCards().add(card);
-                }
-            }
-
-            // Tjek, om der er kort tilbage at vise
-            if (selectedDeck.getAvailableCards().isEmpty()) {
-                finishGame();
-                return;
-            }
-
-            // Vis og skjul UI-elementerne
-            label_Top.setVisible(true);
-            hbox_AnswerOptions.setVisible(false);
-            btn_ShowAnswer.setVisible(true);
-            btn_StartGame.setVisible(false);
-
-            // Vis første kort
-            showRandomCard();
-
-            // Opdater stats
-            updateStats();
-        } else {
-            System.out.println("No Deck selected");
-        }
-    }
-
+    // Helpers - These are used for managing the game state. Resetting the cards, preparing the game etc... //
     private void finishGame() {
 
         // Shut down the scheduler for card delay
@@ -344,92 +356,88 @@ public class InGameController {
                 "Ikke Korrekt: " + ikkeKorrekt + "\n" +
                 "Total Kort: " + totalCards);
     }
-
-    @FXML
-    private void restartGame() {
-
-        scheduler.shutdown();
-
-        // Reset the card stacks
-        selectedDeck.getUnavailableCards().clear();
-        selectedDeck.getAvailableCards().clear();
+    private void resetScheduler() {
+        if (scheduler.isShutdown()) {
+            scheduler = Executors.newScheduledThreadPool(1);
+        }
+    }
+    private void prepareDeck() {
         pendingCards.clear();
         frontCards.clear();
+        selectedDeck.getAvailableCards().clear();
 
-        // Reset all cards in the deck
         for (Card card : selectedDeck.getDeckDemplate()) {
-            card.setLearnedType(null);
-            card.setAnswered(false);
+            if (card.getLearnedType() != Card.Learned.Korrekt) {
+                selectedDeck.getAvailableCards().add(card);
+            }
         }
-
-        // Add all cards back to available cards
-        selectedDeck.getAvailableCards().addAll(selectedDeck.getDeckDemplate());
-
-        // Reset all statistic labels to 0
-        label_korrektAmount.setText("Korrekt: 0");
-        label_næstenKorrektAmount.setText("Næsten Korrekt: 0");
-        label_delvistKorrektAmount.setText("Delvist Korrekt: 0");
-        label_ikkeKorrektAmount.setText("Ikke Korrekt: 0");
-        label_doneAmount.setText("Kort tilbage: " + selectedDeck.getDeckDemplate().size());
-
-        // Restart the game
-        startGame();
     }
-
-    @FXML
-    private void surrender() {
-
-        // Reset the card stacks
+    private void resetAllCards() {
         selectedDeck.getUnavailableCards().clear();
         selectedDeck.getAvailableCards().clear();
 
-        // Reset all cards in the deck template
         for (Card card : selectedDeck.getDeckDemplate()) {
             card.setLearnedType(null);
             card.setAnswered(false);
         }
 
-        // Update the stats
-        updateStats();
-
-        // finish the game
-        finishGame();
+        selectedDeck.getAvailableCards().addAll(selectedDeck.getDeckDemplate());
     }
 
-    @FXML
-    private void backToMainMenu() {
-
-        if (!scheduler.isShutdown()) {
-            scheduler.shutdownNow();
-            System.out.println("Scheduler successfully shut down.");
-        }
-
-        // Gem den aktuelle tilstand
-        DataSaver.getInstance().save(); // Sørg for, at databasen bliver gemt korrekt
-
-        // Skift tilbage til hovedmenuen
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("hello-view.fxml"));
-            BorderPane mainMenuView = loader.load();
-
-            HelloController helloController = loader.getController();
-
-            // Udskift hele roden i scenen med hello-view's BorderPane
-            btn_StartGame.getScene().setRoot(mainMenuView);
-
-        } catch (IOException e) {
-            e.printStackTrace();
-            System.err.println("Failed to load hello-view.fxml");
-        }
+    // Helpers - These are mainly used for updating the UI //
+    private void updateUIForGameStart() {
+        label_Top.setVisible(true);
+        hbox_AnswerOptions.setVisible(false);
+        btn_ShowAnswer.setVisible(true);
+        btn_StartGame.setVisible(false);
+        img_Image.setVisible(true);
     }
+    private void hideGameUI() {
+        label_Top.setVisible(false);
+        label_Answer.setVisible(false);
+        hbox_AnswerOptions.setVisible(false);
+        btn_ShowAnswer.setVisible(false);
+        btn_StartGame.setVisible(false);
+        img_Image.setVisible(false);
+    }
+    private void updateStats() {
+        for (Card card : selectedDeck.getDeckDemplate()) {
+            if (card.getLearnedType() == Card.Learned.Korrekt && card.isAnswered()) {
+                label_korrektAmount.setText("Korrekt: " + getLearnedAmount(Card.Learned.Korrekt));
+            }
 
+            if (card.getLearnedType() == Card.Learned.NæstenKorrekt && card.isAnswered()) {
+                label_næstenKorrektAmount.setText("Næsten Korrekt: " + getLearnedAmount(Card.Learned.NæstenKorrekt));
+            }
 
-    private boolean isCurrentCardInPendingList() {
-        for (Card card : pendingCards) {
-            if (card.equals(currentCard)) {
-                return true;
+            if (card.getLearnedType() == Card.Learned.DelvistKorrekt && card.isAnswered()) {
+                label_delvistKorrektAmount.setText("Delvist Korrekt: " + getLearnedAmount(Card.Learned.DelvistKorrekt));
+            }
+
+            if (card.getLearnedType() == Card.Learned.IkkeKorrekt && card.isAnswered()) {
+                label_ikkeKorrektAmount.setText("Ikke Korrekt: " + getLearnedAmount(Card.Learned.IkkeKorrekt));
             }
         }
-        return false;
+
+        System.out.println("Pending Cards: " + pendingCards.size());
+
+        calculateCardsLeft();
     }
+    private void showStatistics() {
+        int totalCards = selectedDeck.getDeckDemplate().size();
+        int korrekt = getLearnedAmount(Card.Learned.Korrekt);
+        int næstenKorrekt = getLearnedAmount(Card.Learned.NæstenKorrekt);
+        int delvistKorrekt = getLearnedAmount(Card.Learned.DelvistKorrekt);
+        int ikkeKorrekt = getLearnedAmount(Card.Learned.IkkeKorrekt);
+
+        label_Top.setVisible(true);
+        label_Top.setText("Spillet er slut! Tak for at spille.\n" +
+                "Statistikker:\n" +
+                "Korrekt: " + korrekt + "\n" +
+                "Næsten Korrekt: " + næstenKorrekt + "\n" +
+                "Delvist Korrekt: " + delvistKorrekt + "\n" +
+                "Ikke Korrekt: " + ikkeKorrekt + "\n" +
+                "Total Kort: " + totalCards);
+    }
+
 }
