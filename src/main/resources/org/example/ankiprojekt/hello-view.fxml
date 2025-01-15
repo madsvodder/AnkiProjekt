@@ -42,8 +42,6 @@
             <children>
                <Button mnemonicParsing="false" onAction="#importAnkiDeck" text="Import Deck" />
                <Button onAction="#createNewDeck" text="Opret Deck" />
-               <Button layoutX="645.0" layoutY="20.0" onAction="#createNewCard" text="Opret nyt kort" />
-               <Button layoutX="689.0" layoutY="10.0" onAction="#editUserCards" text="Rediger kort" />
             </children>
          </HBox>
       </VBox>
@@ -55,6 +53,9 @@
             <items>
                   <MenuItem mnemonicParsing="false" onAction="#save" text="Save" />
                   <MenuItem mnemonicParsing="false" onAction="#load" text="Load" />
+                  <MenuItem mnemonicParsing="false" onAction="#createNewCard" text="Opret Kort" />
+                  <MenuItem mnemonicParsing="false" onAction="#importCustomCard" text="Importer Kort" />
+                  <MenuItem mnemonicParsing="false" onAction="#editUserCards" text="Håndter Kort" />
             </items>
           </Menu>
         </menus>

@@ -4,10 +4,11 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
@@ -15,10 +16,50 @@ import java.util.logging.Logger;
 
 public class AnkiDeckImporter {
 
+    public String decksFolderPath = PathManager.decksFolderPath;
+
+    DecksDatabase decksDatabase;
+    public AnkiDeckImporter(DecksDatabase decksDatabase) {
+        this.decksDatabase = decksDatabase;
+    }
     private static final Logger LOGGER = Logger.getLogger(AnkiDeckImporter.class.getName());
 
     private static final int MIN_COLUMNS = 7;
     private String directory;
+
+
+    // Import an Anki deck from a folder (including txt file and associated images). //
+    public void importDeckFromFolder(File selectedDirectory, DecksDatabase decksDatabase) {
+        if (selectedDirectory == null || !selectedDirectory.isDirectory()) {
+            throw new IllegalArgumentException("Invalid directory provided.");
+        }
+
+        File destinationFolder;
+
+        // Copy the folder to the `decksFolderPath`
+        try {
+            destinationFolder = new File(decksFolderPath, selectedDirectory.getName());
+            copyFolder(selectedDirectory.toPath(), destinationFolder.toPath());
+        } catch (IOException e) {
+            LOGGER.log(Level.SEVERE, "Failed to copy folder to decks folder path", e);
+            throw new RuntimeException("Failed to copy folder to decks folder path", e);
+        }
+
+        // Get txt files in the copied directory
+        File[] txtFiles = destinationFolder.listFiles((dir, name) -> name.toLowerCase().endsWith(".txt"));
+        if (txtFiles == null || txtFiles.length == 0) {
+            throw new IllegalArgumentException("No .txt file found in the selected folder.");
+        }
+
+        // Use the paths from the copied folder
+        String txtFilePath = txtFiles[0].getAbsolutePath();
+        String imagesPath = destinationFolder.getAbsolutePath();
+
+        // Import it
+        importAnkiDeck(txtFilePath, imagesPath);
+    }
+
+
     public void importAnkiDeck(String filePath, String imageDirectory) {
 
         directory = imageDirectory;
@@ -94,6 +135,8 @@ public class AnkiDeckImporter {
         }
     }
 
+
+
     private void setCardQuestions(Card card) {
         if (card.getNotetype().equals("Art")) {
             card.setQuestion("Artist?");
@@ -118,7 +161,6 @@ public class AnkiDeckImporter {
         // Return null if no image is found
         return null;
     }
-
     private String createFullImagePath(String imageName, String imagePath) {
 
         // Make sure that the image path is valid
@@ -129,7 +171,6 @@ public class AnkiDeckImporter {
         // Combine
         return Paths.get(imagePath, imageName).toString();
     }
-
     public static String cleanHtmlTags(String input) {
         if (input == null) {
             return "";
@@ -137,5 +178,21 @@ public class AnkiDeckImporter {
         return input.replaceAll("<[^>]*>", "").trim();
     }
 
+
+    // Utility to copy folder
+    private void copyFolder(Path source, Path destination) throws IOException {
+        Files.walk(source).forEach(sourcePath -> {
+            try {
+                Path targetPath = destination.resolve(source.relativize(sourcePath));
+                if (Files.isDirectory(sourcePath)) {
+                    Files.createDirectories(targetPath);
+                } else {
+                    Files.copy(sourcePath, targetPath, StandardCopyOption.REPLACE_EXISTING);
+                }
+            } catch (IOException e) {
+                throw new UncheckedIOException(e);
+            }
+        });
+    }
 
 }

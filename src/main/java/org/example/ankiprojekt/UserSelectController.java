@@ -52,7 +52,7 @@ public class UserSelectController {
                         Stage newStage = new Stage();
                         Scene scene = new Scene(root);
                         newStage.setScene(scene);
-                        newStage.setTitle("Hello View");
+                        newStage.setTitle("Anki Klon");
                         newStage.show();
 
                         ownerStage = newStage;

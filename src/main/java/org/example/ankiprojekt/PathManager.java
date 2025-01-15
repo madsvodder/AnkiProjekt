@@ -4,7 +4,7 @@ import java.io.File;
 
 public class PathManager {
 
-    // Felter til at gemme stierne
+    // Save strings
     public static String ankiKlonFolderPath;
     public static String saveDataFolderPath;
     public static String decksFolderPath;
@@ -12,22 +12,22 @@ public class PathManager {
 
     // Initialisering af stier (kald denne én gang ved programmets start)
     public static void initializePaths() {
-        // Få brugerens "Documents"-mappe
+        // Get the users documents folder
         String userDocumentsPath = System.getProperty("user.home") + File.separator + "Documents";
 
-        // Definer alle stier
+        // Create the paths
         File ankiKlonFolder = new File(userDocumentsPath, "AnkiKlon");
         File saveDataFolder = new File(ankiKlonFolder, "SaveData");
         File decksFolder = new File(ankiKlonFolder, "Decks");
         File userCardsFolder = new File(ankiKlonFolder, "UserCards");
 
-        // Gem stierne som strings
+        // Save the paths as strings
         ankiKlonFolderPath = ankiKlonFolder.getAbsolutePath();
         saveDataFolderPath = saveDataFolder.getAbsolutePath();
         decksFolderPath = decksFolder.getAbsolutePath();
         userCardsFolderPath = userCardsFolder.getAbsolutePath();
 
-        // Opret mapperne, hvis de ikke eksisterer
+        // Create the folders, if they dont already exists
         if (!ankiKlonFolder.exists() && ankiKlonFolder.mkdirs()) {
             System.out.println("Oprettede mappe: " + ankiKlonFolderPath);
         }

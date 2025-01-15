@@ -51,7 +51,7 @@ public class HelloController {
     @Setter
     private DecksDatabase decksDatabase = activeUser.getDecksDatabase();
 
-    AnkiDeckImporter importer = new AnkiDeckImporter();
+    AnkiDeckImporter importer = new AnkiDeckImporter(decksDatabase);
 
 
 
@@ -224,13 +224,13 @@ public class HelloController {
     private void editUserCards() {
         // Create a new stage for the popup
         Stage popupStage = new Stage();
-        popupStage.setTitle("Remove cards in deck");
+        popupStage.setTitle("Fjern kort i bruger database");
         popupStage.initModality(Modality.APPLICATION_MODAL); // Block events to other windows
         popupStage.initOwner(ownerStage); // Set the owner stage
 
         Button okButton = new Button("OK");
         Button cancelButton = new Button("Cancel");
-        Label listviewLabel = new Label("Cards in user database:");
+        Label listviewLabel = new Label("Kort i bruger database:");
 
         CheckListView<Card> checkListView = new CheckListView<>();
 
@@ -401,6 +401,9 @@ public class HelloController {
                 // Add the new custom card to the custom cards database
                 decksDatabase.getUserCards().add(c);
 
+                // Save the card as a .dat-file in the UserCards folder
+                saveCardToFile(c);
+
                 // Add logic to handle the created card, e.g., saving to a list or database
             } else {
                 Alert a = new Alert(Alert.AlertType.ERROR, "Please fill in at least question and back answer line 1!");
@@ -426,6 +429,52 @@ public class HelloController {
 
         // Show the popup
         popupStage.showAndWait();
+    }
+
+    @FXML
+    private void importCustomCard() {
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.setTitle("Choose custom card");
+        fileChooser.getExtensionFilters().addAll(
+                new FileChooser.ExtensionFilter("Custom Card Files", "*.dat")
+        );
+        File selectedFile = fileChooser.showOpenDialog(ownerStage);
+
+        if (selectedFile == null) {
+            System.out.println("No file selected!");
+            return;
+        }
+
+        try (FileInputStream fileInputStream = new FileInputStream(selectedFile);
+             ObjectInputStream oip = new ObjectInputStream(fileInputStream)) {
+
+            Card loadedUserCard = (Card) oip.readObject();
+
+            decksDatabase.getUserCards().add(loadedUserCard);
+
+            System.out.println("Kort indlæst fra: " + selectedFile.getAbsolutePath());
+        } catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void saveCardToFile(Card card) {
+        // Skab filstien baseret på UUID og gem den i UserCards-mappen
+        File cardFile = new File(PathManager.userCardsFolderPath, card.getGuid() + ".dat");
+
+        try (FileOutputStream fos = new FileOutputStream(cardFile);
+             ObjectOutputStream oos = new ObjectOutputStream(fos)) {
+
+            // Gem Card-objektet som en fil
+            oos.writeObject(card);
+            oos.flush();
+
+            System.out.println("Card saved to file: " + cardFile.getAbsolutePath());
+        } catch (IOException e) {
+            e.printStackTrace();
+            Alert alert = new Alert(Alert.AlertType.ERROR, "Failed to save card: " + e.getMessage());
+            alert.showAndWait();
+        }
     }
     private void switchToGameView(Deck selectedDeck) {
         try {
@@ -514,36 +563,24 @@ public class HelloController {
 
     @FXML
     private void importAnkiDeck() {
+        try {
+            DirectoryChooser directoryChooser = new DirectoryChooser();
+            directoryChooser.setTitle("Choose Anki Deck");
 
-        String txtPath;
-        String imagesPath;
+            File selectedDirectory = directoryChooser.showDialog(welcomeText.getScene().getWindow());
+            if (selectedDirectory == null) return;
 
-        DirectoryChooser directoryChooser = new DirectoryChooser();
+            // Import the deck using the importer
+            importer.importDeckFromFolder(selectedDirectory, decksDatabase);
 
-        directoryChooser.setTitle("Choose Anki Deck");
-
-        // Show the directory chooser dialog
-        File selectedDirectory = directoryChooser.showDialog(welcomeText.getScene().getWindow());
-
-        if (selectedDirectory != null) {
-            // Get the txt file
-            File[] txtFiles = selectedDirectory.listFiles((dir, name) -> name.toLowerCase().endsWith(".txt"));
-
-            assert txtFiles != null;
-            txtPath = txtFiles[0].getAbsolutePath();
-
-            imagesPath = selectedDirectory.getAbsolutePath();
-
-            importer.importAnkiDeck(txtPath, imagesPath);
-
-            System.out.println("Anki Deck imported!" + txtPath);
+            // Update UI
+            populateDecks();
+            save();
+        } catch (Exception e) {
+            e.printStackTrace();
+            Alert alert = new Alert(Alert.AlertType.ERROR, "Failed to import Anki Deck: " + e.getMessage());
+            alert.showAndWait();
         }
-
-        // Refresh the decks list
-        populateDecks();
-
-        // Save
-        save();
     }
 
     @FXML

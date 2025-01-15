@@ -1,0 +1,657 @@
+#separator:tab
+#html:true
+#guid column:1
+#notetype column:2
+#deck column:3
+#tags column:13
+hT:)^7+,yL	Art	Great Works of Art::Artists	"<img src=""2014-08-19_020719.jpg"" />"	Max Ernst	Europe After the Rain II		1942	Symbolism				
+"g1a#mBvko="	Art	Great Works of Art::Artists	"<img src=""2014-08-18_113742.jpg"" />"	Peter Paul Rubens	Fall of the Damned		c. 1620	Baroque		Flemish (Southern Netherlands)		
+fJhl-P)vs9	Art	Great Works of Art::Artists	"<img src=""Thetriumphofdeath.jpg"" />"	Bruegel the Elder	Triumph of Death&nbsp;		1562	Early Renaissance,&nbsp;Northern Renaissance				
+gOQ3Na3>&:	Art	Great Works of Art::Artists	"<img src=""2014-08-18_121301.jpg"" />"	Peter Paul&nbsp;Rubens	The Adoration of the Magi (3 of 3)		1624	Baroque		Flemish (Southern Netherlands)		
+f{f`FZ97(F	Art	Great Works of Art::Artists	"<img src=""2014-08-23_203352.jpg"" />"	Raphael	The Transfiguration		1516–20	High Renaissance	oil on wood			Renaissance
+g{<`!Zipzk	Art	Great Works of Art::Artists	"<img src=""2014-08-19_052843.jpg"" />"	Henri Rousseau	Sleeping Gypsy		1897	Post-Impressionism				
+d)%I%?mk:%	Art	Great Works of Art::Artists	"<img src=""2014-08-18_202207.jpg"" />"	Vincent van Gogh	The Potato Eaters		1885	Post-Impressionism				
+oAFw~SaROy	Art	Great Works of Art::Artists	"<img src=""2014-09-08_160522.jpg"" />"	Albrecht Altdorfer	The Battle of Alexander at Issus		1529	Renaissance				
+"mcw}#bvO.("	Art	Great Works of Art::Artists	"<img src=""2014-08-19_054935.jpg"" />"	Paul Klee	Ad Marginen&nbsp;		1930	Expressionism				
+bBUp0G^;EF	Art	Great Works of Art::Artists	"<img src=""2014-08-19_035837.jpg"" />"	Rembrandt	Belshazzar's Feast		1635	Baroque				
+up?51P:Yf!	Art	Great Works of Art::Artists	"<img src=""300px-Chagall_IandTheVillage.jpg"" />"	Marc Chagall	I and the Village		1911	Expressionism				
+"bMKiJ^#:PF"	Art	Great Works of Art::Artists	"<img src=""2014-08-19_055811.jpg"" />"	Henri Rousseau	Carnival Evening		1886	Post-Impressionism, Naïve Art, Primitivism				
+r_H^bQ]0um	Art	Great Works of Art::Artists	"<img src=""2014-08-19_191542.jpg"" />"	René Magritte	The False Mirror		1928	Surrealism				
+fme!V6o)lt	Art	Great Works of Art::Artists	"<img src=""6b71451e9716b1786866e50a58101acd.jpg"" />"	Mark Tansey	Forward Retreat		1986	Contemporary Art				
+s=&rKVS^o+	Art	Great Works of Art::Artists	"<img src=""2014-08-19_060439.jpg"" />"	Jean-François Millet	Harvesters Resting		1853	Realism				
+tR9_@oY9?=	Art	Great Works of Art::Artists	"<img src=""2014-08-31_160649.jpg"" />"	Bruegel the Elder	Procession to Calvary		1564	Early Renaissance,&nbsp;Northern Renaissance				
+k^-[I^~`>*	Art	Great Works of Art::Artists	"<img src=""2014-08-20_181934.jpg"" />"	Peter Paul Rubens	Feast of Venus		1637	Baroque		Flemish (Southern Netherlands)		
+nYEBSRtB(m	Art	Great Works of Art::Artists	"<img src=""2014-08-19_164329.jpg"" />"	Paolo Uccello	Saint George and the Dragon		c. 1470	Early Renaissance				
+k|gPmA~,pG	Art	Great Works of Art::Artists	"<img src=""2014-08-19_164544.jpg"" />"	Egon Schiele	Death and the Maiden		1915	Expressionism				
+cA{}AAq3?[	Art	Great Works of Art::Artists	"<img src=""tumblr_kx53zsn6kk1qa3849o1_500.jpg"" />"	Egon Schiele	Family		1917	Expressionism				
+u&O`Xdm%da	Art	Great Works of Art::Artists	"<img src=""2014-08-19_165447.jpg"" />"	Hans Holbein the Younger	The Ambassadors	Double Portrait of Jean de Dinteville and Georges de Selve	1533	Northern Renaissance				
+m@j@KqxA9h	Art	Great Works of Art::Artists	"<img src=""2014-08-19_165842.jpg"" />"	Hokusai	Ocean Waves		1826-1833	Ukiyo-e				Asian_Art
+AP89GBn.@8	Art	Great Works of Art::Artists	"<img src=""776px-El_Tres_de_Mayo,_by_Francisco_de_Goya,_from_Prado_thin_black_margin.jpg"" />"	Francisco Goya	The Third of May 1808		1814	Romanticism			"<span style="""">Di</span>verging from the traditions of Christian art and traditional depictions of war, it has no distinct precedent. The painting's content, presentation, and emotional force secure its status as a groundbreaking, archetypal image of the horrors of war."	
+geK9gPl,Pf	Art	Great Works of Art::Artists	"<img src=""2014-08-19_035940.jpg"" />"	Rembrandt	Anatomy Lesson of Dr. Nicolaes Tulp		1632	Baroque				
+qY={H|AuYy	Art	Great Works of Art::Artists	"<img src=""757px-Eugène_Delacroix_-_La_liberté_guidant_le_peuple.jpg"" />"	Eugène Delacroix	Liberty Leading the People		1830	Romanticism				
+st=NMvv&	Art	Great Works of Art::Artists	"<img src=""2014-09-08_160335.jpg"" />"	Hieronymus Bosch	The Last Judgement (triptych)		c. 1482	Early Renaissance,&nbsp;Northern Renaissance				
+zhB*0&EO?y	Art	Great Works of Art::Artists	"<img src=""2014-08-19_180308.jpg"" />"	Hieronymus Bosch	The Garden of Earthly Delights (triptych)		1490-1510	Early Renaissance,&nbsp;Northern Renaissance				
+AMnEQX[-P[	Art	Great Works of Art::Artists	"<img src=""La_nascita_di_Venere_(Botticelli).jpg"" />"	<div>Sandro Botticelli</div>	The Birth of Venus		1486	Early Renaissance				
+Ck0Lgp$?t=	Art	Great Works of Art::Artists	"<img src=""2014-08-19_183605.jpg"" />"	<div>Bruegel the Elder</div>	The Tower of Babel		c. 1563	Early Renaissance,&nbsp;Northern Renaissance				
+w=JuA4GIO|	Art	Great Works of Art::Artists	"<img src=""2014-08-19_184422.jpg"" />"	<div>Bruegel the Elder</div><div>(attributed)</div>	Landscape with the Fall of Icarus		c. 1558	Early Renaissance,&nbsp;Northern Renaissance			This is probably an unknown artist's copy of an original painting by Bruegel.	
+E_`.wx{[YD	Art	Great Works of Art::Artists	"<img src=""2014-08-31_155909.jpg"" />"	<div>Antonio da Correggio</div>	Deposition from the Cross		1525	<div>High Renaissance,&nbsp;Mannerism</div>	oil on canvas			
+H5E$7rSP=l	Art	Great Works of Art::Artists	"<img src=""'.jpg"" />"	<div>Paul Gauguin</div>	The Yellow Christ		1889	Post-Impressionism				
+IvW<6z11Rr	Art	Great Works of Art::Artists	"<img src=""2014-08-19_190140.jpg"" />"	<div>Johannes Vermeer</div>	The Girl with a Pearl Earring		c. 1665	Baroque, Dutch Golden Age				
+D-?XA:rEj7	Art	Great Works of Art::Artists	"<img src=""2014-08-29_232102.jpg"" />"	<div>Rembrandt</div>	Night Watch		1642	Baroque				
+GNGzcw)dT2	Art	Great Works of Art::Artists	"<img src=""2014-08-19_190247.jpg"" />"	<div>Pierre-Auguste Renoir</div>	Dance at Le Moulin de la Galette		1876	Impressionism				
+wGn3iP9XIh	Art	Great Works of Art::Artists	"<img src=""2014-08-19_022138.jpg"" />"	<div>Georges Seurat</div>	A Sunday Afternoon on the Island of La Grande Jatte		1884–1886	Post-Impressionism, Pointillism				
+ci2h1aA<>2	Art	Great Works of Art::Artists	"<img src=""2014-08-19_192029.jpg"" />"	<div>René Magritte</div>	The Treachery of Images		1929	Surrealism			The text in the painting says<i> “this is not a pipe”</i>. Magritte was trying to make the point that the painting was not an actual pipe, only a representation of one.	
+l[qtr3*S+o	Art	Great Works of Art::Artists	"<img src=""2014-08-23_223207.jpg"" />"	<div>Grant Wood</div>	American Gothic		1930	Social Realism			American Gothic was inspired by the Dibble House in Iowa. Wood saw its Gothic architectural style and decided to paint the house along with the kind of people he imagined might live in it. The painting depicts a farmer and his daughter, both modeled by his dentist and his sister. Each element of the painting was done separately; the models sat separately and were never at the house.	
+xuX*obr4:F	Art	Great Works of Art::Artists	"<img src=""2014-08-19_194804.jpg"" />"	"<div><span style="""">Salvador Dali</span></div>"	The Persistence of Memory		1931	Surrealism			Dali mentions that he was motivated by a surrealist concept of Camembert cheese melting under the sun.	
+n2m0Dx(P./	Art	Great Works of Art::Artists	"<img src=""paste-131082401873921.jpg"" />"	<div>Pablo Picasso</div>	Guernica		1937	Cubism			Picasso’s detest of the Spanish Civil War is manifested in an art piece known as&nbsp;<i>Guernica</i>. The piece was commissioned by the Spanish Republican government to portray the pain and suffering caused by wars.&nbsp;<i>Guernica</i>&nbsp;would become a monumental symbol of anti-war and peace.	
+s6_%==b%M	Art	Great Works of Art::Artists	"<img src=""2014-08-19_193013.jpg"" />"	<div>René Magritte</div>	The Son of Man		1964	Surrealism				
+p1[nXI:$A;	Art	Great Works of Art::Artists	"<img src=""2014-08-19_194913.jpg"" />"	<div>Hokusai</div>	The Great Wave off Kanagawa		c. 1829–32	Ukiyo-e				Asian_Art
+EyXy,OqUHX	Art	Great Works of Art::Artists	"<img src=""2014-08-19_195106.jpg"" />"	Diego Velázquez	Las Meninas (The Maids of Honour)		1656	Baroque, Spanish Golden Age			Las Meninas (The Maids of Honour) is a 1656 painting by Diego Velázquez, the leading artist of the Spanish Golden Age, in the Museo del Prado in Madrid. The work's complex and enigmatic composition raises questions about reality and illusion, and creates an uncertain relationship between the viewer and the figures depicted. Because of these complexities, Las Meninas has been one of the most widely analyzed works in Western painting.	
+boQxC[<<ep	Art	Great Works of Art::Artists	"<img src=""Michelangelo The Creation of Adam, 1512.jpg"" />"	<div>Michelangelo</div>	The Creation of Adam	(detail from the Sistine Chapel)	c. 1511	High Renaissance				
+cU[/D]O[m*	Art	Great Works of Art::Artists	"<img src=""2014-08-18_173613.jpg"" />"	<div>Raphael</div>	The School of Athens		1510-11	High Renaissance			One of the most famous frescoes by the Italian Renaissance artist Raphael. It was painted between 1510 and 1511 as a part of Raphael's commission to decorate with frescoes the rooms now known as the Stanze di Raffaello, in the Apostolic Palace in the Vatican.	
+m$?_Qpykz<	Art	Great Works of Art::Artists	"<img src=""2014-08-19_195220.jpg"" />"	Édouard Manet	Olympia		1865	Realism, Impressionism	oil on canvas		"<i>Olympia</i>&nbsp;caused shock and astonishment when it was first exhibited at the 1865 Paris Salon. What shocked contemporary audiences was not the nudity, nor even the presence of her fully clothed maid, but her confrontational gaze and a number of details identifying her as a demi-mondaine or prostitute. These include the orchid in her hair, her bracelet, pearl earrings and the oriental shawl on which she lies, symbols of wealth and sensuality. The black ribbon around her neck, in stark contrast with her pale flesh, and her cast-off slipper underline the voluptuous atmosphere. ""Olympia"" was a name associated with prostitutes in 1860s Paris."	
+Oj!9e4.d,h	Art	Great Works of Art::Artists	"<img src=""2014-08-19_195324.jpg"" />"	James McNeill Whistler	"Arrangement in Grey and Black No.1, or ""Whistler's Mother<i>""</i>"		1871	Tonalism	oil-on-canvas	American	Arrangement in Grey and Black No.1, famous under its colloquial name&nbsp;<i>Whistler's Mother</i>, is an 1871 oil-on-canvas painting by American-born painter James McNeill Whistler.	
+rTI,I|^XxD	Art	Great Works of Art::Artists	"<img src=""2014-08-19_195534.jpg"" />"	Paul Cézanne	Basket of Apples		1890–1894	Post-Impressionism		French	<i>Basket of Apples</i>&nbsp;is a still life oil painting by French artist Paul Cézanne. The piece is often noted for its disjointed perspective. It has been described as a balanced composition due to its unbalanced parts; the tilted bottle, the incline of the basket, and the foreshortened lines of the cookies meshing with the lines of the tablecloth.&nbsp;	
+uEZv_OVynl	Art	Great Works of Art::Artists	"<img src=""2014-08-19_203025.jpg"" />"	<div>Edvard Munch</div>	The Death of Marat		1907	Expressionism, Symbolism			Jean-Paul Marat was one of the leading political lights of the French revolution. Suffering from a skin disease, Marat was known to spend most of the day in a bathtub where he would work on his writings. It was there that Marat was assassinated by Charlotte Corday. The death of Marat has been painted several times, but Munch’s is a particularly brutal vision.	
+lvT=lo5})O	Art	Great Works of Art::Artists	"<img src=""340px-Matthias_Grünewald_-_The_Temptation_of_St_Anthony_-_WGA10765.jpg"" />"	<div>Matthias Grünewald</div>	The Temptation of St. Anthony		c. 1515	Renaissance				
+l^sP:vMZ,`	Art	Great Works of Art::Artists	"<img src=""508px-Francisco_de_Goya,_Saturno_devorando_a_su_hijo_(1819-1823)_crop.jpg"" />"	<div>Francisco Goya</div>	Saturn Devouring His Son		1819-1823	Romantic		Spain	"Probably the most famous of the ""Black Paintings."""	
+Mu0|W$4&wR	Art	Great Works of Art::Artists	"<img src=""2014-08-29_224930.jpg"" />"	"<span style="""">Sandro Botticelli</span>"	The Allegory of Spring		c. 1482	Reanaissance				
+n{6/rMhh>t	Art	Great Works of Art::Artists	"<img src=""2014-08-19_210257.jpg"" />"	John Everett Millais	Ophelia		1852	Pre-Raphaelite,&nbsp;Realism				
+sm>N3b^Z]&	Art	Great Works of Art::Artists	"<img src=""2014-08-18_122740.jpg"" />"	"<span style="""">Peter Paul Rubens</span>"	St. George and The Dragon		1605-07	Baroque		Flemish (Southern Netherlands)		
+fjghH>X[=C	Art	Great Works of Art::Artists	"<img src=""2014-08-19_210514.jpg"" />"	"<span style="""">Wassily Kandinsky</span>"	Composition VII		1913	Expressionism			According to Kandinsky, this is the most complex piece he ever painted.	
+fPL?9E4^~B	Art	Great Works of Art::Artists	"<img src=""paste-3624952397825.jpg"" />"	Natalia Goncharova	Cyclist		1913	Expressionism				
+fl9p:uQ<!7	Art	Great Works of Art::Artists	"<img src=""2014-08-19_211510.jpg"" />"	Claude Monet	Water Lilies		1922	Impressionism	oil painting	French	This is one of the approximately 250 oil paintings in Monet's series,&nbsp;<i>Water Lilies</i> (or <i>Nymphéas</i>). Many of the works were painted while Monet suffered from cataracts.	
+uH7eSQ//D/	Art	Great Works of Art::Artists	"<img src=""2014-08-19_210950.jpg"" />"	"<span style=""""><span style="" font-style: normal; font-weight: normal;"">Henry Tanner</span></span>"	The Banjo Lesson		1893	Realism				
+q;MMQ?e;ST	Art	Great Works of Art::Artists	"<img src=""paste-4226247819265.jpg"" />"	Jean Michel Basquiat	Untitled (Skull)		1984	Neo-Expressionism, Primitivism				
+"QsI1aOz.#]"	Art	Great Works of Art::Artists	"<img src=""2014-08-19_212657.jpg"" />"	"<span style="""">Ernie Barnes</span>"	Sugar Shack		early 1970s	Neo-Mannerism				
+PT!CR~=|;!	Art	Great Works of Art::Artists	"<img src=""2014-08-19_052422.jpg"" />"	Pablo Picasso	Three Musicians		1921	Cubism				
+N@8;3d1yv`	Art	Great Works of Art::Artists	"<img src=""2014-08-19_213312.jpg"" />"	Diego Rivera	Cargador de Flores		1935	Post-Impressionism, Mexican Mural Movement				
+"C#NN*`oCUG"	Art	Great Works of Art::Artists	"<img src=""800px-Pierre-Auguste_Renoir_-_Luncheon_of_the_Boating_Party_-_Google_Art_Project.jpg"" />"	"<span style="""">Pierre Auguste Renoir</span>"	Luncheon of the Boating Party		1880–1881	Impressionism				
+xPy8Y]ic!)	Art	Great Works of Art::Artists	"<img src=""2014-08-19_214050.jpg"" />"	<div>Henry Fuseli</div>	The Nightmare		1781	Romanticism				
+5f_`_Dw7O	Art	Great Works of Art::Artists	"<img src=""paste-8078833483777.jpg"" />"	<div>Ivan Albright</div>	<div>Picture of Dorian Gray</div>		1943	Magical Realism				
+Q~dfC3^W)1	Art	Great Works of Art::Artists	"<img src=""paste-8126078124033.jpg"" />"	<div>Fancis Bacon</div>	Figures at the Base of a Crucifixion		1944	Surrealism, Abstract Expressionism				
+L5+}$Ut2h_	Art	Great Works of Art::Artists	"<img src=""2014-08-19_220200.jpg"" />"	Zhang Zeduan	Along the River During Qingming Festival		early 12th cent.	Song Dynasty		Chinese	These are details the from an 18th cent. remake of Zhang Zeduan's masterpiece.<br />The original scroll is 17 feet long and 10 inches high, there are 814 humans, 28 boats, 60 animals, 30 buildings, 20 vehicles, nine sedan chairs, and 170 trees.	Asian_Art
+g&Mg3{ji;o	Art	Great Works of Art::Artists	"<img src=""paste-8448200671233.jpg"" />"	Zhang Xuan	Noble Ladies in Tang Dynasty		Zhang Xuan lived 713-755 A.D.	Tang Dynasty			<i>Noble Ladies in Tang Dynasty</i>&nbsp;are a serial of paintings drawn by Zhang Xuan and Zhou Fang, two of the most influential figure painters during the Tang dynasty (618 – 907), when the paintings of noble ladies became very popular.	Asian_Art
+y8KpgW?UN1	Art	Great Works of Art::Artists	"<img src=""2014-08-19_223535.jpg"" />"	Giotto	The Mourning of Christ		1305	Renaissance, Gothic Art				
+I3]]l55)g)	Art	Great Works of Art::Artists	"<img src=""2014-08-18_204335.jpg"" />"	<div>Caravaggio</div>	The Sacrifice of Isaac		c. 1603	Baroque				
+eZa:E1e%8Y	Art	Great Works of Art::Artists	"<img src=""paste-9255654522881.jpg"" />"	Jan Van Eyck	Portrait of a Man in a Turban&nbsp;		1433	Early Renaissance,&nbsp;Northern Renaissance			most likely a self-portrait	
+i/DjBzo{yY	Art	Great Works of Art::Artists	"<img src=""paste-9440338116609.jpg"" />"	Willem de Kooning	Woman V		1953	Abstract Expressionism				
+"L5q(s0+?=#"	Art	Great Works of Art::Artists	"<img src=""2014-08-20_181800.jpg"" />"	Masaccio	The Tribute Money		c. 1425	Renaissance				
+Fm1L<1-6`@	Art	Great Works of Art::Artists	"<img src=""2014-08-19_224150.jpg"" />"	Mark Rothko	No. 61 (Rust and Blue)		1953	Color Field, Modern Art				
+koq^%|UtL[	Art	Great Works of Art::Artists	"<img src=""2014-08-19_224529.jpg"" />"	"Albrecht&nbsp;<span style="""">Dürer</span>"	Self-portrait at age 13		1484	High Renaissance			silverpoint drawing by the thirteen-year-old Dürer	
+sQ;~2p0%,V	Art	Great Works of Art::Artists	"<img src=""2014-08-19_224343.jpg"" />"	Albrecht Dürer	Praying Hands		1508	High Renaissance				
+"DjYn>_#[GX"	Art	Great Works of Art::Artists	"<img src=""2014-08-24_183846.jpg"" />"	Piet Mondrian	Composition II in Red, Blue, and Yellow		1930	Modern Art				
+k]jKbj7hQW	Art	Great Works of Art::Artists	"<img src=""2014-08-19_053236.jpg"" />"	Piero della Francesca	The Resurrection		<!--anki-->1463	Renaissance				
+iu)_8^eZSG	Art	Great Works of Art::Artists	"<img src=""2014-08-19_053359.jpg"" />"	Gustave Courbet	Self-portrait (The Desperate Man)		c.&nbsp;1845	Realism				
+p)SO/0Yh*j	Art	Great Works of Art::Artists	"<img src=""1024px-Courbet_LAtelier_du_peintre.jpg"" />"	Gustave Courbet	The Artist's Studio: &nbsp;A Real Allegory of a Seven Year Phase in my Artistic (and Moral) Life		1855	Realism				
+ug>B`K<L2F	Art	Great Works of Art::Artists	"<img src=""2014-08-19_054454.jpg"" />"	Titian	The Rape of Europa		1562	Renaissance				
+e$Y:dp(Q<o	Art	Great Works of Art::Artists	"<img src=""2014-08-29_225131.jpg"" />"	Titian	Emperor Charles V		1548	Renaissance			Titian's state portrait of Emperor Charles V (1548) at Mühlberg established a new genre, that of the grand equestrian portrait. The composition is steeped both in the Roman tradition of equestrian sculpture and in the medieval representations of an ideal Christian knight, but the weary figure and face have a subtlety few such representations attempt.	
+OMPsgUIW4*	Art	Great Works of Art::Artists	"<img src=""2014-08-19_054534.jpg"" />"	Titian	Danaë		1553-56	Renaissance			"Titian's unmatched handling of color is exemplified by his Danaë, one of several mythological paintings, or ""poesie"" (""poems"") as the painter called them. This painting was done for Alessandro Farnese but a later variant was produced for Philip II, for whom Titian painted many of his most important mythological paintings.&nbsp;"	
+KE9WBh){h(	Art	Great Works of Art::Artists	"<img src=""2014-08-19_054628.jpg"" />"	Paul Klee	Red Balloon		1922	Abstract Art, Expressionism, Surrealism				
+q]i-4ZEU`A	Art	Great Works of Art::Artists	"<img src=""2014-08-19_054717.jpg"" />"	Paul Klee	Senecio		1922	Abstract Art, Expressionism, Surrealism				
+b`:O(Sp_%.	Art	Great Works of Art::Artists	"<img src=""2014-08-19_055256.jpg"" />"	Marc Chagall	The Fiddler		1912	Expressionism				
+pl4+<}yACT	Art	Great Works of Art::Artists	"<img src=""2014-08-29_225410.jpg"" />"	Nicolas Poussin	Helios and Phaeton with Saturn and the Four Seasons		c. 1635	Baroque, Classicism				
+H*LPF|39P1	Art	Great Works of Art::Artists	"<img src=""2014-09-09_181035.jpg"" />"	Nicolas Poussin	The Continence of Scipio		1640	Classicism, Baroque				
+hBZIZ@!`%7	Art	Great Works of Art::Artists	"<img src=""2014-08-20_000710.jpg"" />"	Paolo Uccello	Portrait of a Lady		c.1450	Early Renaissance				
+F1{-9xj^Ao	Art	Great Works of Art::Artists	"<img src=""2014-08-20_000756.jpg"" />"	William Blake	<i>The Lovers' Whirlwind</i>		1824-27	Romanticism			<i>The Lovers' Whirlwind&nbsp;</i>illustrates Hell in Canto V of&nbsp;<i>Dante's Inferno</i>	
+i2B^`gL[[d	Art	Great Works of Art::Artists	"<img src=""2014-08-20_001153.jpg"" />"	Andrea Mantegna	Saint Sebastian		1480	Early Renaissance				
+"PwFV[9q:#M"	Art	Great Works of Art::Artists	"<img src=""2014-08-20_001548.jpg"" />"	Andrea Mantegna	The Agony in the Garden		c. 1458	Early Renaissance			<i>The Agony in the Garden</i> (right panel of the predella of the San Zeno Altarpiec) is the pinnacle of Mantegna's early style.	
+uE!0H&+K.=	Art	Great Works of Art::Artists	"<img src=""2014-08-20_005625.jpg"" />"	El Greco	The Disrobing of Christ		1577–1579	Mannerism, Renaissance			The Disrobing of Christ (<i>El Espolio</i>) (1577–1579) is one of the most famous altarpieces of El Greco. El Greco's altarpieces are renowned for their dynamic compositions and startling innovations.	
+pL|<hBv-8/	Art	Great Works of Art::Artists	"<img src=""paste-16814796963841.jpg"" />"	Paul Nash	Sea of the Dead		1941	Surrealism				
+"nc#xzl<}4J"	Art	Great Works of Art::Artists	"<img src=""2014-08-20_011200.jpg"" />"	Winslow Homer	The Gulf Stream		1899	Realism				
+uG~9||a7De	Art	Great Works of Art::Artists	"<img src=""2014-08-20_013316.jpg"" />"	Marcel Duchamp	Nude Descending a Staircase No. 2		1912	Cubism				
+xMV%H)eI][	Art	Great Works of Art::Artists	"<img src=""2014-08-20_014132.jpg"" />"	Giorgione	Sleeping Venus		c. 1510	High Renaissance				
+Q?TngIEe~B	Art	Great Works of Art::Artists	"<img src=""2014-08-20_013033.jpg"" />"	Hans Holbein the Younger	Portrait of Henry VIII of England		c. 1536	Northern Renaissance				
+y=ovP=U*vO	Art	Great Works of Art::Artists	"<img src=""2014-08-20_014320.jpg"" />"	Wassily Kandinsky	Composition VIII		1923	Expressionism				
+l%Ni.XG-Tg	Art	Great Works of Art::Artists	"<img src=""2014-08-20_014617.jpg"" />"	Tintoretto	Paradise		after 1588	Renaissance				
+H_Ezv:r0%v	Art	Great Works of Art::Artists	"<img src=""800px-Jacopo_Tintoretto_030.jpg"" />"	Tintoretto	The Deliverance of Arsenoe		c.&nbsp;1560	Renaissance				
+xX[B*xX&U5	Art	Great Works of Art::Artists	"<img src=""paste-119692148604929.jpg"" />"	Edgar Degas	A Cotton Office in New Orleans		1873	Impressionism, Realism				
+AR[W2InF7z	Art	Great Works of Art::Artists	"<img src=""2014-08-20_035820.jpg"" />"	"<span style="""">Edgar Degas</span>"	The Dance Class		1873–1876	Impressionism, Realism	oil on canvas&nbsp;			
+gO$_A4KqxB	Art	Great Works of Art::Artists	"<img src=""Edgar_Degas_-_In_a_Café_-_Google_Art_Project_2.jpg"" />"	"<span style="""">Edgar Degas</span>"	The Absinthe Drinker&nbsp;	"or ""Glass of Absinthe"""	1876	Impressionism, Realism	<!--anki-->oil on canvas			
+[l5,s@^&x	Art	Great Works of Art::Artists	"<img src=""paste-120289149059073.jpg"" />"	Fra Angelico	The Day of Judgement		1425–1430	Early Renaissance			&nbsp;The Day of Judgement, upper panel of an altarpiece. It shows the precision, detail and colour required in a commissioned work	
+tz*=p1TLez	Art	Great Works of Art::Artists	"<img src=""2014-08-19_022613.jpg"" />"	"<span style="""">Georges Seurat</span>"	The Seine and la Grande Jatte - Springtime		1888	Post-Impressionism, Pointillism				
+l`)g4{qto6	Art	Great Works of Art::Artists	"<img src=""L'Ange_du_Foyeur.jpg"" />"	Max Ernst	L'Ange du Foyer		1937	Surrealism				
+B9.A+BBKg8	Art	Great Works of Art::Artists	"<img src=""2014-08-20_015816.jpg"" />"	"<span style="""">Max Ernst</span>"	Ubu Imperator		1923	Surrealism				
+PbbS]|8+kw	Art	Great Works of Art::Artists	"<img src=""paste-121139552583681.jpg"" />"	Jasper Johns	Three Flags		1958	Abstract Expressionism, Pop Art				
+"v1FJp#q|s;"	Art	Great Works of Art::Artists	"<img src=""2014-08-20_020052.jpg"" />"	"<span style="""">Jasper Johns</span>"	Map		1961	Abstract Expressionism				
+CsLNqz)F>/	Art	Great Works of Art::Artists	"<img src=""2014-08-20_020253.jpg"" />"	Sandro Botticelli	Venus and Mars		c 1483	Renaissance				
+i!k*>}MkO	Art	Great Works of Art::Artists	"<img src=""paste-121332826112001.jpg"" />"	David Hockney	We Two Boys Together Clinging		1961	Pop Art				
+IEdbS&Xy@t	Art	Great Works of Art::Artists	"<img src=""paste-121508919771137.jpg"" />"	Umberto Boccioni&nbsp;	The City Rises		1910	Futurism				
+hX^s7ZB^lY	Art	Great Works of Art::Artists	"<img src=""2014-08-20_020510.jpg"" />"	Umberto Boccioni	The Laugh		1911	Futurism				
+m$Olq5)-3E	Art	Great Works of Art::Artists	"<img src=""2014-08-20_020700.jpg"" />"	"<span style="""">Umberto Boccioni</span>"	States of Mind - The Farewells		1911	Futurism				
+EPU7/pJ]VR	Art	Great Works of Art::Artists	"<img src=""paste-121813862449153.jpg"" />"	Joachim Patinir	Landscape with Saint Christopher		c.1520	Northern Renaissance				
+bx>73yZpzF	Art	Great Works of Art::Artists	"<img src=""2014-08-20_020809.jpg"" />"	Joachim Patinir	The Baptism of Christ		1510-20	Northern Renaissance				
+H(:a5]-?`	Art	Great Works of Art::Artists	"<img src=""2014-08-20_021126.jpg"" />"	Duccio	The Maestà	"or ""Maestà of Duccio"""	1308–1311	Gothic Art				
+Nb8%1)Alm.	Art	Great Works of Art::Artists	"<img src=""2014-08-20_021622.jpg"" />"	Duccio	Madonna with Child and six Angels		c. 1300-1305.	Gothic Art				
+k/_|m%?Qf&	Art	Great Works of Art::Artists	"<img src=""2014-08-20_021945.jpg"" />"	Rogier van der Weyden	The Descent from the Cross		c. 1435	Northern Renaissance	oil on oak panel			
+JcC3AKye]m	Art	Great Works of Art::Artists	"<img src=""2014-08-20_022452.jpg"" />"	John Constable	The Opening of Waterloo Bridge seen from Whitehall Stairs		c.&nbsp;1832	Romanticism				
+ylhoX/MPV?	Art	Great Works of Art::Artists	"<img src=""2014-08-20_022605.jpg"" />"	Jacques-Louis David	Napoleon at the Saint-Bernard Pass		1801	Neoclassicism				
+nO4u7/xe<j	Art	Great Works of Art::Artists	"<img src=""2014-08-20_022804.jpg"" />"	"<span style="""">Jacques-Louis David</span>"	The Death of Socrates		1787	Neoclassicism				
+DP]):hGI?R	Art	Great Works of Art::Artists	"<img src=""2014-08-20_023158.jpg"" />"	Jacques-Louis David	Leonidas at Thermopylae		1814	Neoclassicism				
+NHd9q~}jTv	Art	Great Works of Art::Artists	"<img src=""paste-122724395515905.jpg"" />"	Arshile Gorky	The Liver is the Cock's Comb		1944	Cubism			Arshile Gorky &nbsp;(1905-1948), The Liver is the Cock's Comb (1944), oil on canvas. The painting represents the peak of Gorky's achievement and his individual style, after he had emerged from the influence of Cézanne and Picasso.	
+L;/rOZi5wk	Art	Great Works of Art::Artists	"<img src=""paste-122810294861825.jpg"" />"	Hieronymus Bosch	The Temptation of St. Anthony		c. 1501	Early Renaissance,&nbsp;Northern Renaissance				
+M{*9E=kAW-	Art	Great Works of Art::Artists	"<img src=""2014-08-28_034100.jpg"" />"	Simone Martini	Petrarch's Virgil		c. 1336	International Gothic				
+jb=Z.mt&[1	Art	Great Works of Art::Artists	"<img src=""2014-08-20_025113.jpg"" />"	Frederick Edwin Church	Aurora Borealis		1865	Romanticism				
+L|}*Lz9/|6	Art	Great Works of Art::Artists	"<img src=""paste-124369367990273.jpg"" />"	Edward Hopper	Nighthawks		1942	Realism				
+M^H0a_{UI%	Art	Great Works of Art::Artists	"<img src=""paste-124506806943745.jpg"" />"	Lucio Fontana	Concept Spatiale		1959	Spatialism				
+kw+,pDD[{Q	Art	Great Works of Art::Artists	"<img src=""2014-08-19_221625.jpg"" />"	Franz Marc	Die großen blauen Pferde (The Large Blue Horses)		1911	Expressionism				
+d/r>WQeFqx	Art	Great Works of Art::Artists	"<img src=""2014-08-19_221745.jpg"" />"	Pierre-Auguste Renoir	The Theater Box		1874	Impressionism				
+uF9^A]wkZ$	Art	Great Works of Art::Artists	"<img src=""2014-08-19_221837.jpg"" />"	"<span style="""">Pierre-Auguste Renoir</span>"	The Two Sisters		1881	Impressionism				
+NY8R.&khC/	Art	Great Works of Art::Artists	"<img src=""2014-08-20_035911.jpg"" />"	Pierre-Auguste Renoir	Nude In The Sun		1875	Impressionism				
+POEvI>-m0h	Art	Great Works of Art::Artists	"<img src=""paste-36747740184577.jpg"" />"	Giotto	The Lamentation		1305-06	Early Renaissance	fresco			
+J7>g+W*&;)	Art	Great Works of Art::Artists	"<img src=""2014-08-18_180400 (1).jpg"" />"	Simone Martini	Annunciation with St. Margaret and St. Ansanus		1333	International Gothic	tempera and gold on panel			
+K!9^9|z[u0	Art	Great Works of Art::Artists	"<img src=""2014-08-18_165822.jpg"" />"	<div>Praxiteles</div>	Aphrodite of Knidos		4th cent. BC	Ancient Greek			Praxiteles,&nbsp;Aphrodite of Knidos,&nbsp;Mid 4th Century 340 BCE. First nude statue of a greek goddess&nbsp;Praxiteles was famous for his ability to transform marble into soft flesh.	Sculpture
+P8F<!|F(62	Art	Great Works of Art::Artists	"<img src=""paste-38392712658945.jpg"" />"	Auguste Rodin	The Gates of Hell		1880-1917	Modern Sculpture				Sculpture
+Ned!o|M{+/	Art	Great Works of Art::Artists	"<img src=""paste-38744899977217.jpg"" />"	(attributed to) Praxiteles	Hermes and the Infant Dionysos		4th cent. BC	Ancient Greek				Sculpture
+sPeGalQ_<w	Art	Great Works of Art::Artists	"<img src=""paste-38920993636353.jpg"" />"	<div>Lysippos</div>	Farnese Hercules (<i>Weary Hercules)</i>		320 BC	Ancient Greek				Sculpture
+v7M[cZI$sB	Art	Great Works of Art::Artists	"<img src=""paste-38989713113089.jpg"" />"	<div>Alexandros of Antioch</div>	Venus de Milo		125 BCE	Ancient Greece				Sculpture
+AzD(w+G!LT	Art	Great Works of Art::Artists	"<img src=""paste-39049842655233.jpg"" />"	<div>(attributed to) Agesander, Athenodoros, and Polydorus</div>	Laocoön and His Sons		200 BCE - 80 AD	Ancient Rome				Sculpture
+LG/$4$~4)e	Art	Great Works of Art::Artists	"<img src=""paste-44027709751297.jpg"" />"	<div>Auguste Rodin</div>	The Thinker		1881	Modern Sculpture				Sculpture
+E!@v%rT-<@	Art	Great Works of Art::Artists	"<img src=""paste-44092134260737.jpg"" />"	<div>Camille Claudel</div>	The Fates		1897	Modern Sculpture				Sculpture
+d.=PK=|w`p	Art	Great Works of Art::Artists	"<img src=""paste-44139378900993.jpg"" />"	<div>Camille Claudel</div>	The Age of Maturity		1899-1913	Modern Sculpture				Sculpture
+"cl#-82RVMj"	Art	Great Works of Art::Artists	"<img src=""paste-44242458116097.jpg"" />"	<div>Gaston Lachaise</div>	Standing Woman		1932	Modern Sculpture				Sculpture
+b3nB!zTkX@	Art	Great Works of Art::Artists	"<img src=""paste-44289702756353.jpg"" />"	<div>Gaston Lachaise</div>	Heroic Man		1934	Modern Sculpture				Sculpture
+Ms^ln5Z-/?	Art	Great Works of Art::Artists	"<img src=""paste-44470091382785.jpg"" />"	<div>George Minne</div>	Adolescent		1891	Modern Sculpture				Sculpture
+hZ]6RE(.vg	Art	Great Works of Art::Artists	"<img src=""paste-44534515892225.jpg"" />"	<div>George Minne</div>	Five Kneeling Youths		1898	Modern Sculpture				Sculpture
+i]Y$y27a/g	Art	Great Works of Art::Artists	"<img src=""paste-44865228374017.jpg"" />"	<div>Wilhelm Lehmbruck</div>	Dying Warrior (Fallen Man)		1916	Modern Sculpture	Sculpture			Sculpture
+c4qBm*81Wo	Art	Great Works of Art::Artists	"<img src=""paste-44929652883457.jpg"" />"	Giacometti	Large Woman		1960	Modern Sculpture	Sculpture			Sculpture
+Q]ee.<W46c	Art	Great Works of Art::Artists	"<img src=""paste-44981192491009.jpg"" />"	Giacometti	Man Striding		1948	Modern Sculpture				Sculpture
+bGw>sgLav{	Art	Great Works of Art::Artists	"<img src=""paste-45045617000449.jpg"" />"	Calder	Arc of Petals (Mobile)		1940	Modern Sculpture				Sculpture
+fKsx)X45c0	Art	Great Works of Art::Artists	"<img src=""paste-45092861640705.jpg"" />"	Brancusi	Endless Column		1930	Modern Sculpture				Sculpture
+F^Ax=v$tg*	Art	Great Works of Art::Artists	"<img src=""paste-45140106280961.jpg"" />"	Moore	Recumbent Figure		1940	Modern Sculpture				Sculpture
+A&uXKoY9S-	Art	Great Works of Art::Artists	"<img src=""paste-45333379809281.jpg"" />"	Moore	Family Group		1950	Modern Sculpture				Sculpture
+p5a?|..?[H	Art	Great Works of Art::Artists	"<img src=""paste-45380624449537.jpg"" />"	Théodore Chassériau	The Toilet of Esther		1842	Romanticism				
+N~{,nF14s1	Art	Great Works of Art::Artists	"<img src=""paste-45449343926273.jpg"" />"	Paul Delaroche	The Execution of Lady Jane Grey		1834	Neoclassicism, Academicism				
+t:f@ilCQ4@	Art	Great Works of Art::Artists	"<img src=""2014-08-24_180142.jpg"" />"	Thorvaldsen	The Lion of Lucerne&nbsp;	(Monument to the Royal Swiss Guards of Louis XVI)	1819-1821	Neoclassicism				Sculpture
+J0&={{zl7s	Art	Great Works of Art::Artists	"<img src=""paste-45591077847041.jpg"" />"	Jean-François Millet	The Winnower		1848	Realism				
+vgA/{QRhae	Art	Great Works of Art::Artists	"<img src=""paste-45947560132609.jpg"" />"	Carpeaux	The Four Continents		1867-1872	Realism				Sculpture
+LpC7-ZS(Q.	Art	Great Works of Art::Artists	"<img src=""paste-45994804772865.jpg"" />"	Édouard Manet	The Railroad		1873	Realism				
+L/(iN;n;)V	Art	Great Works of Art::Artists	"<img src=""2014-08-19_022517.jpg"" />"	George Seurat	A Bathing Place (Asnieres)		1884	Post-Impressionism, Pointillism				
+b%o_OK.WNM	Art	Great Works of Art::Artists	"<img src=""paste-46200963203073.jpg"" />"	Vincent van Gogh	The Night Cafe at Arles		1888	Post-Impressionism				
+D-1%Nn&;OT	Art	Great Works of Art::Artists	"<img src=""2014-08-20_025759.jpg"" />"	Thomas Eakins	Hiawatha		c.&nbsp;1874	Realism				
+pZ(ihgD:_[	Art	Great Works of Art::Artists	"<img src=""2014-08-19_060918.jpg"" />"	Jean-François Millet	The Angelus		1857	Realism	oil on canvas&nbsp;			
+g465QVvs`H	Art	Great Works of Art::Artists	"<img src=""2014-08-20_030012.jpg"" />"	Charles Bird King	Young Omaha, War Eagle, Little Missouri, and Pawnees		1821	American Renaissance	oil on canvas&nbsp;			
+c;;WwLD%6@	Art	Great Works of Art::Artists	"<img src=""2014-08-20_030437.jpg"" />"	Pierre-Narcisse Guérin	The Return of Marcus Sextus		c.&nbsp;1799	Neoclassicism	oil on canvas&nbsp;			
+Je|5d[9jB<	Art	Great Works of Art::Artists	"<img src=""2014-08-20_033501.jpg"" />"	Antoine-Jean Gros	Napoleon in the Pesthouse at Jaffa		1804	Neoclassicism	oil on canvas			
+O_2iN%Xu&1	Art	Great Works of Art::Artists	"<img src=""2014-08-20_033757.jpg"" />"	Anne-Louis Girodet	The Deluge		1806	Romanticism	oil on canvas			
+Nx/-c$.Bza	Art	Great Works of Art::Artists	"<img src=""2014-08-29_231613.jpg"" />"	Francisco Goya	The Clothed Maja		c. 1803	Romanticism	oil on canvas		"The more chaste, but teasingly provocative, companion to Goya's ""Nude Maja."""	
+"r[#T^7xE-6"	Art	Great Works of Art::Artists	"<img src=""2014-08-18_182728.jpg"" />"	William Blake	Elohim Creating Adam		c. 1795-1805	Romanticism	color print finished in ink and watercolor&nbsp;			
+e,PqCowR3-	Art	Great Works of Art::Artists	"<img src=""2014-08-18_182110.jpg"" />"	William Blake	Body of Abel Found by Adam and Eve		<!--anki-->c. 1826	Romanticism	watercolor			
+m+1Q]FmjSF	Art	Great Works of Art::Artists	"<img src=""2014-08-30_192339.jpg"" />"	Théodore Géricault	Officer of the Imperial Guard		1812	Romanticism	oil on canvas			
+jlxq}@Cy$V	Art	Great Works of Art::Artists	"<img src=""2014-08-20_034040.jpg"" />"	Théodore Géricault	The Raft of the Medusa (1819) oil on canvas		oil on canvas	Romanticism				
+q`p_7wG4rc	Art	Great Works of Art::Artists	"<img src=""2014-08-20_034308.jpg"" />"	Eugène Delacroix	The Women of Algiers		<!--anki-->1834	Romanticism	oil on canvas&nbsp;			
+FD8?}y4vJu	Art	Great Works of Art::Artists	"<img src=""2014-08-19_042946.jpg"" />"	J.M.W. Turner	The Fighting Temeraire tugged to her last berth to be broken up, 1838		1839	Romanticism	oil on canvas&nbsp;			
+Nzvn)+N,x&	Art	Great Works of Art::Artists	"<img src=""2014-08-19_043303.jpg"" />"	J.M.W. Turner	Rain, Steam, and Speed – The Great Western Railway		1844	Romanticism				
+v8@ZQ@kh=6	Art	Great Works of Art::Artists	"<img src=""Caspar_David_Friedrich_-_Wanderer_above_the_sea_of_fog.jpg"" />"	Caspar David Friedrich	The Traveler Above a Sea of Clouds		c. 1818	Romanticism	oil on canvas&nbsp;			
+A>lRRwA{8>	Art	Great Works of Art::Artists	"<img src=""2014-08-20_034759.jpg"" />"	Caspar David Friedrich	Periods of Life		1834-1835	Romanticism	oil on canvas&nbsp;			
+e}Z<Zav-e0	Art	Great Works of Art::Artists	"<img src=""2014-08-29_232228.jpg"" />"	Thomas Couture	The Romans of Decadance		1847	Romanticism	oil on canvas&nbsp;			
+Ql~J7@D10L	Art	Great Works of Art::Artists	"<img src=""2014-08-18_164107.jpg"" />"	Myron	Discobolus		c. 450	Ancient Rome		Greek		Sculpture
+O;Hbku<&X[	Art	Great Works of Art::Artists	"<img src=""2014-08-20_040448.jpg"" />"	Thomas Hart Benton	People of Chilmark		1920	Social Realism	oil on canvas			
+A^$;<@nt6Z	Art	Great Works of Art::Artists	"<img src=""2014-08-20_155745.jpg"" />"	Georgia O'Keefe	Orchid		1941	American Modernism	pastel on paper-covered board			
+v;D(|EyH7V	Art	Great Works of Art::Artists	"<img src=""2014-08-20_160042.jpg"" />"	Edward Hopper	City Sunlight		1954	Realism	oil on canvas			
+Av:Vq<{c}Q	Art	Great Works of Art::Artists	"<img src=""2014-08-20_160330.jpg"" />"	Andrew Wyeth	Christina's World		1948	Realism				
+q6mv^SNzn&	Art	Great Works of Art::Artists	"<img src=""2014-08-20_160452.jpg"" />"	Diego Rivera	detail from The Great Tenochtitlan		1945	Social Realism, Mexican Mural Movement	fresco			
+A]/gt;o4Pk	Art	Great Works of Art::Artists	"<img src=""2014-08-20_160627.jpg"" />"	Henri Matisse	The Peasant Blouse		1940	"<span class=""Apple-tab-span"" style=""white-space:pre""> </span>Fauvism, Impressionism"	oil on canvas			
+Gj=!_@r*4%	Art	Great Works of Art::Artists	"<img src=""2014-08-20_160707.jpg"" />"	Georges Rouault	The Old King		1916-1936	Fauvism, Expressionism				
+"h#JIAoD/9U"	Art	Great Works of Art::Artists	"<img src=""2014-08-20_160747.jpg"" />"	Georges Roualt	Christ on the Cross		c. 1920	Fauvism, Expressionism				
+b`KQsb[R8|	Art	Great Works of Art::Artists	"<img src=""2014-08-19_050932.jpg"" />"	Pablo Picasso	The Young Ladies of Avignon		1907	Cubism	oil on canvas			
+B,wC?sK28h	Art	Great Works of Art::Artists	"<img src=""2014-08-20_160927.jpg"" />"	Marcel Duchamp	King and Queen Surrounded by Swift Brides		1911	Cubism				
+"eT|mw#$7|Z"	Art	Great Works of Art::Artists	"<img src=""2014-08-20_160950.jpg"" />"	Fernand Léger	The Builders		1951	Tubism, Cubism, Modern Art	oil on canvas			
+qrAn*kwLT?	Art	Great Works of Art::Artists	"<img src=""2014-08-20_161015.jpg"" />"	August Macke	Spaziergang im Garten		1914	Expressionism	oil on canvas			
+eoDe}qQ&b^	Art	Great Works of Art::Artists	"<img src=""2014-08-20_161116.jpg"" />"	Max Beckmann&nbsp;	Family Portrait		1920	Expressionism, New Objectivity	oil on canvas			
+yb.E2);xY9	Art	Great Works of Art::Artists	"<img src=""2014-08-20_161200.jpg"" />"	Otto Dix	The Seven Deadly Sins		1933	New Objectivity (<i>Neue Sachlichkeit</i>), Post-Expressionism	mixed media on panel			
+O|_30D{qVV	Art	Great Works of Art::Artists	"<img src=""2014-08-20_161317.jpg"" />"	Mark Rothko	Untitled		c. 1950	Color Field, Abstract Expressionism	oil on paper glued to linen			
+"eu1U+}#y`Y"	Art	Great Works of Art::Artists	"<img src=""2014-08-20_161347.jpg"" />"	Paul Signac	The Papal Palace at Avignon		1900	Post-Impressionism, Pointillism	oil on canvas			
+O$4sCZ!nJ~	Art	Great Works of Art::Artists	"<img src=""2014-08-20_161426.jpg"" />"	Paul Signac	The Red Bouy, St. Tropez		1895	Post-Impressionism, Pointillism	oil on canvas			
+l=bPj~1y~T	Art	Great Works of Art::Artists	"<img src=""2014-08-19_195815.jpg"" />"	Paul Cézanne	The Cardplayers		<!--anki-->1892-1895	Post-Impressionism	oil on canvas			
+mGKV,WY(*p	Art	Great Works of Art::Artists	"<img src=""2014-08-19_195956.jpg"" />"	Paul Cézanne	Mont Sainte-Victoire above the Tholonet Road		1896-1898	Post-Impressionism	oil on canvas			
+m`>:b[5%cx	Art	Great Works of Art::Artists	"<img src=""2014-08-20_161455.jpg"" />"	Paul Gauguin	Madame Ginoux in the Café de la Gare in Arles		1888	Post-Impressionism	oil on canvas			
+H<dP`>hq=p	Art	Great Works of Art::Artists	"<img src=""2014-08-20_161532.jpg"" />"	Paul Gauguin	The Meal, Bananas		1891	Post-Impressionism	&nbsp;oil on paper, transferred to canvas			
+ooUngXjxuK	Art	Great Works of Art::Artists	"<img src=""2014-08-18_203310.jpg"" />"	Vincent van Gogh	Self-Portrait		1889	Post-Impressionism	<!--anki-->oil on canvas&nbsp;			
+mntjq?2jV2	Art	Great Works of Art::Artists	"<img src=""2014-08-31_182145.jpg"" />"	Henri de Toulouse-Lautrec	At the Moulin Rouge		1892, 1895	Post-Impressionism	oil on cardboard			
+zhW:4tVPf/	Art	Great Works of Art::Artists	"<img src=""2014-08-20_161826.jpg"" />"	James Ensor	Remarkable Masks		1891	Expressionism, Symbolism	oil on canvas			
+nb@J<C~Dd6	Art	Great Works of Art::Artists	"<img src=""2014-08-20_161908.jpg"" />"	Amedeo Modigliani	Portrait of Chaim Soutine		1916	Post-Impressionism, Modern Art	oil on canvas			
+"w#tRGj,QkW"	Art	Great Works of Art::Artists	"<img src=""2014-08-20_161934.jpg"" />"	Philip Wilson Steer	Boulogne Sands		1888-1891	Impressionism	oil on canvas			
+LbvAu7:21|	Art	Great Works of Art::Artists	"<img src=""2014-08-19_204538.jpg"" />"	Edvard Munch	The Scream		1893	Expressionism, Symbolism	tempera and pastel on cardboard&nbsp;			
+E&4T-?q1R7	Art	Great Works of Art::Artists	"<img src=""2014-08-20_162018.jpg"" />"	Félix Vallotton	The Ball		1899	Realism, Post-Impressionism	oil on canvas			
+CQNkBkTr<F	Art	Great Works of Art::Artists	"<img src=""2014-08-22_022119.jpg"" />"	Odilon Redon	The Cyclops		1898-1900	Post-Impressionism	oil on panel \			
+m2muZ%l0+@	Art	Great Works of Art::Artists	"<img src=""2014-08-20_162316.jpg"" />"	Maurice Prendergast	Summer; New England		1912	Post-Impressionism	oil on canvas			
+wbP!;aosmZ	Art	Great Works of Art::Artists	"<img src=""2014-08-20_162527.jpg"" />"	Claude Monet	Poppies at Argenteuil		1873	Impressionism	oil on canvas			
+k7%RSmnbTX	Art	Great Works of Art::Artists	"<img src=""2014-08-20_162626.jpg"" />"	Claude Monet	Gare Saint Lazare		1877	Impressionism	oil on canvas&nbsp;			
+sh?.wj=5?t	Art	Great Works of Art::Artists	"<img src=""2014-08-20_162712.jpg"" />"	Auguste Renoir	The Swing		1876	Impressionism	oil on canvas			
+KSLTbc&{Gm	Art	Great Works of Art::Artists	"<img src=""2014-08-20_162805.jpg"" />"	Pierre-Auguste Renoir	Path in the High Grass		1874	Impressionism	oil on canvas			
+K.xEz^803-	Art	Great Works of Art::Artists	"<img src=""2014-08-20_162901.jpg"" />"	Berthe Morisot	The Harbor at Lorient		1869	Impressionism	oil on canvas			
+C_CPDDt58@	Art	Great Works of Art::Artists	"<img src=""2014-08-20_162948.jpg"" />"	Mary Cassatt	The Caress		1902	Impressionism	oil on canvas&nbsp;			
+B>JTMK7qrN	Art	Great Works of Art::Artists	"<img src=""2014-08-20_163039.jpg"" />"	Marie Bracquemond	On the Terrace at Sèvres with Fantin-Latour		1880	Impressionism	oil on canvas			
+PoU,LaTld(	Art	Great Works of Art::Artists	"<img src=""2014-08-20_163152.jpg"" />"	Albert Pinkham Ryder	Moonlight		1880-1885	Tonalism	oil on wood			
+R/}w3-Cak	Art	Great Works of Art::Artists	"<img src=""2014-08-20_163228.jpg"" />"	Childe Hassam	The South Ledges, Appledore		1913	Impressionism	oil on canvas			
+Aw3YEC%_8*	Art	Great Works of Art::Artists	"<img src=""2014-08-20_163306.jpg"" />"	John Everett Millais	Christ in the House of His Parents		1850	Pre-Raphaelite, Realism	oil on canvas			
+u%$lX|Fw+F	Art	Great Works of Art::Artists	"<img src=""2014-08-20_163401.jpg"" />"	John William Waterhouse	The Lady of Shallot		1888	Pre-Raphaelite	oil on canvas			
+ldZrb|TQ:>	Art	Great Works of Art::Artists	"<img src=""2014-08-20_163430.jpg"" />"	Sir Lawrence Alma-Tadema	Joseph, Overseer of Pharaoh's Graineries		1874	Academicism	oil on canvas			
+M|NErZh1Wt	Art	Great Works of Art::Artists	"<img src=""2014-08-20_163540.jpg"" />"	Alexandre Cabanel	The Birth of Venus		1863	Academicism, Neoclassicism, Romanticism	oil on canvas			
+k@!Bk2([7m	Art	Great Works of Art::Artists	"<img src=""2014-08-20_171739.jpg"" />"	Théodore Chassériau	The Tepidarium		1853	Romanticism, Neoclassicism	oil on canvas			
+vVE+k?b0Q|	Art	Great Works of Art::Artists	"<img src=""2014-08-20_172316.jpg"" />"	Jean Léon Gérôme and Aimé Morot	The Gladiators (Monument to Gérôme)		1878	Academicism	bronze			Sculpture
+H29mpnig4G	Art	Great Works of Art::Artists	"<img src=""2014-08-20_172347.jpg"" />"	Léon Augustin Lhermitte	Paying the Harvesters		1882	Realism	oil on canvas			
+m2,t]6a{9I	Art	Great Works of Art::Artists	"<img src=""2014-08-20_181501.jpg"" />"	Carolus-Duran	The Convalescent (The Wounded Man)		c. 1860	Academicism, Realism	oil on canvas			
+HR/3A1QSiN	Art	Great Works of Art::Artists	"<img src=""2014-08-20_181428.jpg"" />"	Armand Guillaumin	Sunset at Ivry		1874	Impressionism	oil on canvas			
+epV@a=KTu!	Art	Great Works of Art::Artists	"<img src=""2014-08-20_181342.jpg"" />"	Hans Gude	Port of Refuge on the Norwegian Coast		1873	Romanticism				
+gPm(gyH*51	Art	Great Works of Art::Artists	"<img src=""2014-08-20_181308.jpg"" />"	Thomas Eakins	John Biglin in a Single Scull		c. 1873	Realism	Watercolor			
+w-wnlpl/cF	Art	Great Works of Art::Artists	"<img src=""2014-08-20_181137.jpg"" />"	Thomas Moran	Cliffs of the Upper Colorado River, Wyoming Territory		1893	Romanticism, Hudson River School	oil on canvas			
+mxoa?41[3:	Art	Great Works of Art::Artists	"<img src=""2014-08-20_181053.jpg"" />"	Jean-Baptiste-Camille Corot	A Morning Dance of the Nymphs		c. 1850	Romanticism	oil on canvas			
+GMYd`5:G%{	Art	Great Works of Art::Artists	"<img src=""2014-08-19_060504.jpg"" />"	Jean-François Millet	The Gleaners		1857	Realism	oil on canvas			
+PYG6+%Ax2c	Art	Great Works of Art::Artists	"<img src=""2014-08-20_035603.jpg"" />"	Jacques-Louis David	Death of Marat		1793	Neoclassicism	oil on canvas			
+uf7Tmmw.=b	Art	Great Works of Art::Artists	"<img src=""2014-08-20_163640.jpg"" />"	Jean-Auguste-Dominique Ingres	Apotheosis of Homer		1827	Neoclassicism				
+cB8jy~wM-<	Art	Great Works of Art::Artists	"<img src=""2014-08-20_163710.jpg"" />"	Canaletto	The Pier, Seen from the Basin of San Marco		c. 1730-1735	Vedute, Landscapes				
+focb0yC<3n	Art	Great Works of Art::Artists	"<img src=""2014-08-20_163847.jpg"" />"	Giovanni Battista Tiepolo	America&nbsp;(detail of a ceiling fresco)		1753	Rococo				
+xCmbLITUfu	Art	Great Works of Art::Artists	"<img src=""2014-08-20_164123.jpg"" />"	Joseph Wright of Derby	The Old Man and Death		1774	Romanticism	oil on canvas			
+v+aF`GMS[)	Art	Great Works of Art::Artists	"<img src=""2014-08-20_164215.jpg"" />"	Annibale Carracci	The Triumph of Bacchus		1597-1601	Baroque	fresco			
+bhCq-?>!Oh	Art	Great Works of Art::Artists	"<img src=""2014-08-20_164311.jpg"" />"	Gianlorenzo Bernini	The Ecstasy of Saint Theresa		1644-1647	&nbsp;Baroque	marble			Sculpture
+hNoB}>bV{x	Art	Great Works of Art::Artists	"<img src=""2014-09-08_145519.jpg"" />"	Pietro da Cortona	Triumph of the Barberini		1633-1639	Baroque	fresco,&nbsp;Ceiling fresco in the Salone, Palazzo Barberini, Rome			
+h`h&/C>3_}	Art	Great Works of Art::Artists	"<img src=""2014-08-20_164606.jpg"" />"	Hyacinthe Rigaud	Louis XIV		1701	Baroque	oil on canvas			
+=S)tqqJzP	Art	Great Works of Art::Artists	"<img src=""2014-08-20_030843.jpg"" />"	Pierre Puget	Milon of Croton		1670-1683	Baroque	marble			Sculpture
+NwSX0jzNUT	Art	Great Works of Art::Artists	"<img src=""2014-09-30_155955.jpg"" />"	Frans Hals	The Clown with the Lute		1625	Baroque	oil on wood&nbsp;			
+GZU,tQJgoc	Art	Great Works of Art::Artists	"<img src=""2014-08-20_164730.jpg"" />"	Jacob van Ruisdael	The Jewish Graveyard		c. 1655	Baroque	oil on canvas			
+D(Yed`MT2<	Art	Great Works of Art::Artists	"<img src=""2014-09-16_190900.jpg"" />"	David Teniers the Younger	Archduke Leopold Wilhelm of Austria in His Art Gallery		1651	Baroque				
+Qt+@HkP6CI	Art	Great Works of Art::Artists	"<img src=""2014-08-20_164756.jpg"" />"	Benvenuto Cellini	Perseus with the Head of Medusa		1545&nbsp;	Mannerism				Sculpture
+m-8lrT`q?5	Art	Great Works of Art::Artists	"<img src=""2014-08-21_050118.jpg"" />"	Germain Pilon	The Three Graces; Monument to the heart of Henri II		1560-1566	Mannerism	marble&nbsp;			Sculpture
+B:hZ,5%)3J	Art	Great Works of Art::Artists	"<img src=""2014-08-20_164859.jpg"" />"	Tintoretto	Transport of the Body of St. Mark		1562-1566	Renaissance	oil on canvas&nbsp;			
+chOL9Sh2Nw	Art	Great Works of Art::Artists	"<img src=""2014-08-20_164931.jpg"" />"	Paolo Veronese	The Wedding at Cana		1562-1563	Mannerism				
+t?&:e$sEf=	Art	Great Works of Art::Artists	"<img src=""2014-08-20_024158.jpg"" />"	Pieter Bruegel	The Parable of the Blind Leading the Blind		1568	Early Renaissance,&nbsp;Northern Renaissance	tempera on canvas			
+VX9m>](B%	Art	Great Works of Art::Artists	"<img src=""2014-08-20_165057.jpg"" />"	Quentin Matsys	Money Changer and His Wife		1514	Northern Renaissance	Oil on panel&nbsp;			
+ISIXjdffGl	Art	Great Works of Art::Artists	"<img src=""2014-08-20_165142.jpg"" />"	Joachim Patinir	Charon crossing the Styx		c. 1520	Northern Renaissance				
+f{L1K*[N*v	Art	Great Works of Art::Artists	"<img src=""2014-08-19_225001.jpg"" />"	Albrecht&nbsp;<span>Dürer</span>	Emperor Charlemagne and Emperor Sigismund		c. 1512	Northern Renaissance				
+nf*+^HxE(C	Art	Great Works of Art::Artists	"<img src=""2014-08-20_165342.jpg"" />"	Paollo Uccello	The Battle of San Romano		c. 1438-40	Early Renaissance	oil on panel&nbsp;			
+M-zyf{4op.	Art	Great Works of Art::Artists	"<img src=""2014-08-20_165423.jpg"" />"	Pierro della Francesca	The Flagellation of Christ		c. 1459	Early Renaissance	oil on panel&nbsp;			
+i4RJNeG;&D	Art	Great Works of Art::Artists	"<img src=""2014-08-19_033325.jpg"" />"	Leonardo da Vinci	Last Supper		1495-98	High Renaissance	fresco			
+zGjk`cj9Qv	Art	Great Works of Art::Artists	"<img src=""2014-08-25_155254.jpg"" />"	Leonardo da Vinci	Mona Lisa		1503-1507	High Renaissance	oil on panel			
+kVSS3@p!7<	Art	Great Works of Art::Artists	"<img src=""2014-08-19_033734.jpg"" />"	Leonardo da Vinci	The Virgin and Child with St. Anne		c. 1510	High Renaissance	oil on panel&nbsp;			
+oFm_]RoTEQ	Art	Great Works of Art::Artists	"<img src=""2014-08-19_044010.jpg"" />"	Michelangelo	David		1501-1504	High Renaissance	marble			Sculpture
+HDzl~j[[l{	Art	Great Works of Art::Artists	"<img src=""2014-08-20_022205.jpg"" />"	Giorgione	Pastoral Concert		c. 1510	High Renaissance	oil on canvas			
+i.NiIlZG{t	Art	Great Works of Art::Artists	"<img src=""2014-08-20_165543.jpg"" />"	Titian	King Francis I and Sultan Suleiman the Magnificient&nbsp;		c. 1530	High Renaissance				
+lPR^t4;an]	Art	Great Works of Art::Artists	"<img src=""2014-08-20_165631.jpg"" />"	Giotto	Lamentation (the Mourning of Christ)		1303 - 1305	Early Renaissance	fresco			
+bC9$lJmcz)	Art	Great Works of Art::Artists	"<img src=""2014-08-20_165717.jpg"" />"	Simone Martini	The Miracle of Augustine's Saving the Child Falling from the Window		1328	International Gothic	tempera on wood&nbsp;			
+d8lYgVQ34B	Art	Great Works of Art::Artists	"<img src=""2014-08-20_165820.jpg"" />"	Ambrogio Lorenzetti	<!--anki-->The Effects of Good Government on the City Life		1338	Byzantine, Gothic	fresco			
+PmV~x7<o,0	Art	Great Works of Art::Artists	"<img src=""2014-08-20_165939.jpg"" />"	Andrea Pisano	Detail of the panels for the South Doors of the Florence Baptistery		1330-1336	Gothic				
+NXmH[^qc=T	Art	Great Works of Art::Artists	"<img src=""2014-08-20_170014.jpg"" />"	Jacopo della Quercia	Madonna and Child		1406	Early Renaissance	marble&nbsp;			Sculpture
+j^X~5GM*(F	Art	Great Works of Art::Artists	"<img src=""2014-08-20_170052.jpg"" />"	<div>Lorenzo Ghiberti</div>	The Gates of Paradise	The doors of the Florence baptistry&nbsp;	1425-1452	Early Renaissance				
+"zp{?t#>Mv<"	Art	Great Works of Art::Artists	"<img src=""2014-08-20_170139.jpg"" />"	Gentile da Fabriano	Adoration of the Magi		1423	International Gothic	Tempera on wood&nbsp;			
+vGA&;G+2*3	Art	Great Works of Art::Artists	"<img src=""2014-08-20_170207.jpg"" />"	Donatello	St. George		c. 1417	Early Renaissance	marble sculpture			Sculpture
+u=B(G]e;Z^	Art	Great Works of Art::Artists	"<img src=""2014-08-20_170709.jpg"" />"	Hiroshige	Man on Horseback Crossing a Bridge		1834-1842	Ukiyo-e				
+D3$F@GB^}C	Art	Great Works of Art::Artists	"<img src=""2014-08-20_170745.jpg"" />"	Hiroshige	Shōno's White Rain (白雨)		c. 1830s	Ukiyo-e				Asian_Art
+qy;{N$K,T+	Art	Great Works of Art::Artists	"<img src=""2014-08-20_170825.jpg"" />"	Zhan Ziqian	Strolling About in Spring		AD 581–618	Sui Dynasty				Asian_Art
+GG@|=*R0@x	Art	Great Works of Art::Artists	"<img src=""2014-08-20_171105.jpg"" />"	Han Gan&nbsp;	A Man Herding Horses		706–783 AD	Tang Dynasty				Asian_Art
+DHj:-.OV?I	Art	Great Works of Art::Artists	"<img src=""2014-08-20_171225.jpg"" />"	Su Hanchen	Playing Children		c. 1150 AD	Northern Song				Asian_Art
+iDZ%ZKmoIu	Art	Great Works of Art::Artists	"<img src=""2014-08-20_171306.jpg"" />"	Kun Can	Świątynia Bao’en		1664	Qing Dynasty		China		Asian_Art
+oz8eY(@*Hn	Art	Great Works of Art::Artists	"<img src=""2014-08-20_171150.jpg"" />"	Dong Yuan	Mountain Hall (洞天山堂图)		c. 934–962	Five Dynasties and Ten Kingdoms period				Asian_Art
+q2uXn]<N_(	Art	Great Works of Art::Artists	"<img src=""paste-180534655320065.jpg"" />"	Dong Yuan	&nbsp;Xiao and Xiang Rivers (潇湘图)			Five Dynasties and Ten Kingdoms period	Part of a handscroll, ink and color on silk			Asian_Art
+C|$K4,g8lU	Art	Great Works of Art::Artists	"<img src=""paste-180749403684865.jpg"" />"	Liang Kai	Shakyamuni Emerging from the Mountains		Song Dynasty	Song Dynasty				Asian_Art
+e%oxKzH]T9	Art	Great Works of Art::Artists	"<img src=""2014-08-20_180937.jpg"" />"	Liang Kai	Drunken Celestial		Song Dynasty	Song Dynasty				Asian_Art
+l0+vAH(l!U	Art	Great Works of Art::Artists	"<img src=""paste-180856777867265.jpg"" />"	Zhang Zeduan	Along the River During Qingming Festival		18th century remake	Song Dynasty				Asian_Art
+rVP<>n)V&6	Art	Great Works of Art::Artists	"<img src=""2014-08-20_180852.jpg"" />"	Gu Hongzhong	Detail of Night Revels of Han Xizai		Song Dynasty (960–1279) remake of a 10th century original	Five Dynasties and Ten Kingdoms period				
+M/ETizW%kT	Art	Great Works of Art::Artists	"<img src=""2014-08-20_180816.jpg"" />"	Wang Meng	Forest Grotto in Juqu		Yuan Dynasty	Yuan Dynasty				Asian_Art
+H=^6J-d[i|	Art	Great Works of Art::Artists	"<img src=""2014-08-20_180723.jpg"" />"	Wang Meng	Writing Books under the Pine Trees		Yuan Dynasty	Yuan Dynasty				Asian_Art
+d;@Q>x(!t}	Art	Great Works of Art::Artists	"<img src=""paste-181440893419521.jpg"" />"	Wang Shimin	Snow Over Rivers and Mountains		1668	Qing Dynasty				Asian_Art
+I.e*?;qYUU	Art	Great Works of Art::Artists	"<img src=""2014-08-20_180614.jpg"" />"	Ren Xiong	After the poems of Da Mei		late Qing Dynasty	Qing Dynasty				Asian_Art
+BZM:P),g/`	Art	Great Works of Art::Artists	"<img src=""2014-08-20_180533.jpg"" />"	Ren Xiong	(title not known)		late Qing Dynasty	Qing Dynasty				Asian_Art
+c`ymQmBNd!	Art	Great Works of Art::Artists	"<img src=""2014-08-20_180447.jpg"" />"	Rèn Yi (Ren Bonian)	Portrait of Gao Yong's Wife		1886	Shanghai School				Asian_Art
+Q&^t{TSudm	Art	Great Works of Art::Artists	"<img src=""2014-08-20_180359.jpg"" />"	Rèn Yi (Ren Bonian)	Playing the Flute		1860-80	Shanghai School				Asian_Art
+AIYsas|R*i	Art	Great Works of Art::Artists	"<img src=""2014-08-20_180327.jpg"" />"	&nbsp;Zhao Zhiqian	Flowers		1859	Late Qing Dynasty				Asian_Art
+cirK)0N{Az	Art	Great Works of Art::Artists	"<img src=""2014-08-20_180241.jpg"" />"	Xu Beihong	Galloping Horse		?	Chinese Ink Drawings				
+oQ[pWoJXi)	Art	Great Works of Art::Artists	"<img src=""paste-185770220453889.jpg"" />"	Kano Eitoku	Cypress Tree Byōbu		1590	Kanō School of Japanese Painting	folding screen			Asian_Art
+v!9YNmfHLy	Art	Great Works of Art::Artists	"<img src=""2014-08-20_041419.jpg"" />"	Sesshu	Landscape of fall and winter		c. 1505	Rinzai Zen Buddhism		Japan		Asian_Art
+"eXk#.id.|c"	Art	Great Works of Art::Artists	"<img src=""2014-08-20_040828.jpg"" />"	Tawaraya Sōtatsu	Fūjin and Raijin		17th cent.	Rimpa School				Asian_Art
+gl1*E3@Iol	Art	Great Works of Art::Artists	"<img src=""2014-08-20_042024.jpg"" />"	Hokusai	"<i>Red Fuji</i> from the series ""Thirty-six Views of Mount Fuji"""		1826-1833	Ukiyo-e		Japan		Asian_Art
+"pAJjT,#c/e"	Art	Great Works of Art::Artists	"<img src=""2014-08-20_175759.jpg"" />"	José Clemente Orozco	Mural Omniciencia		1925	Social Realism, Mexican Mural Movement				
+is&(up<:+y	Art	Great Works of Art::Artists	"<img src=""2014-08-25_155420.jpg"" />"	Remedios Varo	Useless Science or The Alchemist		1955	Surrealism				
+ltZ(|)P.JW	Art	Great Works of Art::Artists	"<img src=""2014-08-20_043933.jpg"" />"	Vasco Prado	Model Resting		1999	Modern Sculpture				Sculpture
+MVaQJZ_J%}	Art	Great Works of Art::Artists	"<img src=""2014-08-20_043836.jpg"" />"	Paul Gauguin	Spirit of the Dead Keeps Watch		1892	Post-Impressionism				
+oeTe|G^G?f	Art	Great Works of Art::Artists	"<img src=""2014-09-30_160714.jpg"" />"	Kasimir Malevich	Black Square		1915	Suprematism				
+LB$k>ciX)I	Art	Great Works of Art::Artists	"<img src=""2014-08-19_232023.jpg"" />"	Andy Warhol	Campbell's Soup Cans		1962	Pop-Art	Synthetic polymer paint on thirty-two canvases			
+yN2DYOi2r=	Art	Great Works of Art::Artists	"<img src=""paste-88532160872449.jpg"" />"	Raja Ravi Varma	Draupadi with her five husbands - the Pandavas		c. 1900	Indian Art				Asian_Art
+yu32skQp*X	Art	Great Works of Art::Artists	"<img src=""2014-08-20_043548.jpg"" />"	Sahibdin	The War of Lanka		1649-53	Rajasthan		India	It depicts the monkey army of the protagonist Rama (top left, blue figure) fighting the demon-king of the king of Lanka, Ravana in order to save Rama's kidnapped wife Sita. The painting depicts multiple events in the battle against the three-headed demon general Trisiras, in bottom left – Trisiras is beheaded by the monkey-companion of Rama – Hanuman.	Asian_Art
+s~UZ0c&$8Q	Art	Great Works of Art::Artists	"<img src=""2014-08-20_043252.jpg"" />"	Sharaku	Otani Oniji III in the Role of the Servant Edobei		1794	Ukiyo-e				Asian_Art
+oA1N(,y@7$	Art	Great Works of Art::Artists	"<img src=""paste-67078799228929.jpg"" />"	Herrad of Landsberg	Hell &nbsp;(an illustration from the Hortus deliciarum)		c.&nbsp;1180	Proto-Renaissance				
+oy)H8XBnTR	Art	Great Works of Art::Artists	"<img src=""paste-67250597920769.jpg"" />"	Fra Angelico	The Last Judgement, Hell,&nbsp;		c. 1431	Early Renaissance				
+"J{|Y#<jxNB"	Art	Great Works of Art::Artists	"<img src=""2014-08-20_045650.jpg"" />"	William-Adolphe Bouguereau	Dante and Virgil in Hell		<!--anki-->1850	Academicism, Neoclassicism, Romanticism				
+kx/-.&Gp=T	Art	Great Works of Art::Artists	"<img src=""2014-08-20_042742.jpg"" />"	Georgia O'Keeffe	Ram's Head White Hollyhock and Little Hills		1935	American Modernism				
+iE)yLx8Ul)	Art	Great Works of Art::Artists	"<img src=""2014-08-18_195349.jpg"" />"	<div>Warner Sallman</div>	The Head of Christ		1941	Commerical Art			This 1940 painting has been reproduced over 500 million times, making it one of the most popular works of art in history.	
+xg]p&z?=jT	Art	Great Works of Art::Artists	"<img src=""2014-08-20_042357.jpg"" />"	Raphael	"The School of Athens"""	Detail of Aristotle and Plato&nbsp;	1509	High Renaissance				
+MHxtN^txs:	Art	Great Works of Art::Artists	"<img src=""paste-47150150975489.jpg"" />"	Suzuki Harunobu	Murasaki Shikibu		c. 1767	Ukiyo-e, Edo Period				Asian_Art
+Mw{0SEg7s@	Art	Great Works of Art::Artists	"<img src=""2014-08-19_223900.jpg"" />"	Masaccio	The Expulsion of Adam and Even from Eden		1426–1427	Early Renaissance			Fig leaves added in 1980 after the painting was cleaned.	
+gG)av`F>-F	Art	Great Works of Art::Artists	"<img src=""2014-08-20_031549.jpg"" />"	Jeong Seon	A secluded house near a valley in Mt. Inwangsan		c.1742	Southern School		Korea		Asian_Art
+h/p8~}Ot^q	Art	Great Works of Art::Artists	"<img src=""2014-08-20_031248.jpg"" />"	Guo Xi	Autumn in the River Valley		c. 1020–1090 AD	Northern Song Dynasty		China		
+hBW:mapPy7	Art	Great Works of Art::Artists	"<img src=""paste-29549374996481.jpg"" />"	José Clemente Orozco	Dive Bomber		1940	Social Realism, Mexican Mural Movement				
+mWl@(U4bm!	Art	Great Works of Art::Artists	"<img src=""2014-08-20_010942.jpg"" />"	Umberto Boccioni	Unique Forms of Continuity in Space		1913	Futurism			(shown on the 20-cent euro coin)	Sculpture
+"q{cEf#^kVd"	Art	Great Works of Art::Artists	"<img src=""550px-The_Body_of_the_Dead_Christ_in_the_Tomb,_and_a_detail,_by_Hans_Holbein_the_Younger.jpg"" />"	Hans&nbsp;Holbein the Younger	The Body of the Dead Christ in the Tomb		1521	Northern Renaissance				
+"Eo?Wk#2$U0"	Art	Great Works of Art::Artists	"<img src=""2014-08-20_031142.jpg"" />"	Jean-Michel Basquiat	Untitled		1982	Neo-Expressionism, Primitivism				
+M29SgTAEB[	Art	Great Works of Art::Artists	"<img src=""2014-08-18_114719.jpg"" />"	Peter Paul Rubens	Self-Portrait		1623	Baroque		Flemish (Southern Netherlands)		
+h3jE}!9r_x	Art	Great Works of Art::Artists	"<img src=""2014-08-20_023305.jpg"" />"	Peter Paul Rubens	The Elevation of the Cross		c. 1610-1611	Baroque	triptych	Flemish (Southern Netherlands)		
+z/*ZIj3HwP	Art	Great Works of Art::Artists	"<img src=""2014-08-18_115543 (1).jpg"" />"	Peter Paul Rubens	The Adortation of the Magi (2 of 3)		c. 1618-19	Baroque	oil on canvas	Flemish (Southern Netherlands)		
+"B`<B#INkoO"	Art	Great Works of Art::Artists	"<img src=""2014-08-18_120742.jpg"" />"	Peter Paul Rubens	Adoration of the Magi (1 of 3)		1609	Baroque		Flemish		
+f@F-_.:O^@	Art	Great Works of Art::Artists	"<img src=""2014-08-21_213329.jpg"" />"	Raphael	The School of Athens	a self-portrait of Raphael in the background	1510-11	High Renaissance				
+xLjNG|zrl:	Art	Great Works of Art::Artists	"<img src=""Gustav Klimt.jpg"" />"	Gustav Klimt	The Kiss		1907-08	Symbolism	oil on canvas	Austria		
+AP4%EWe1UB	Art	Great Works of Art::Artists	"<img src=""2014-08-29_225336.jpg"" />"	Gustav Klimt	Portrait of Adele Bloch-Bauer I		1907	Symbolism	oil, silver, and gold on canvas	Austria		
+FB-p<iXcOo	Art	Great Works of Art::Artists	"<img src=""2014-08-30_192233.jpg"" />"	Gustav Klimt	The Sunflower		c. 1906	Symbolism		Austria&nbsp;		
+o`1OGLd&va	Art	Great Works of Art::Artists	"<img src=""2014-08-18_175031.jpg"" />"	Gustav Klimt	Avenue in Schloss Kammer Park		1912	Symbolism		Austria		
+A7Fmn?/3^,	Art	Great Works of Art::Artists	"<img src=""2014-08-29_231808.jpg"" />"	Gustav Klimt	Hope II		1907-08	Symbolism				
+NV{/tbNe$)	Art	Great Works of Art::Artists	"<img src=""2014-08-18_175437.jpg"" />"	Gustav Klimt	Danaë		1907	Symbolism		Austria		
+G:ka4ng(o	Art	Great Works of Art::Artists	"<img src=""2014-08-18_175611.jpg"" />"	Gustav Klimt	Mäda Gertrude Primavesi		1912	Symbolism				
+vwgPpn9DL4	Art	Great Works of Art::Artists	"<img src=""2014-08-18_175759.jpg"" />"	Gustav Klimt	Judith and the Head of Holofernes&nbsp;<div><br /></div>	(also known as&nbsp;<i>Judith I</i>)	1901	Symbolism				
+kj1!B=M&DY	Art	Great Works of Art::Artists	"<img src=""2014-08-29_225523.jpg"" />"	Gustav Klimt	The Three Ages of Woman		1905	Symbolism				
+rLi&+(,q9)	Art	Great Works of Art::Artists	"<img src=""440px-Europe_a_Prophecy,_copy_D,_object_1_(Bentley_1,_Erdman_i,_Keynes_i)_British_Museum.jpg"" />"	William Blake	The Ancient of Days		c.&nbsp;1794	Romanticism				
+l9qk<D/d_m	Art	Great Works of Art::Artists	"<img src=""2014-08-29_232706.jpg"" />"	Vincent van Gogh	The Starry Night		1889	Post-Impressionism	oil on canvas	Dutch		
+ywKVI8Iz=X	Art	Great Works of Art::Artists	"<img src=""2014-08-18_202007 (1).jpg"" />"	Vincent van Gogh	Skull of a Skeleton with Burning Cigarette		1885–1886	Post-Impressionism				
+"Nbi@LR`#kK"	Art	Great Works of Art::Artists	"<img src=""2014-08-22_200226.jpg"" />"	Vincent van Gogh	Bedroom in Arles	(3rd Version)	1888	Post-Impressionism	Oil on canvas			
+"GQU#9z,eZ!"	Art	Great Works of Art::Artists	"<img src=""2014-08-31_160042.jpg"" />"	Vincent van Gogh	Self-Portrait (with Bandaged Ear)		1889	Post-Impressionism				
+nsb_XoW&+|	Art	Great Works of Art::Artists	"<img src=""2014-08-18_202759.jpg"" />"	Vincent van Gogh	The Church at Auvers		1890	Post-Impressionism				
+qLa8o?jKnm	Art	Great Works of Art::Artists	"<img src=""2014-08-18_202857.jpg"" />"	Vincent van Gogh	Portrait of Dr. Gachet		1890	Post-Impressionism				
+u[s55^wNt3	Art	Great Works of Art::Artists	"<img src=""2014-08-18_203010.jpg"" />"	Vincent van Gogh	Sorrowing Old Man ('At Eternity's Gate')		1890	Post-Impressionism				
+fJ1>1S`xNH	Art	Great Works of Art::Artists	"<img src=""2014-08-18_203628.jpg"" />"	Vincent van Gogh	Irises		1889	Post-Impressionism				
+BL,ZI(x8`_	Art	Great Works of Art::Artists	"<img src=""2014-08-18_204500.jpg"" />"	Caravaggio	The Calling of Saint Matthew		1599–1600	Baroque				
+rHxkj2(/n3	Art	Great Works of Art::Artists	"<img src=""395px-Caravaggio_-_Sette_opere_di_Misericordia.jpg"" />"	Caravaggio	The Seven Works of Mercy		1606-07	Baroque				
+"I#(Z?/gnPs"	Art	Great Works of Art::Artists	"<img src=""2014-08-18_204939.jpg"" />"	Caravaggio	St. Jerome		1605-06	Baroque				
+l*0)Wt2T-[	Art	Great Works of Art::Artists	"<img src=""2014-09-15_141312.jpg"" />"	Caravaggio	The Crucifixion of Saint Peter		1601	Baroque				
+CzIoSTMsfQ	Art	Great Works of Art::Artists	"<img src=""2014-08-18_205217.jpg"" />"	Caravaggio	David with the Head of Goliath		1609–1610	Baroque				
+J.rROmfC?b	Art	Great Works of Art::Artists	"<img src=""2014-08-21_183335.jpg"" />"	Damien Hirst	The Physical impossibility of Death in the Mind of Someone Living		<!--anki-->1991	Contemporary Art				Sculpture
+FY5QU_j4M5	Art	Great Works of Art::Artists	"<img src=""Autumn Rhythm.jpg"" />"	Jackson Pollock	Autumn Rhythm (Number 30)		1950	Abstract Expressionism				
+u%,.WA<d6Y	Art	Great Works of Art::Artists	"<img src=""2014-08-18_205844.jpg"" />"	Jackson Pollock	No. 5		1948	Abstract Expressionism				
+xL4xPr,sBD	Art	Great Works of Art::Artists	"<img src=""2014-08-18_210345.jpg"" />"	Claude Monet	Impression, Sunrise		1872	Impressionism				
+pb,jk=y^Mr	Art	Great Works of Art::Artists	"<img src=""2014-08-18_210525.jpg"" />"	Claude Monet	Study of a Figure Outdoors: Woman with a Parasol, facing left.		1886	Impressionism				
+M|L%s%jz>l	Art	Great Works of Art::Artists	"<img src=""2014-08-18_210701.jpg"" />"	Claude Monet	Jardin à Sainte-Adresse		1867	Impressionism				
+z?_bcg.6EI	Art	Great Works of Art::Artists	"<img src=""2014-08-19_021014.jpg"" />"	Georges Seurat	The Circus		1891	Post-Impressionism, Pointillism		French		
+caw@ITmU)M	Art	Great Works of Art::Artists	"<img src=""2014-08-19_021904.jpg"" />"	Georges Seurat	Le Chahut		1889-90	Post-Impressionism, Pointillism		French		
+LI5UGG~6sZ	Art	Great Works of Art::Artists	"<img src=""2014-08-19_023817.jpg"" />"	Raphael	St. George and the Dragon	(early version)	c. 1504	High Renaissance			Raphael has two paintings of St. George and the Dragon.	
+vx:PBbfI[G	Art	Great Works of Art::Artists	"<img src=""Raffaello_Sposalizio.jpg"" />"	Raphael	The Wedding of the Virgin		1504	High Renaissance			His most sophisticated altarpiece of this period.	
+oI38Vz$R%Y	Art	Great Works of Art::Artists	"<img src=""2014-08-19_024248.jpg"" />"	Raphael	Saint Catherine of Alexandria		1507	High Renaissance				
+jj97DBFl+m	Art	Great Works of Art::Artists	"<img src=""2014-08-19_024209.jpg"" />"	Raphael	Madonna of the Meadow		1505	High Renaissance				
+ukQvu?!FPz	Art	Great Works of Art::Artists	"<img src=""2014-09-30_160359.jpg"" />"	Raphael	The Deposition of Christ		1507	High Renaissance				
+J|411r}?{O	Art	Great Works of Art::Artists	"<img src=""2014-08-19_024627.jpg"" />"	Raphael	Portrait of Pope Julius II		c. 1512	High Renaissance				
+f7NnP9zJMb	Art	Great Works of Art::Artists	"<img src=""2014-08-19_024649.jpg"" />"	Raphael	Portrait of Bindo Altovit		c. 1514	High Renaissance				
+LN.hHr-`l<	Art	Great Works of Art::Artists	"<img src=""2014-08-19_032526.jpg"" />"	Raphael	Sistine Madonna		1513	High Renaissance			peripheral figures: Saint/Pope Sixtus IV (left) and Saint Barbara (right)	
+"J9l?[S#f;:"	Art	Great Works of Art::Artists	"<img src=""2014-08-19_033912.jpg"" />"	Leonardo da Vinci	The Vitruvian Man		c. 1490	High Renaissance	<div>Pen and ink with wash over metalpoint</div><div>on paper</div>			
+"m#5(hk?`>>"	Art	Great Works of Art::Artists	"<img src=""2014-08-19_034208.jpg"" />"	Leonardo da Vinci	Lady with an Ermine		1489–90	High Renaissance				
+eE)1XM{89K	Art	Great Works of Art::Artists	"<img src=""2014-08-19_034613.jpg"" />"	Leonardo da Vinci	portrait of a man in red chalk (self-portrait)		c. 1510	High Renaissance				
+Gi%;waWEK/	Art	Great Works of Art::Artists	"<img src=""2014-08-19_035150.jpg"" />"	Leonardo da Vinci	St. John the Baptist		1513-16	High Renaissance				
+FNCl/)lne5	Art	Great Works of Art::Artists	"<img src=""2014-08-19_035809.jpg"" />"	Rembrandt	Self-Portrait		1660	Baroque				
+DaZ*?]54Xq	Art	Great Works of Art::Artists	"<img src=""2014-08-19_040410.jpg"" />"	Rembrandt	The Archangel leaving Tobias		1637	Baroque				
+x9e,@IUQxG	Art	Great Works of Art::Artists	"<img src=""2014-08-19_040525.jpg"" />"	Rembrandt	Jeremiah Lamenting the Destruction of Jerusalem		c. 1630	Baroque				
+"DW#&X5dvPe"	Art	Great Works of Art::Artists	"<img src=""2014-08-19_040633.jpg"" />"	Rembrandt	Abraham and Isaac		1634	Baroque				
+"KxArW$v#M6"	Art	Great Works of Art::Artists	"<img src=""2014-08-21_180013.jpg"" />"	Auguste Rodin	The Kiss		1882	Modern Sculpture				Sculpture
+fd%Q&1pLdl	Art	Great Works of Art::Artists	"<img src=""2014-08-19_042604.jpg"" />"	J.M.W. Turner	The Slave Ship		1840	Romanticism			"Originally titled ""Slavers Throwing overboard the Dead and Dying—Typhon coming on"""	
+bCXWs(]uj>	Art	Great Works of Art::Artists	"<img src=""2014-08-19_043358.jpg"" />"	Rembrandt	The Storm on the Sea of Galilee		1633	Baroque				
+xuSNrDcQK2	Art	Great Works of Art::Artists	"<img src=""2014-08-19_043700.jpg"" />"	Michelangelo	Pietà		1498–1499	High Renaissance	Marble			Sculpture
+C=UUUC_T5a	Art	Great Works of Art::Artists	"<img src=""499px-Michelangelo,_Giudizio_Universale_02.jpg"" />"	Michelangelo	The Last Judgment		1536-1541	High Renaissance	fresco		From the altar wall of the Sistine Chapel	
+p]}<jK)`,&	Art	Great Works of Art::Artists	"<img src=""2014-08-19_044427.jpg"" />"	Michelangelo	The Sistine Chapel ceiling		1508-1512	High Renaissance				
+PLB0dXc8YF	Art	Great Works of Art::Artists	"<img src=""2014-09-08_155347.jpg"" />"	Michelangelo	The Crucifixion of St. Peter		c.1546–1550	High Renaissance				
+rjdq*/|p=z	Art	Great Works of Art::Artists	"<img src=""2014-08-19_045533.jpg"" />"	Michelangelo	The Conversion of Saul		c. 1542–1545	High Renaissance	fresco			
+Q&hxJ3`WZi	Art	Great Works of Art::Artists	"<img src=""2014-08-19_045750.jpg"" />"	Michelangelo	The Entombment		c.&nbsp;1500–1501	High Renaissance				
+v4:X-)I$d$	Art	Great Works of Art::Artists	"<img src=""398px-Caravaggio_-_La_Deposizione_di_Cristo.jpg"" />"	Caravaggio	The Entombment of Christ		1602-03	Baroque				
+rx|+o%g8bq	Art	Great Works of Art::Artists	"<img src=""456px-Conversion_on_the_Way_to_Damascus-Caravaggio_(c.1600-1).jpg"" />"	Caravaggio	Conversion of Saint Paul		1601	Baroque				
+M|3$5_`MDd	Art	Great Works of Art::Artists	"<img src=""2014-08-19_050436.jpg"" />"	Caravaggio	Love Conquers All		1601-02	Baroque	oil on canvas		Known in English by a variety of names including<i> Amor Victorious, Victorious Cupid, Love Triumphant, Love Victorious, </i>or<i> Earthly Love</i>	
+Ey6m`N[(DI	Art	Great Works of Art::Artists	"<img src=""2014-08-19_050821.jpg"" />"	Caravaggio	Salome with the Head of John the Baptist		"&nbsp;<span class=""Apple-tab-span"" style=""white-space:pre""> </span>c. 1609"	Baroque	oil on canvas			
+m7u7,_I~_x	Art	Great Works of Art::Artists	"<img src=""2014-08-19_051157.jpg"" />"	Pablo Picasso	Boy with a Pipe		1905	"""Rose Period"""				
+y9ymGwy~IO	Art	Great Works of Art::Artists	"<img src=""2014-08-19_051434.jpg"" />"	Pablo Picasso	Portrait of Gertrude Stein		1906	"""Rose Period"""				
+c9a.9}836q	Art	Great Works of Art::Artists	"<img src=""2014-08-19_051700.jpg"" />"	Pablo Picasso	La Vie		1903	"""Blue Period"""				
+CYq;O0+SR<	Art	Great Works of Art::Artists	"<img src=""2014-08-19_051753.jpg"" />"	Pablo Picasso	The Old Guitarist		1903	"""Blue Period"""				
+t&zG=~ko!w	Art	Great Works of Art::Artists	"<img src=""2014-08-19_051938.jpg"" />"	Pablo Picasso	Portrait of Igor Stravinsky		c. 1920	Expressionism				
+g3:_PP25GT	Art	Great Works of Art::Artists	"<img src=""2014-08-19_052140.jpg"" />"	Pablo Picasso	Femme assise dans un fauteuil (Eva), Woman in an Armchair		1913	Cubism				
+B$<1:h+CQK	Art	Great Works of Art::Artists	"<img src=""2014-08-19_052459.jpg"" />"	Pablo Picasso	Don Quixote		1955	Expressionism				
+LO(bjer{[J	Art	Great Works of Art::Artists	"<img src=""2014-08-20_043134.jpg"" />"	Pablo Picasso	Massacre in Korea		1951	Expressionism				
+Kquxw={bQ!	Art	Great Works of Art::Artists	"<img src=""2014-08-19_053638.jpg"" />"	Gustave Courbet	L'Origine du monde (The Origin of the World)		1866	Realism				
+v!BoJ@jP0_	Art	Great Works of Art::Artists	"<img src=""2014-09-15_140410.jpg"" />"	Marc Chagall	Calvary (Golgotha)		1912	Cubism, Expressionism				
+l0cS~qR9hM	Art	Great Works of Art::Artists	"<img src=""2014-08-29_230842.jpg"" />"	Francisco Goya	The Nude Maja		c. 1800	Romanticism		Spain	"Without a pretense to allegorical or mythological meaning, the painting was ""the first totally profane life-size female nude in Western art"""	
+F81aq!j`eo	Art	Great Works of Art::Artists	"<img src=""800px-El_Aquelarre.jpg"" />"	Francisco Goya	Witches' Sabbath (The Great He-Goat)		1819-1823	Romantic		Spain		
+s]UVe)ibwu	Art	Great Works of Art::Artists	"<img src=""2014-08-19_174607.jpg"" />"	Francisco Goya	Two Old Men Eating Soup or, The Witchy Brew		1819-1823	Romantic				
+eA2PIw@vN4	Art	Great Works of Art::Artists	"<img src=""Francisco_de_Goya_y_Lucientes_-_Witches'_Sabbath_-_WGA10007.jpg"" />"	Francisco Goya	Witches' Sabbath		1789	Romantic				
+p+[.<[*u?>	Art	Great Works of Art::Artists	"<img src=""2014-08-19_175310.jpg"" />"	Francisco Goya	Witches' Flight		1797–98	Romantic				
+IdDveVC0}H	Art	Great Works of Art::Artists	"<img src=""Portrait_de_Dante.jpg"" />"	Sandro&nbsp;Botticelli	Portrait of Dante Alighieri		1495	Early Renaissance				
+um(FiX2^o@	Art	Great Works of Art::Artists	"<img src=""408px-Sandro_Botticelli_-_The_Virgin_and_Child_(The_Madonna_of_the_Book)_-_Google_Art_Project.jpg"" />"	Sandro Botticelli	The Virgin and Child (The Madonna of the Book)		1480	Early Renaissance				
+N&6SG;[ujV	Art	Great Works of Art::Artists	"<img src=""2014-08-19_184044.jpg"" />"	Bruegel the Elder	The Peasant Wedding		1566–69	Early Renaissance,&nbsp;Northern Renaissance	oil on panel			
+h?+~q:xc8I	Art	Great Works of Art::Artists	"<img src=""2014-08-19_185534.jpg"" />"	Antonio da Correggio&nbsp;	Assumption of the Virgin		1526–1530	Late Renaissance			A fresco by the Italian Late Renaissance artist, decorating the dome of the Cathedral of Parma, Italy.	Renaissance
+jlBPCVu6?}	Art	Great Works of Art::Artists	"<img src=""2014-08-19_190657.jpg"" />"	René Magritte	The Lovers		1928	Surrealism	oil on canvas			Renaissance
+"P#eFf5$kvb"	Art	Great Works of Art::Artists	"<img src=""2014-08-19_191322.jpg"" />"	René Magritte	Golconda		1953	Surrealism				
+AOGiYWW<3^	Art	Great Works of Art::Artists	"<img src=""2014-08-19_193510.jpg"" />"	René Magritte	The Beautiful Relations		1967	Surrealism				
+dfXP6eZL+k	Art	Great Works of Art::Artists	"<img src=""2014-08-19_200245.jpg"" />"	Paul Cézanne	The Bathers		1898–1905	Post-Impressionism	oil on canvas			
+iz?}Kc:?Tg	Art	Great Works of Art::Artists	"<img src=""2014-08-19_200925.jpg"" />"	Salvador Dali	Dream Caused by the Flight of a Bee Around a Pomegranate a Second Before Awakening		1944	Surrealism				
+eY{4^bUKTW	Art	Great Works of Art::Artists	"<img src=""2014-08-19_201135.jpg"" />"	Salvador Dalí	The Temptation of St. Anthony		1946	Surrealism				
+"CbVEpW-O#z"	Art	Great Works of Art::Artists	"<img src=""2014-08-19_201349.jpg"" />"	Salvador Dali	Christ of Saint John of the Cross		1951	Surrealism				
+KX-$B&yiPV	Art	Great Works of Art::Artists	"<img src=""2014-08-19_202436.jpg"" />"	Salvador Dali	Soft Watch at the Moment of First Explosion		c. 1954	Surrealism				
+IZ$*`eL-El	Art	Great Works of Art::Artists	"<img src=""2014-08-19_205007.jpg"" />"	Edvard Munch	Weeping Nude		1913–14	Expressionism, Symbolism				
+CyAoQ3}hgW	Art	Great Works of Art::Artists	"<img src=""2014-08-19_205229.jpg"" />"	Edvard Munch	Madonna		1894	Expressionism, Symbolism				
+bup[(%8y7b	Art	Great Works of Art::Artists	"<img src=""2014-08-19_205429.jpg"" />"	Evard Munch	The Dance of Life		1899–1900	Expressionism, Symbolism				
+lq~r(}]{S^	Art	Great Works of Art::Artists	"<img src=""2014-08-19_205449.jpg"" />"	Edvard Munch	Ashes		1894	Expressionism, Symbolism				
+"GG{Kk*N#29"	Art	Great Works of Art::Artists	"<img src=""2014-08-19_210708.jpg"" />"	Wassily Kandinsky	On White II		1923	Expressionism				
+QLe{)At.fC	Art	Great Works of Art::Artists	"<img src=""2014-08-19_213420.jpg"" />"	Diego Rivera	Two Women		1914	Cubism			(Dos Mujeres, portrait of Angelina Beloff and Maria Dolores Bastian)	
+gXUDMxp9>o	Art	Great Works of Art::Artists	"<img src=""2014-08-19_222052.jpg"" />"	Pierre-Auguste Renoir	Self-portrait		1875	Impressionism		French		
+s$e]izkp/g	Art	Great Works of Art::Artists	"<img src=""2014-08-20_032858.jpg"" />"	Andy Warhol	Marilyn		1962	Pop-Art				
+D+[k!>BRGb	Art	Great Works of Art::Artists	"<img src=""2014-08-19_235611.jpg"" />"	Andy Warhol	Mao Tse Tung		1973	Pop-Art				
+y<<0^p);`%	Art	Great Works of Art::Artists	"<img src=""2014-08-20_002021.jpg"" />"	Johannes Vermeer	The Allegory of Painting	"aka ""The Art of Painting"""	c. 1665-68	Baroque, Dutch Golden Age	oil on canvas			
+"xm#IJELMbq"	Art	Great Works of Art::Artists	"<img src=""2014-08-20_004352.jpg"" />"	Johannes Vermeer	The Milkmaid		c. 1658	Baroque, Dutch Golden Age				
+x]POM6;ri5	Art	Great Works of Art::Artists	"<img src=""2014-08-20_004941.jpg"" />"	Johannes Vermeer	The Girl with the Wine Glass	"or, ""A Lady and Two Gentlemen"""	1659-1660	Baroque, Dutch Golden Age				
+Jtv.OrSaAS	Art	Great Works of Art::Artists	"<img src=""800px-Nash,_Paul_-_We_are_Making_a_New_World_-_Google_Art_Project.jpg"" />"	Paul Nash	We are Making a New World		1918	Surrealism				
+rpeDUrO!C5	Art	Great Works of Art::Artists	"<img src=""Battle of Germany 1944  (Art.IWM_ART_LD_4526).jpg"" />"	Paul Nash	Battle of Germany &nbsp;		1944 &nbsp;	Surrealism				
+h_Sj>Lg!}d	Art	Great Works of Art::Artists	"<img src=""2014-08-20_011258.jpg"" />"	Winslow Homer	Breezing Up (A Fair Wind)		1873–76	Realism	oil on canvas			
+oZ%_ODc8S1	Art	Great Works of Art::Artists	"<img src=""2014-08-20_012433.jpg"" />"	José Clemente Orozco	Gods of the Modern World		1932-34	Social Realism,&nbsp;Mexican Mural Movement	mural		Dartmouth mural	
+khWJ`Wk{K{	Art	Great Works of Art::Artists	"<img src=""2014-08-29_225311.jpg"" />"	Tintoretto	Miracle of the Slave		1548	Renaissance			It portrays an episode of the life of St. Mark, patron saint of Venice, taken from Jacopo da Varazze's Golden Legend. The scene shows, in the upper part, the saint intervening to make invulnerable a slave about to be martyred for his veneration of another saint's relics. All the figures are inscribed into an architectonic scenario.	
+~lAgN^F9_	Art	Great Works of Art::Artists	"<img src=""Peter_Paul_Rubens_035.jpg"" />"	Peter Paul Rubens	The Disembarkation at Marseilles		c. 1624	Baroque				
+g}7C52sg2b	Art	Great Works of Art::Artists	"<img src=""2014-08-20_034229.jpg"" />"	Eugène Delacroix	Orphan Girl at the Cemetary		1823	Romanticism				
+b-|VjH2Rt:	Art	Great Works of Art::Artists	"<img src=""2014-08-20_024652.jpg"" />"	Jacques-Louis David	The Emperor Napoleon in His Study at the Tuileries		1812	Neoclassicism				
+"MZYpI%RW#O"	Art	Great Works of Art::Artists	"<img src=""800px-Thomas_Hart_Benton_-_Achelous_and_Hercules_-_Smithsonian.jpg"" />"	Thomas Hart Benton	Achelous and Hercules		1947	Social Realism	mural			
+"k#*B$;B*^j"	Art	Great Works of Art::Artists	"<img src=""300px-Blue-green.jpg"" />"	Georgia O'Keeffe	Blue and Green Music		1919 - 1921	American Modernism				
+IHQIF)!NAE	Art	Great Works of Art::Artists	"<img src=""Woher_kommen_wir_Wer_sind_wir_Wohin_gehen_wir.jpg"" />"	Paul Gauguin	Where Do We Come From? What Are We? Where Are We Going?		1897	Post-Impressionism				
+t,m6{[7F(!	Art	Great Works of Art::Artists	"<img src=""2014-08-20_044056.jpg"" />"	Paul Gauguin	Still Life with Profile of Laval		1886	Post-Impressionism				
+Q6knkprB^0	Art	Great Works of Art::Artists	"<img src=""2014-08-20_045541.jpg"" />"	William-Adolphe Bouguereau	The Birth of Venus		1879	Academicism, Neoclassicism, Romanticism				
+t--YA0.5[U	Art	Great Works of Art::Artists	"<img src=""2014-08-20_050023.jpg"" />"	William-Adolphe Bouguereau	Charity		1878	Academicism, Neoclassicism, Romanticism				
+L9zo-h0loJ	Art	Great Works of Art::Artists	"<img src=""2014-08-20_050204.jpg"" />"	William-Adolphe Bouguereau	A Young Girl Defending Herself Against Eros		1880	Academicism, Neoclassicism, Romanticism				
+AxVGhV5DT.	Art	Great Works of Art::Artists	"<img src=""2014-08-20_194417.jpg"" />"	John William Waterhouse	Cleopatra		1888	Pre-Raphaelite				
+"FiITW{#rK]"	Art	Great Works of Art::Artists	"<img src=""2014-08-20_194626.jpg"" />"	Peter Paul Rubens	Martyrdom of St. Thomas		1636-38	Baroque				
+"qu=S9H#Hxe"	Art	Great Works of Art::Artists	"<img src=""2014-08-20_194801.jpg"" />"	Caravaggio	The Incredulity of Saint Thomas		1601-02	Baroque				
+hIGOoZu(FE	Art	Great Works of Art::Artists	"<img src=""2014-08-20_194859.jpg"" />"	Herbert James Draper	Lamia		1909	Classicism				
+QhSbo^`xyS	Art	Great Works of Art::Artists	"<img src=""2014-08-20_200137.jpg"" />"	Henri Matisse	The Dance I		1909	Expressionism, Fauvism			One of the cornerstones of 20th-century modern art.	
+"K-L),/![M#"	Art	Great Works of Art::Artists	"<img src=""2014-08-20_200259.jpg"" />"	Vincent van Gogh	Sunflowers	(Vase with Fifteen Sunflowers)	1888	Post-Impressionism				
+"ECqs3hY(!#"	Art	Great Works of Art::Artists	"<img src=""2014-08-21_182425.jpg"" />"	Donatello	David		c.1445	Early Renaissance				Sculpture
+DY6Wj|^Y}M	Art	Great Works of Art::Artists	"<img src=""2014-08-20_200613.jpg"" />"	Hans Hofmann	The Gate		1959-60	Abstract Expressionism				
+BVzT%hWk*E	Art	Great Works of Art::Artists	"<img src=""2014-08-20_200735.jpg"" />"	Franz Kline	Painting Number 2		1954	Modern Art				
+yZOkE]<xg>	Art	Great Works of Art::Artists	"<img src=""2014-08-20_201140.jpg"" />"	Jean Metzinger	Fruit and a Jug on a Table		1916-17	Cubisim				
+dp=K-4_-x/	Art	Great Works of Art::Artists	"<img src=""2014-08-20_201243.jpg"" />"	Reza Abbasi	Two Lovers		1630	Persian Miniaturism				Asian_Art
+O}CCct.7HO	Art	Great Works of Art::Artists	"<img src=""2014-08-20_201331.jpg"" />"	Hokusai	Two Lovers		c. 1815	Shunga (Japanese erotic art)				Asian_Art
+s0`Ik]TmvR	Art	Great Works of Art::Artists	"<img src=""2014-08-20_202007.jpg"" />"	Andrea Mantegna	The Lamentation Over the Dead Christ		c. 1480	Renaissance				
+zy>%37ZL!2	Art	Great Works of Art::Artists	"<img src=""2014-08-20_202247.jpg"" />"	Frederic Edwin Church	The Heart of the Andes		1859	Luminism, Hudson River School				
+OMlPcZM@c!	Art	Great Works of Art::Artists	"<img src=""2014-08-20_202657.jpg"" />"	Domenico Remps	Cabinet of Curiosities		1690s	Trompe-l’oeil				
+OnwG9*?([S	Art	Great Works of Art::Artists	"<img src=""2014-09-08_160708.jpg"" />"	Hans Memling	Portrait of Barbara van Vlaenderbergh Moreel		c. 1480	Northern Renaissance				
+"b$YTS4&S#^"	Art	Great Works of Art::Artists	"<img src=""2014-08-20_203255.jpg"" />"	Cimabue	Madanno Enthroned		c. 1280	Byzantine, Proto-Renaissance				
+l?pf8=4uZ.	Art	Great Works of Art::Artists	"<img src=""2014-08-20_203952.jpg"" />"	Philip Sutton	Whiltshire Landscape		1962	Abstract Expressionism				
+tvNZpqpwB(	Art	Great Works of Art::Artists	"<img src=""2014-08-20_204422.jpg"" />"	Claude Monet	Giverny		1890-91	Impressionism				
+HXcPSZGby:	Art	Great Works of Art::Artists	"<img src=""2014-08-20_205651.jpg"" />"	James Ensor	Fireworks		1887	Expressionism				
+m=Ge.T{=[7	Art	Great Works of Art::Artists	"<img src=""2014-08-20_210015.jpg"" />"	William Holman Hunt	Our English Coasts		1852	Pre-Raphaelite				
+quNz)LAI.7	Art	Great Works of Art::Artists	"<img src=""423ceb94528dd9f01549f7b7eb602a23.jpg"" />"	Romaine Brooks	At the Seashore		1912	Symbolism, Aestheticism				
+rT(}L>>oy[	Art	Great Works of Art::Artists	"<img src=""2014-08-20_210319.jpg"" />"	Jan van Eyck	Giovanni Arnolfini and His Wife		1434	Early Renaissance,&nbsp;Northern Renaissance				
+z1lM(Tf31]	Art	Great Works of Art::Artists	"<img src=""2014-08-20_210644.jpg"" />"	Caspar David Friedrich	Abbey Among Oak Trees	1809 or 1810	1809 or 1810	Romanticism				
+o}{(*a-_PG	Art	Great Works of Art::Artists	"<img src=""2014-08-20_210919.jpg"" />"	Caspar David Friedrich	The Sea of Ice		1823-24	Romanticism			"This scene has been described as ""a stunning composition of near and distant forms in an Arctic image""."	
+bMQ<;i(Sq<	Art	Great Works of Art::Artists	"<img src=""2014-08-20_211231.jpg"" />"	Mary Cassatt	The Boating Party		1893-94	Impressionism				
+c9v1Dsc,A2	Art	Great Works of Art::Artists	"<img src=""2014-08-20_211531.jpg"" />"	Joan Miro	The Farm		1921-22	Surrealism				
+CW47K]``5Y	Art	Great Works of Art::Artists	"<img src=""2014-08-20_212425.jpg"" />"	Joan Miro	Still Life with Old Shoe		1937	Surrealism				
+dt~qJw0mfE	Art	Great Works of Art::Artists	"<img src=""2014-08-20_212926.jpg"" />"	Sandro Chia	The Idleness of Sisyphus		1981	Transavantgarde, Neo-Expressionism				
+OzZyqD6/w/	Art	Great Works of Art::Artists	"<img src=""2014-08-20_215400.jpg"" />"	Alexej von Jawlensky	Portrait of Alexander Sakharoff		1909	Expressionism				
+Qzb&d6g[P1	Art	Great Works of Art::Artists	"<img src=""210px-Alexei_Jawlensky_-_Young_Girl_with_a_Flowered_Hat,_1910_-_Google_Art_Project.jpg"" />"	<!--anki-->Alexej von Jawlensky	Young Girl in a Flowered Hat		1910	Expressionism				
+fKh`MBw8De	Art	Great Works of Art::Artists	"<img src=""2014-08-20_215919.jpg"" />"	Alexej von Jawlensky	Still Life with Flask, Fruit, and Figure&nbsp;		1907	Expressionism				
+ESaM5FO@qC	Art	Great Works of Art::Artists	"<img src=""2014-08-20_220618.jpg"" />"	Jan and Hubert van Eyck	Ghent Altarpiece	<!--anki-->(exterior)	c.1432	Early Renaissance,&nbsp;Northern Renaissance	Polyptych	Flemish (Belgium)	Since its creation the altarpiece has been considered one of Northern European art's masterpieces and one of the world's treasures.	
+z4t;C&D57~	Art	Great Works of Art::Artists	"<img src=""2014-08-20_222234.jpg"" />"	Jan and Hubert van Eyck	Ghent Altarpiece	(upper interior)	c. 1432	Early Renaissance,&nbsp;Northern Renaissance	Polyptych	Flemish (Belgium)		
+v&tZPZX<wI	Art	Great Works of Art::Artists	"<img src=""2014-08-20_222700.jpg"" />"	Jan and Hubert van Eyck	Ghent Altarpiece	(lower center of interior)	c. 1432	Early Renaissance,&nbsp;Northern Renaissance	Polyptych			
+DgnbP4M;7>	Art	Great Works of Art::Artists	"<img src=""2014-08-20_223228.jpg"" />"	Kenneth Noland	Bridge		1964	Color Field,&nbsp;Abstract Expressionism, Minimalism				
+H8IEi5F@ry	Art	Great Works of Art::Artists	"<img src=""2014-08-20_225502.jpg"" />"	Francis Bacon	Study after Velázquez's Portrait of Pope Innocent X		1953	Expressionism, Surrealism, Contemporary Art			"This is probably the most famous of Bacon's ""Screaming Popes"" -- his series of 45 variations of the original Velázquez portrait of Pope Innocent X."	
+o[=LYP1h<k	Art	Great Works of Art::Artists	"<img src=""2014-08-20_225801.jpg"" />"	Diego Velázquez	Portrait of Innocent X		c. 1650	Baroque				
+LTBY<;&LK|	Art	Great Works of Art::Artists	"<img src=""2014-08-20_230632.jpg"" />"	Pellegrino Tibaldi	The Adoration of the Shepherds		c. 1546	Renaissance				
+zmmSs`w=.G	Art	Great Works of Art::Artists	"<img src=""2014-08-20_230926.jpg"" />"	Guido Reni	The Archangel Michael Defeating Satan		1635	Baroque				
+rAgQ*^Jn4-	Art	Great Works of Art::Artists	"<img src=""2014-08-20_231407.jpg"" />"	Raphael	St. Michael Vanquishing Satan		1518	High Renaissance				
+l-!|EzVRZ2	Art	Great Works of Art::Artists	"<img src=""2014-08-20_233928.jpg"" />"	Adriaen van Utrecht	Vanitas: Still Life with Bouquet and Skull		c.1642	Baroque				
+kxtX3K!w@L	Art	Great Works of Art::Artists	"<img src=""2014-08-20_234456.jpg"" />"	Henry Ossawa Tanner	The Annunciation		1898	Realism				
+t(XZ`3uqWK	Art	Great Works of Art::Artists	"<img src=""2014-08-20_234618.jpg"" />"	Henry Ossawa Tanner	The Seine		c. 1902	Impressionism			One of three paintings by African Americans on display in 2012 in the National Gallery of Art's American Art galleries.	
+b/k:wxh0${	Art	Great Works of Art::Artists	"<img src=""2014-08-20_234804.jpg"" />"	Gerard van Honthorst	The Concert.		1623	Caravaggisti, Baroque				
+"Lm1=j[71#y"	Art	Great Works of Art::Artists	"<img src=""2014-08-20_235014.jpg"" />"	Gerard van Honthorst	The Matchmaker	"or ""The Procuress"""	1625	Dutch Golden Age, Caravaggisti, Baroque				
+t<c4CHA-A.	Art	Great Works of Art::Artists	"<img src=""2014-08-20_235154.jpg"" />"	Leonardo da Vinci	Portrait of Ginevra de’ Benci		1474-78	High Renaissance				
+bDpc8o3m<x	Art	Great Works of Art::Artists	"<img src=""2014-08-20_235350.jpg"" />"	Raphael	Madonna and Child		c. 1505	High Renaissance				
+Cy>-VM/~:2	Art	Great Works of Art::Artists	"<img src=""2014-08-20_235508.jpg"" />"	Nicolas Poussin	The Assumption of the Virgin		c. 1626	Classicism, Baroque				
+tevRAMX}`]	Art	Great Works of Art::Artists	"<img src=""2014-08-20_235655.jpg"" />"	Rembrandt	Self-portrait		1659	Baroque, Dutch Golden Age				
+"C`i(]uhz#_"	Art	Great Works of Art::Artists	"<img src=""2014-08-21_001420.jpg"" />"	Henry Ossawa Tanner	The Thankful Poor		1894	Realism				
+tQu(BF~fK5	Art	Great Works of Art::Artists	"<img src=""Whistler_James_Symphony_in_White_no_1_(The_White_Girl)_1862.jpg"" />"	James Abbott McNeill Whistler	Symphony in White, No. 1: The White Girl		1862	Tonalism			Whistler was the founder of the <i>tonalist </i>style.	
+mzJ$DwNd^r	Art	Great Works of Art::Artists	"<img src=""2014-08-21_013214.jpg"" />"	Alfred Sisley	&nbsp;The Bridge at Villeneuve-la-Garenne		1872	Impressionism				
+FEzSU?f%<=	Art	Great Works of Art::Artists	"<img src=""2014-08-21_013448.jpg"" />"	Berthe Morisot	Lady at her Toilette		1875/1880	Impressionism				
+L)ULb$.JxK	Art	Great Works of Art::Artists	"<img src=""2014-08-21_013605.jpg"" />"	Édouard Manet&nbsp;	Berthe Morisot With a Bouquet of Violets		1872	Realism				
+pM|XLkRPce	Art	Great Works of Art::Artists	"<img src=""2014-08-21_013819.jpg"" />"	Claude Monet	Bouquet of Sunflowers		1880	Impressionism				
+oIY+IJ1u&j	Art	Great Works of Art::Artists	"<img src=""2014-08-21_014054.jpg"" />"	Camille Pissarro	Jallais Hill, Pontoise		1867	Impressionism, Post-Impressionism				
+JYs%y[M9ML	Art	Great Works of Art::Artists	"<img src=""2014-08-21_014610.jpg"" />"	Carl Rottmann	Corinth with Akrocorinth		1847	Romanticism				
+b96mKEX;<=	Art	Great Works of Art::Artists	"<img src=""2014-08-21_020107.jpg"" />"	Jean-Auguste-Dominique Ingres	Grande Odalisque		1814	Neoclassicism				
+vi.:;lD|,/	Art	Great Works of Art::Artists	"<img src=""2014-08-21_020520.jpg"" />"	Leonardo da Vinci	Portrait of an Unknown Woman		1490-96	High Renaissance				
+Fz_zt`3O5/	Art	Great Works of Art::Artists	"<img src=""2014-08-21_021420.jpg"" />"	Henri Rousseau	The Dream		1910	Post-Impressionism				
+c9RavY(R05	Art	Great Works of Art::Artists	"<img src=""2014-08-21_021641.jpg"" />"	Gustave Caillebotte	Paris Street in Rainy Weather		1877	Impressionism				
+"Q9w#pB5l/`"	Art	Great Works of Art::Artists	"<img src=""2014-08-21_022620.jpg"" />"	Gustav Klimt	Beethovenfries&nbsp;		1902	Symbolism				
+"HaJf7>NS8#"	Art	Great Works of Art::Artists	"<img src=""2014-08-21_022811.jpg"" />"	Gustav Klimt	The Virgin		1913	Symbolism				
+jZQVvcv44%	Art	Great Works of Art::Artists	"<img src=""2014-08-21_023515.jpg"" />"	El Greco	View of Toledo		1596-1600	Mannerism, Renaissance				
+udUbMUs[r&	Art	Great Works of Art::Artists	"<img src=""2014-08-21_023746.jpg"" />"	Lucas Cranach the Elder	Martin Luther		1529	Renaissance				
+cTg[+bwC<`	Art	Great Works of Art::Artists	"<img src=""2014-08-21_024011.jpg"" />"	Lucas Cranach the Elder	The Fountain of Youth		1546	Renaissance				
+eOPb4@y4_g	Art	Great Works of Art::Artists	"<img src=""2014-08-21_024107.jpg"" />"	Georges Seurat	Circus Sideshow		1887	Post-Impressionism, Pointillism				
+OOmzBD05{d	Art	Great Works of Art::Artists	"<img src=""2014-08-21_024513.jpg"" />"	Ernst Ludwig Kirchner	Female Artist		1910	Expressionism				
+BpEVwmXel4	Art	Great Works of Art::Artists	"<img src=""2014-08-21_025350.jpg"" />"	Alfred Sisley	The Hill Path		1879	Impressionism	Impressionism			
+F557QM>E(H	Art	Great Works of Art::Artists	"<img src=""2014-08-21_025827.jpg"" />"	Mark Tansey	Triumph Over Mastery II		1987	Contemporary Art				
+"wGV#(wrvSz"	Art	Great Works of Art::Artists	"<img src=""2014-08-24_180942.jpg"" />"	<div>Johannes Vermeer</div>	The Geographer		c. 1668-69	Baroque, Dutch Golden Age				
+yiY+p+N7eF	Art	Great Works of Art::Artists	"<img src=""2014-08-21_030431.jpg"" />"	Salvador Dali	The Enigma of Desire		1929	Surrealism				
+H9(^*tE>):	Art	Great Works of Art::Artists	"<img src=""2014-08-21_031458.jpg"" />"	John Singer Sargent	Smoke of Ambergris		1880	American Renaissance, Impressionism				
+d~dW`AG$Zw	Art	Great Works of Art::Artists	"<img src=""2014-08-21_031618.jpg"" />"	Gustav Klimt	Death and Life		c.1910	Symbolism				
+yBt:pg!sS$	Art	Great Works of Art::Artists	"<img src=""2014-08-21_032054.jpg"" />"	Caravaggio	Young Sick Bacchus		c. 1592/93	Baroque				
+kc?4=.Iksu	Art	Great Works of Art::Artists	"<img src=""2014-08-21_032847.jpg"" />"	Caravaggio	Judith Beheading Holofernes		1598-99	Baroque				
+i2fw3jAgn;	Art	Great Works of Art::Artists	"<img src=""2014-08-21_033037.jpg"" />"	Artemisia Gentileschi	Judith Slaying Holofernes		c.1612	Baroque				
+oJ&~v9ODFh	Art	Great Works of Art::Artists	"<img src=""300px-Van_Gogh_-_Terrasse_des_Cafés_an_der_Place_du_Forum_in_Arles_am_Abend1.jpeg"" />"	Vincent van Gogh	Cafe Terrace at Night	(The Cafe Terrace on the Place du Forum)	1888	Post-Impressionism				
+C}L2|PySSM	Art	Great Works of Art::Artists	"<img src=""2014-08-21_044954.jpg"" />"	Sultān Muhammad	The Ascent of Muhammad to Heaven		1539-43	Persian Art				Asian_Art
+xehqP&g!)4	Art	Great Works of Art::Artists	"<img src=""2014-08-21_154841.jpg"" />"	Honoré Daumier	Don Quixote and Sancho Panza		c. 1868	Realism				
+JavSKn$z(1	Art	Great Works of Art::Artists	"<img src=""2014-08-21_155057.jpg"" />"	Edward Poynter	Andromeda		1869	Classicism				
+ALWIDWUHo|	Art	Great Works of Art::Artists	"<img src=""2014-08-23_181349.jpg"" />"	Pierre-Étienne Monnot	Andromeda		1700-04	Late Baroque			<div>(sometimes wrongly attributed to Domenico Guidi)</div>	Sculpture
+fdS0:_nG+H	Art	Great Works of Art::Artists	"<img src=""2014-08-21_160830.jpg"" />"	Michelangeo	Moses		c. 1513–1515	High Renaissance				Sculpture
+n^]4|[U:^!	Art	Great Works of Art::Artists	"<img src=""2014-08-23_181521.jpg"" />"	Daniel Chester	Abraham Lincoln		1920	American Renaissance				Sculpture
+y^ZEF5t8~o	Art	Great Works of Art::Artists	"<img src=""2014-08-23_180714.jpg"" />"	Bernini	Apollo and Daphne		1622-25	Baroque				Sculpture
+b[&}_V]&2C	Art	Great Works of Art::Artists	"<img src=""2014-08-21_163955.jpg"" />"	Edvard Eriksen	The Little Mermaid		1913	Neoclassicism			A major landmark in&nbsp;Copenhagen, Denmark.	Sculpture
+Bqck.;i-:*	Art	Great Works of Art::Artists	"<img src=""2014-08-21_170850.jpg"" />"	Paul Landowski	Christ the Redeemer		1922-31	Monument Sculpture			Famous landmark in Rio de Janeiro, Brazil	Sculpture
+qewta%.n4@	Art	Great Works of Art::Artists	"<img src=""2014-08-21_172139.jpg"" />"	unknown artist	Dying Gaul	"(aka ""Dying Galatian"" and ""Dying Gladiator"")"	c. 230-220 BC	Hellenistic			A Roman marble copy of a Hellenistic work of the late 3rd century BC.	Sculpture
+pw}+y4B?2%	Art	Great Works of Art::Artists	"<img src=""2014-08-23_181033.jpg"" />"	Benvenuto Cellini	Salt cellar for Francis I		1540-43	Mannerism				Sculpture
+gkC.-zu)8C	Art	Great Works of Art::Artists	"<img src=""2014-08-23_180910.jpg"" />"	Auguste Rodin	Burghers of Calais		1884-86	Modern Sculpture				Sculpture
+zC]4-$ysnu	Art	Great Works of Art::Artists	"<img src=""2014-08-21_181058.jpg"" />"	Edgar Degas	Little Fourteen-Year-Old Dancer		executed 1880; cast 1922	Realism	Sculpture (additive)			Sculpture
+Of,5GCTs]u	Art	Great Works of Art::Artists	"<img src=""2014-08-23_180835.jpg"" />"	unknown Greek artist	Winged Victory of Samothrace		c. 200-190 BC	Ancient Greece				Sculpture
+mJ/J}=}]:`	Art	Great Works of Art::Artists	"<img src=""2014-08-23_180749.jpg"" />"	Max Klinger	Beethoven		1902	Symbolism				Sculpture
+"Q4VX%eq#Gx"	Art	Great Works of Art::Artists	"<img src=""CRI_210999.jpg"" />"	Pablo Picasso	Glass of Absinthe		1914	Abstract Expressionism				Sculpture
+N!V+D3wL^6	Art	Great Works of Art::Artists	"<img src=""2014-08-23_180518.jpg"" />"	Polykleitos	The Dresden Youth	marble copy after bronze original	c. 430 BC	Ancient Greece				Sculpture
+C<?qWY]`>_	Art	Great Works of Art::Artists	"<img src=""2014-08-21_185731.jpg"" />"	Harriet Hosmer	Beatrice Cenci		1857	Neoclasiicism				Sculpture
+s;cyw5c11j	Art	Great Works of Art::Artists	"<img src=""2014-08-21_190017.jpg"" />"	Aristide Maillol	The Mediterranean		1905	Modern Sculpture				Sculpture
+IM1G1EwZEq	Art	Great Works of Art::Artists	"<img src=""2014-08-21_190624.jpg"" />"	Camille Claudel	The Waltz		1895	Modern Sculpture				Sculpture
+I012+UE4Iv	Art	Great Works of Art::Artists	"<img src=""2014-08-21_213135.jpg"" />"	Raphael	Self-portrait		1504-06	High Renaissance	oil on board			
+d>z{e^F?@g	Art	Great Works of Art::Artists	"<img src=""2014-08-22_001821.jpg"" />"	Michelangelo	Madonna and Child		1504	High Renaissance				Sculpture
+hmwXF);%Z|	Art	Great Works of Art::Artists	"<img src=""2014-08-22_002401.jpg"" />"	Michelangelo	The Last Judgment	(detail showing Christ surrounded by prominent Saints)	1536-1541	High Renaissance	fresco		The figures surrounding Christ include Saints Catherine of Alexandria, Peter, Lawrence, Bartholomew, Paul, Sebastian, John the Baptist, and others.	
+IU]@Jg)UsG	Art	Great Works of Art::Artists	"<img src=""2014-08-23_180947.jpg"" />"	Giorgione	The Tempest		c. 1507	High Renaissance				
+f5lG]|zgW|	Art	Great Works of Art::Artists	"<img src=""2014-08-22_010602.jpg"" />"	Édouard Manet	The Spanish Singer		1860	Realism				
+A@9sBl<TyS	Art	Great Works of Art::Artists	"<img src=""2014-08-22_010912.jpg"" />"	Édouard Manet	Luncheon on the Grass		1863	Realism, Impressionism				
+F(7@QL+!8w	Art	Great Works of Art::Artists	"<img src=""2014-08-22_011928.jpg"" />"	Camille Pissarro	Boulevard Monmartre		1897	Impressionism				
+m)ww]Smdxf	Art	Great Works of Art::Artists	"<img src=""2014-08-22_012346.jpg"" />"	Gustave Courbet	A Burial at Ornans		1849-50	Realism			"Exhibition at the 1850–1851 Paris Salon created an ""explosive reaction"" and brought Courbet instant fame."	
+eqrZa15@7C	Art	Great Works of Art::Artists	"<img src=""2014-08-22_012921.jpg"" />"	Honoré Daumier	The Third Class Wagon		1862–1864	Realism				
+AR[{1*3eJg	Art	Great Works of Art::Artists	"<img src=""2014-08-22_013230.jpg"" />"	Jean-Baptiste-Camille Corot	The Bridge at Narni		1826	Realism				
+fFdMfp7X$8	Art	Great Works of Art::Artists	"<img src=""2014-08-23_180320.jpg"" />"	Jean-Baptiste-Camille Corot	The Piazzetta seen from the Riva degli Schiavoni		1835-1845	Realism				
+u8$!Esut|-	Art	Great Works of Art::Artists	"<img src=""2014-08-22_013616.jpg"" />"	Jean-François Millet	The Sower		1850	Realism				
+E?^96~<[NN	Art	Great Works of Art::Artists	"<img src=""2014-08-22_013956.jpg"" />"	Gustave Courbet	The Stonebreakers		1849	Realism				
+rcAtI7(v&P	Art	Great Works of Art::Artists	"<img src=""2014-08-22_014730.jpg"" />"	Eugène Delacroix	Death of Sardanapalus		1828	Romanticism				
+p-oz0JTIno	Art	Great Works of Art::Artists	"<img src=""2014-08-23_181132.jpg"" />"	Thomas Cole	The Voyage of Life: Childhood		1842	Romanticism				
+rI|;+&0l}k	Art	Great Works of Art::Artists	"<img src=""2014-08-23_180415.jpg"" />"	Thomas Cole	The Savage State		1836	Romanticism				
+FxqYy$v5TX	Art	Great Works of Art::Artists	"<img src=""2014-08-23_180219.jpg"" />"	Thomas Cole	The Oxbow		1836	Romanticism				
+DIGtt*@XS!	Art	Great Works of Art::Artists	"<img src=""2014-08-22_020238.jpg"" />"	Thomas Cole	The Titan's Goblet		1833	Romanticism				
+x!ysgO~]X=	Art	Great Works of Art::Artists	"<img src=""2014-08-22_020522.jpg"" />"	Pablo Picasso	The Weeping Woman		1937	Cubism				
+nl7o.=h:lJ	Art	Great Works of Art::Artists	"<img src=""2014-08-22_022713.jpg"" />"	Rembrandt	Bathsheba at Her Bath		1654	Baroque				
+l-g2wSRCXU	Art	Great Works of Art::Artists	"<img src=""2014-08-22_024036.jpg"" />"	Bruegel the Elder	The Hunters in the Snow	or,&nbsp;<i>The Return of the Hunters</i>	1565	Early Renaissance,&nbsp;Northern Renaissance				
+jkCVR!n-XX	Art	Great Works of Art::Artists	"<img src=""2014-08-22_024319.jpg"" />"	Rogier van der Weyden	Portrait of a Lady		c. 1460	Early Renaissance,&nbsp;Northern Renaissance				
+y8:^Ow(wqc	Art	Great Works of Art::Artists	"<img src=""Giovanni Battista Gaulli - triumph.jpg"" />"	Giovanni Battista Gaulli	The Triumph of the Name of Jesus		1676-79	Baroque				
+|Y7~FuK47	Art	Great Works of Art::Artists	"<img src=""2014-08-22_133524.jpg"" />"	Gian Lorenzo Bernini	Chair of Saint Peter		1647-53	Baroque	Sculpture			Sculpture
+BP|<yWEGAo	Art	Great Works of Art::Artists	"<img src=""2014-08-22_134316.jpg"" />"	Parmigianino	Madonna with the Long Neck	(Madonna and Child with Angels and St. Jerome)	1534-40	High Renaissance, Mannerism			"A great example of the ""<i>Mannerist</i>"" movement in High Renaissance art.&nbsp;<i>Mannerism</i> makes itself known by elongated proportions, highly stylized poses, and lack of clear perspective."	
+wm=-[Jrt<K	Art	Great Works of Art::Artists	"<img src=""2014-08-22_135138.jpg"" />"	Thomas Regnaudin and François Girardon	Apollo Attended by the Nymphs		1666-72	Baroque				Sculpture
+PyN{M5y]__	Art	Great Works of Art::Artists	"<img src=""2014-08-22_141213.jpg"" />"	Nicolas Poussin	The Holy Family on the Steps		1648	Baroque, Classicism				
+GZFSVxNz0:	Art	Great Works of Art::Artists	"<img src=""2014-08-22_142630.jpg"" />"	Nicolas Poussin	Et in Arcadia ego		1637-38	Classicism, Baroque			"This is the most famous of his two paintings with this title. The Latin prase means<i>&nbsp;""Even in Arcadia, there am I""</i>. ""I"" refers to death, and ""Arcadia"" means a utopian or ideal land. It would thus be a <i>memento mori</i>."	
+iL~@NZJ/kp	Art	Great Works of Art::Artists	"<img src=""2014-08-22_143352.jpg"" />"	Nicolas Poussin	A Dance to the Music of Time		1634-35	Classicism, Baroque				
+r)o3K{=JW}	Art	Great Works of Art::Artists	"<img src=""2014-08-22_143631.jpg"" />"	Nicolas Poussin	The Crossing of the Red Sea		1633-34	Classicism				
+fOZEf.kpwn	Art	Great Works of Art::Artists	"<img src=""2014-08-22_144801.jpg"" />"	Caspar David Friedrich	Monk by the Sea		1808-10	Romaticism				
+p;HmoP+8(~	Art	Great Works of Art::Artists	"<img src=""2014-08-22_145405.jpg"" />"	Gerard van Honthorst	The Adoration of the Shepherds		1622	Caravaggisti, Baroque				
+oKSq?2@=_P	Art	Great Works of Art::Artists	"<img src=""Frank_Stella's_'Harran_II',_1967.jpg"" />"	Frank Stella	Harran II		1967	Modernism, Color Field				
+F<mHxy9&NL	Art	Great Works of Art::Artists	"<img src=""2014-08-22_150516.jpg"" />"	Kenneth Noland	Beginning		1958	Color Field				
+j!K)nX_a9l	Art	Great Works of Art::Artists	"<img src=""2014-08-22_150653.jpg"" />"	Hans Hofmann	The Gate		1959-60	Modernism				
+"N{Fv;#M`TO"	Art	Great Works of Art::Artists	"<img src=""2014-08-22_150903.jpg"" />"	Frank Stella	La Vecchia dell'Orto		1986	Modernism, Abstract Expressionism				
+e?G&r]k?Q`	Art	Great Works of Art::Artists	"<img src=""2014-08-22_165248.jpg"" />"	Jacques-Louis David	The Oath of the Horatii		1784	Neoclassicism				
+NlJ8EsoG=;	Art	Great Works of Art::Artists	"<img src=""2014-08-22_165708.jpg"" />"	Antonio Canova	Psyche Revived by Cupid's Kiss		1787-93	Neoclassicism	Sculpture			Sculpture
+j%td2Gug+R	Art	Great Works of Art::Artists	"<img src=""524px-Perseus_Canova_Pio-Clementino_Inv969.jpg"" />"	Antonio Canova	Perseus Holding Medusa's Head		c.1800	Neoclassicism	Sculpture			Sculpture
+pIrW@pR}s=	Art	Great Works of Art::Artists	"<img src=""2014-08-22_174046.jpg"" />"	François Gerard&nbsp;	Portrait of the Empress&nbsp;Joséphine		1801	Neoclassicism				
+G!~S!~(JV3	Art	Great Works of Art::Artists	"<img src=""2014-08-22_180304.jpg"" />"	Paul Gauguin	Vision After the Sermon		1888	Post-Impressionism, Symbolism				
+vPPve:?e<Y	Art	Great Works of Art::Artists	"<img src=""2014-08-23_181857.jpg"" />"	Fernand Khnopff	I Lock the Door Upon Myself		1891	Symbolism				
+"Psnb#K7xor"	Art	Great Works of Art::Artists	"<img src=""2014-08-22_181139.jpg"" />"	Munch	Anxiety		1894	Expressionism, Symbolism				
+gU;`;`+sU]	Art	Great Works of Art::Artists	"<img src=""2014-08-22_182900.jpg"" />"	Paul Cézanne	Montagne Sainte-Victoire		1904	Post-Impressionism				
+"P!zUIoE#UC"	Art	Great Works of Art::Artists	"<img src=""2014-08-22_184423.jpg"" />"	Edgar Degas	Dance Class		1871	Realism, Impressionism				
+c])^=ZLfEM	Art	Great Works of Art::Artists	"<img src=""2014-08-22_184548.jpg"" />"	Edgar Degas	The Laundress		c. 1869	Realism, Impressionism				
+yPy>{p!&CE	Art	Great Works of Art::Artists	"<img src=""2014-08-22_185503.jpg"" />"	André Derain	The Drying Sails		1905	Expressionism,&nbsp;Fauvism				
+bpfoV!xN`L	Art	Great Works of Art::Artists	"<img src=""2014-08-22_185428.jpg"" />"	André Derain	The Dancer		1906	Expressionism,&nbsp;Fauvism				
+Hhcci:}BG^	Art	Great Works of Art::Artists	"<img src=""2014-08-22_185444.jpg"" />"	André Derain	The Dance		1906	Expressionism,&nbsp;Fauvism				
+p$bhnmbzK$	Art	Great Works of Art::Artists	"<img src=""2014-08-22_190003.jpg"" />"	Emil Nolde	The Dance Around the Golden Calf		1910	Expressionism				
+jB|^U.l[m:	Art	Great Works of Art::Artists	"<img src=""2014-08-22_190821.jpg"" />"	André Derain	Three Figures Sitting on the Grass		1906	Expressionism,&nbsp;Fauvism				
+cxv?hzk]sI	Art	Great Works of Art::Artists	"<img src=""2014-08-22_191230.jpg"" />"	Henri Matisse	Woman with a Hat		1905	Expressionism, Fauvism			The woman was Matisse's wife.	
+yp:yCqU/DM	Art	Great Works of Art::Artists	"<img src=""index.jpg"" />"	Franz Marc	Horse in a Landscape		1910	Expressionism				
+l/e4ye>p1_	Art	Great Works of Art::Artists	"<img src=""2014-08-22_200639.jpg"" />"	Frida Kahlo	Self-Portrait with Thorn Necklace and Hummingbird		1940	Surrealism, Magical Realism				
+qd{%)s{TvC	Art	Great Works of Art::Artists	"<img src=""2014-08-22_201046.jpg"" />"	Frida Kahlo	The Broken Column		1944	Surrealism, Magical Realism				
+cOj=upZiI}	Art	Great Works of Art::Artists	"<img src=""2014-08-22_201900.jpg"" />"	Georges Braque	Violin and Pitcher		1910	Cubism				
+z0xi4r$h0n	Art	Great Works of Art::Artists	"<img src=""2014-08-23_204639.jpg"" />"	Paul Nash	Totes Meer	(Dead Sea)	1940-41	Surrealism				
+m&Si?+dyFk	Art	Great Works of Art::Artists	"<img src=""2014-08-23_205208.jpg"" />"	Charles Demuth	Figure 5 in Gold		1928	American Modernism				
+bgyCBc4:?4	Art	Great Works of Art::Artists	"<img src=""2014-08-23_213847.jpg"" />"	John Singer Sargent	Portrait of Madame X		1884	American Renaissance			The model was Virginie Amélie Avegno Gautreau. This painting created a social scandal when shown at the Paris Salon.	
+uz%~?*WJ_d	Art	Great Works of Art::Artists	"<img src=""2014-09-30_155626.jpg"" />"	Salvador Dali	Soft Construction with Boiled Beans (Premonition of Civil War)		1936	Surrealism				
+bBOzmAR+;J	Art	Great Works of Art::Artists	"<img src=""2014-08-23_224423.jpg"" />"	Salvador Dali	Swans Reflecting Elephants		1937	Surrealism				
+g=2]g0|N7d	Art	Great Works of Art::Artists	"<img src=""2014-08-23_224531.jpg"" />"	Salvador Dali	The Elephants		1948	Surrealism				
+l/fB][h6_o	Art	Great Works of Art::Artists	"<img src=""2014-08-23_224732.jpg"" />"	Salvador Dali	Galatea of the Spheres		1952	Surrealism				
+Ahxl<>A`4>	Art	Great Works of Art::Artists	"<img src=""2014-08-23_224832.jpg"" />"	Salvador Dali	Crucifixion (Corpus Hypercubus)		1954	Surrealism				
+B?YS~6KHvQ	Art	Great Works of Art::Artists	"<img src=""2014-08-23_225020.jpg"" />"	Salvador Dalí	The Temptation of St. Anthony		1946	Surrealism				
+B2.AB8^ePa	Art	Great Works of Art::Artists	"<img src=""2014-08-24_180642.jpg"" />"	Johannes Vermeer	A Girl Reading a Letter by an Open Window		c. 1657-59	Baroque, Dutch Golden Age				
+nJVK:+%V.E	Art	Great Works of Art::Artists	"<img src=""2014-08-24_181638.jpg"" />"	Georges Braque	The Poruguese		1911	Cubism				
+Maes?$,QZD	Art	Great Works of Art::Artists	"<img src=""2014-08-24_182052.jpg"" />"	Theo van Doesburg	Study for Composition VIII (The Cow)		1918	Cubism, Neoplasticism				
+K9J<RD8@GB	Art	Great Works of Art::Artists	"<img src=""2014-08-24_182536.jpg"" />"	Robert Delaunay	The Eiffel Tower		1911	Cubism, Abstract Art				
+zAJD-lz?41	Art	Great Works of Art::Artists	"<img src=""2014-08-24_182851.jpg"" />"	Robert Delaunay	Sun and Moon		1912	Abstract Art				
+i(v!`{|%|(	Art	Great Works of Art::Artists	"<img src=""2014-08-24_183145.jpg"" />"	Wassily Kandinsky	The Garden of Love (Improvisation number 27)		1912	Abstract Art				
+Qw(0$*V_me	Art	Great Works of Art::Artists	"<img src=""2014-08-24_192743.jpg"" />"	Jacob van Ruisdael	View of Haarlem		1670	Dutch Golden Age, Landscape				
+e`$CEjNRo4	Art	Great Works of Art::Artists	"<img src=""2014-08-25_154155.jpg"" />"	Otto Dix	Portrait of the Journalist Sylvia von Harden		1926	New Objectivity (<i>Neue Sachlichkeit</i>), Post-Expressionism		Germany		
+i+3&r<U|ke	Art	Great Works of Art::Artists	"<img src=""2014-08-25_163645.jpg"" />"	Karl Schmidt-Rottluff	Woman with a Bag		1915	Expressionism				
+v]Fq&A2iz8	Art	Great Works of Art::Artists	"<img src=""2014-08-25_164033.jpg"" />"	Richard Hamilton	Just What Is It That Makes Today's Home So Different, So Appealing?		1956	Pop Art				
+KN_P%m}m$r	Art	Great Works of Art::Artists	"<img src=""2014-08-25_181529.jpg"" />"	Giorgio de Chirico	The Song of Love		1914	Surrealism				
+r6ui9:|o1x	Art	Great Works of Art::Artists	"<img src=""2014-08-26_213829.jpg"" />"	Bruegel the Elder	The Fight Between Carnival and Lent		1559	Early Renaissance,&nbsp;Northern Renaissance				
+k/f47zd:&8	Art	Great Works of Art::Artists	"<img src=""2014-08-26_221746.jpg"" />"	Donatello	The Equestrian Statue of Gattamelata		1453	Early Renaissance	Bronze			Sculpture
+j?1Eu0eRp}	Art	Great Works of Art::Artists	"<img src=""2014-09-09_180154.jpg"" />"	Emil Nolde	The Last Supper		1909	Expressionism	oil on canvas			
+n0B?FwPx,h	Art	Great Works of Art::Artists	"<img src=""2014-08-26_222501.jpg"" />"	Emil Nolde	The Crucifixion		1912	Expressionism				
+J@HCR,M+*Q	Art	Great Works of Art::Artists	"<img src=""2014-08-26_222527.jpg"" />"	Emil Nolde	Pentecost		1909	Expressionism				
+q*9cU!.p$c	Art	Great Works of Art::Artists	"<img src=""2014-08-26_225021.jpg"" />"	Pablo Picasso	Child Holding a Dove		1901	"""Blue Period"""				
+gw_tEr@g[u	Art	Great Works of Art::Artists	"<img src=""2014-08-26_224829.jpg"" />"	Henri Matisse	Le bonheur de vivre	"""The Joy of Life"""	1906	Modernism, Expressionism				
+goK:PHaxxu	Art	Great Works of Art::Artists	"<img src=""2014-08-26_231539.jpg"" />"	Henri Matisse	The Green Line	or, <i>The Green Stripe,&nbsp;Portrait of Madame Matisse</i>	1905	Modernism, Fauvism				
+m8S[{LDMpH	Art	Great Works of Art::Artists	"<img src=""300px-Die_Zwitscher-Maschine_(Twittering_Machine).jpg"" />"	Paul Klee	Twittering Machine		1922	Modern Art	&nbsp;Watercolor and ink; oil transfer on paper with gouache and ink on border			
+t%^gcA[:DF	Art	Great Works of Art::Artists	"<img src=""2014-08-31_174258.jpg"" />"	Jean Auguste Dominique Ingres	The Source	"(or, ""The Spring"")"	1856	Neoclassicism				
+c1=%f]k0_F	Art	Great Works of Art::Artists	"<img src=""2014-09-01_174738.jpg"" />"	Vincent van Gogh	Starry Night Over the Rhône		1888	Post-Impressionism	oil on canvas			
+Eh0j-Ei]l/	Art	Great Works of Art::Artists	"<img src=""2014-09-01_175203.jpg"" />"	Vincent van Gogh	The Sower	(Sower at Sunset)	1888	Post-Impressionism	oil on canvas			
+oIC]J<<x`	Art	Great Works of Art::Artists	"<img src=""2014-09-01_175408.jpg"" />"	Vincent van Gogh	Paul Gauguin's Armchair		1888	Post-Impressionism				
+c0cj_o;;Dp	Art	Great Works of Art::Artists	"<img src=""2014-09-01_175604.jpg"" />"	Vincent van Gogh	Van Gogh's Chair		1888	Post-Impressionism				
+QM^=%~EPU<	Art	Great Works of Art::Artists	"<img src=""2014-09-01_175855.jpg"" />"	Vincent van Gogh	The Olive Trees	(Olive Trees with the Alpilles in the Background)	1888	Post-Impressionism				
+q%JNQ_QQ/N	Art	Great Works of Art::Artists	"<img src=""2014-09-01_180103.jpg"" />"	Vincent van Gogh	Road with Cypress and Star	(Country Road in Provence by Night)	1890	Post-Impressionism				
+Mh>6pZEpoW	Art	Great Works of Art::Artists	"<img src=""2014-09-01_180536.jpg"" />"	Vincent van Gogh	Sunflowers	(Vase with 12 Sunflowers)	1888	Post-Impressionism				
+B^>fcP717v	Art	Great Works of Art::Artists	"<img src=""2014-09-14_214806.jpg"" />"	Banksy	Girl with Balloon		2004	Contemporary Art, Graffiti				
+"D-#Dh8^P:u"	Art	Great Works of Art::Artists	"<img src=""2014-09-14_215324.jpg"" />"	Banksy	Love is in the Air		2003	Contemporary Art, Graffiti				
+gtRp3aiw`m	Art	Great Works of Art::Artists	"<img src=""2014-09-14_215602.jpg"" />"	Banksy	Maid in London		2006	Contemporary Art, Graffiti				
+K}r(BBndNh	Art	Great Works of Art::Artists	"<img src=""2014-09-15_032441.jpg"" />"	Norman Rockwell	Freedom from Fear	"(from the ""Four Freedoms"" series)"	1943	20th Century				
+zzKm==/O>%	Art	Great Works of Art::Artists	"<img src=""2014-09-15_033541.jpg"" />"	Norman Rockwell	Freedom of Speech	"(from the ""Four Freedoms"" series)"	1943	20th Century				
+u$i?FuC_W7	Art	Great Works of Art::Artists	"<img src=""2014-09-15_034204.jpg"" />"	Norman Rockwell	Freedom of Worship	"(from the ""Four Freedoms"" series)"	1943	20th Century				
+E<Da:[qbm*	Art	Great Works of Art::Artists	"<img src=""2014-09-15_034035.jpg"" />"	Norman Rockwell	Freedom from Want	"(from the ""Four Freedoms"" series)"	1943	20th Centry				
+sLLWhxocw%	Art	Great Works of Art::Artists	"<img src=""2014-09-15_035144.jpg"" />"	Norman Rockwell	Rosie the Riveter		1943	20th Century				
+"Fi:s[+[#mN"	Art	Great Works of Art::Artists	"<img src=""2014-09-15_035608.jpg"" />"	Norman Rockwell	The Problem We All Live With		1964	20th Century			"An iconic image of the civil rights movement in the United States, it depicts Ruby Bridges, a six-year-old African-American girl, on her way into an all-white public school in New Orleans on November 14, 1960 during the process of racial desegregation. She is escorted by four deputy U.S. marshals; the painting is framed such that the marshals' heads are cropped at the shoulders. On the wall behind her is written the racial slur ""nigger"" and the letters ""KKK""; a smashed tomato thrown at Bridges is also visible. The white crowd is not visible, as the viewer is looking at the scene from their point of view."	
+k/;8pAaR[u	Art	Great Works of Art::Artists	"<img src=""2014-09-29_183933.jpg"" />"	Pierro della Francesca	The Baptism of Christ		1450s	Early Renaissance				
+Jn-Z+{4p^F	Art	Great Works of Art::Artists	"<img src=""Piero_Madonna_del_parto.jpg"" />"	Pierro della Francesca	Madonna del Parto	(Madonna of Parturition)	after 1457	Early Renaissance			"<i>""Parturition""</i> is the act of giving birth."	
+nO-]{tLw.`	Art	Great Works of Art::Artists	"<img src=""2014-09-29_205230.jpg"" />"	Titian	Assumption of the Virgin		1516–1518	Renaissance				
+L.j.F>uD`x	Art	Great Works of Art::Artists	"<img src=""2014-09-30_004907.jpg"" />"	J.M.W. Turner	Shipwreck		1805&nbsp;	Romanticism				
+in]X!2w/$>	Art	Great Works of Art::Artists	"<img src=""2014-10-03_005441.jpg"" />"	Raphael	Triumph of Galatea		c. 1514	High Renaissance	Fresco			
+z=6>wY/0nd	Art	Great Works of Art::Artists	"<img src=""2014-10-04_182338.jpg"" />"	Antoine Watteau	Pilgrimage to Cythera	The Embarkation for Cythera	1717	Rococo			<i>Pilgrimage to Cythera </i>is an embellished repetition of Watteau's earlier painting, and exemplifies the frivolity and sensuousness of Rococo painting.	
+G-A_CFUT:l	Art	Great Works of Art::Artists	"<img src=""2014-10-04_180448.jpg"" />"	Jean-Honoré Fragonard	The Happy Accidents of the Swing		1767-1768	Rococo				
+u8hEsuQEpH	Art	Great Works of Art::Artists	"<img src=""2014-10-04_180640.jpg"" />"	Jean-Honoré Fragonard	The Meeting	(Part of the Progress of Love series)	1771	Rococo				
+O.`(e1i@AO	Art	Great Works of Art::Artists	"<img src=""2014-10-04_181738.jpg"" />"	François Boucher	Portrait of the Marquise de Pompadour		1756	Rococo				
+Q:s6|QbdGV	Art	Great Works of Art::Artists	"<img src=""2014-10-04_182144.jpg"" />"	Jean-Baptiste van Loo	The Triumph of Galatea		1720	Rococo				
+"k#M&!bbt.c"	Art	Great Works of Art::Artists	"<img src=""2014-10-04_203847.jpg"" />"	John Constable	The Hay Wain		1821	Romanticism				
