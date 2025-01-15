@@ -16,44 +16,43 @@ public class DataSaver {
 
     @FXML
     public void save() {
-        try (FileOutputStream fos = new FileOutputStream("output.dat");
+        File saveFile = new File(PathManager.saveDataFolderPath, "output.dat");
+
+        try (FileOutputStream fos = new FileOutputStream(saveFile);
              ObjectOutputStream oos = new ObjectOutputStream(fos)) {
 
-            // Gem hele UserDatabase inkl. hver brugers DecksDatabase
             oos.writeObject(UserDatabase.getInstance());
-
             oos.flush();
-            System.out.println("Saved!");
 
+            System.out.println("Data gemt til: " + saveFile.getAbsolutePath());
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
     public void load() {
-        if (!doesSaveFileExist()) {
-            System.out.println("No save file found!");
+        File saveFile = new File(PathManager.saveDataFolderPath, "output.dat");
+
+        if (!saveFile.exists()) {
+            System.out.println("Ingen gemmefil fundet i: " + saveFile.getAbsolutePath());
             return;
         }
 
-        try (FileInputStream fileInputStream = new FileInputStream("output.dat");
+        try (FileInputStream fileInputStream = new FileInputStream(saveFile);
              ObjectInputStream oip = new ObjectInputStream(fileInputStream)) {
 
             UserDatabase loadedUserDatabase = (UserDatabase) oip.readObject();
             UserDatabase.setInstance(loadedUserDatabase);
 
-            System.out.println("Data loaded!");
-
+            System.out.println("Data indlæst fra: " + saveFile.getAbsolutePath());
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
         }
     }
 
-
-
-
     // Helper methods //
     private boolean doesSaveFileExist() {
-        return new File("output.dat").exists();
+        File saveFile = new File(PathManager.saveDataFolderPath, "output.dat");
+        return saveFile.exists();
     }
 }

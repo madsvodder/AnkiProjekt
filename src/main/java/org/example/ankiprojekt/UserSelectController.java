@@ -12,6 +12,8 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 import lombok.Setter;
 
+import java.io.File;
+
 public class UserSelectController {
 
     @Setter
@@ -22,6 +24,9 @@ public class UserSelectController {
 
     @FXML
     public void initialize() {
+
+        PathManager.initializePaths();
+
         DataSaver.getInstance().load();
         listview_userList.setOnMouseClicked(mouseEvent -> {
             if (mouseEvent.getClickCount() == 2) {

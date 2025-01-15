@@ -53,13 +53,18 @@ public class HelloController {
 
     AnkiDeckImporter importer = new AnkiDeckImporter();
 
+
+
     public void initialize() {
         initializeTableView();
+
 
         load();
 
         updateStatistics();
     }
+
+
 
     private void updateStatistics() {
 
