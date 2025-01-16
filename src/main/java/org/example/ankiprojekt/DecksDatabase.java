@@ -15,9 +15,31 @@ public class DecksDatabase implements Serializable {
 
     private ArrayList<Card> userCards;
 
+    @Getter @Setter
+    ArrayList<Deck> recentDecks;
+
+    public void addDeckToRecentDecks(Deck deck) {
+        System.out.println("Adding deck to recent decks: " + deck.getName());
+
+        // Null-check
+        if (recentDecks == null) {
+            recentDecks = new ArrayList<>();
+        }
+
+        // Check if the recent list already contains the deck
+        // Avoids duplication
+        if (recentDecks.contains(deck)) {
+            recentDecks.remove(deck);
+            recentDecks.addFirst(deck);
+        } else {
+            recentDecks.addFirst(deck);
+        }
+    }
+
     public DecksDatabase() {
         decks = new ArrayList<>();
         userCards = new ArrayList<>();
+        recentDecks = new ArrayList<>();
     }
 
     public boolean isCardInAnyDeck(Card card) {

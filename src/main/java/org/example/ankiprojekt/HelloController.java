@@ -26,6 +26,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.UUID;
@@ -91,13 +92,68 @@ public class HelloController {
     public void initialize() {
         initializeTableView();
 
-
         load();
 
         updateStatistics();
     }
 
 
+
+    private void refreshRecentDecksUI() {
+
+        List<Deck> recentDecks = decksDatabase.getRecentDecks();
+
+        // Null
+        if (recentDecks == null) {
+            label_deck1.setText("");
+            label_deck2.setText("");
+            label_deck3.setText("");
+            return;
+        }
+
+        // Setup recent decks UI
+        if (recentDecks.size() > 0 && recentDecks.get(0) != null) {
+            setDeckUI(label_deck1, progress_deck1, img_deck1, recentDecks.get(0));
+        } else {
+            clearDeckUI(label_deck1, progress_deck1, img_deck1);
+        }
+
+        if (recentDecks.size() > 1 && recentDecks.get(1) != null) {
+            setDeckUI(label_deck2, progress_deck2, img_deck2, recentDecks.get(1));
+        } else {
+            clearDeckUI(label_deck2, progress_deck2, img_deck2);
+        }
+
+        if (recentDecks.size() > 2 && recentDecks.get(2) != null) {
+            setDeckUI(label_deck3, progress_deck3, img_deck3, recentDecks.get(2));
+        } else {
+            clearDeckUI(label_deck3, progress_deck3, img_deck3);
+        }
+    }
+
+    private void setDeckUI(Label label, ProgressBar progressBar, ImageView imageView, Deck deck) {
+        label.setText(deck.getName());
+        progressBar.setProgress(deck.getPercentageOfLearnedCardsDouble() / 100.0);
+        progressBar.setVisible(true);
+
+        if (deck.getDeckDemplate() != null && !deck.getDeckDemplate().isEmpty()) {
+            String imagePath = deck.getDeckDemplate().get(0).getImagePath();
+
+            if (imagePath != null && !imagePath.isEmpty()) {
+                Image image = new Image(new File(imagePath).toURI().toString());
+                imageView.setImage(image);
+            }
+        } else {
+            imageView.setImage(null); // Fjern billede, hvis listen er tom eller null
+        }
+    }
+
+    private void clearDeckUI(Label label, ProgressBar progressBar, ImageView imageView) {
+        label.setText("");
+        progressBar.setProgress(0.0);
+        progressBar.setVisible(false);
+        imageView.setImage(null);
+    }
 
     private void updateStatistics() {
 
@@ -108,6 +164,8 @@ public class HelloController {
                   "Du har lært " + totalLearnedCards + " kort.\n"
                 + "Du har " + notLearnedCards + " kort tilbage."
         );
+
+        refreshRecentDecksUI();
     }
     private void initializeTableView() {
         TableColumn<Deck, String> columnName = new TableColumn<>("Navn");
@@ -173,7 +231,8 @@ public class HelloController {
                 }
 
                 if (event.getButton() == MouseButton.PRIMARY && event.getClickCount() == 2) {
-                    // Use the singleton instance to add the deck to the recent decks list
+                    // Add deck to recent
+                    decksDatabase.addDeckToRecentDecks(selectedDeck);
 
                     // Dobbeltklik
                     switchToGameView(selectedDeck);
