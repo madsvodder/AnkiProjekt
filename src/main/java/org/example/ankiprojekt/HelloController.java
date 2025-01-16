@@ -20,6 +20,10 @@ import lombok.Setter;
 import org.controlsfx.control.CheckListView;
 
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
 import java.util.UUID;
 
 public class HelloController {
@@ -368,6 +372,7 @@ public class HelloController {
 
         // Use a mutable array to hold the image path
         final String[] imagePath = {null};
+        final String destinationImagePath = "empty";
 
         addImageButton.setOnAction(e -> {
             FileChooser imageChooser = new FileChooser();
@@ -380,18 +385,33 @@ public class HelloController {
             if (selectedImage != null) {
                 imagePath[0] = selectedImage.getAbsolutePath();
             } else {
-                imagePath[0] = "No image selected";
+                imagePath[0] = null;
             }
         });
-
 
         okButton.setOnAction(e -> {
 
             if (!tf_question.getText().isEmpty() && !tf_back1.getText().isEmpty()) {
-                String selectedImagePath = (imagePath[0] != null) ? imagePath[0] : "No image selected";
+                String selectedImagePath = imagePath[0];
+
+                if (selectedImagePath != null) {
+                    try {
+                        // Copy the image to the userCardsFolderPath
+                        Path sourcePath = Paths.get(selectedImagePath);
+                        Path destinationPath = Paths.get(PathManager.userCardsFolderPath, sourcePath.getFileName().toString());
+
+                        Files.copy(sourcePath, destinationPath, StandardCopyOption.REPLACE_EXISTING);
+                        selectedImagePath = destinationPath.toString();
+                    } catch (IOException ex) {
+                        Alert a = new Alert(Alert.AlertType.ERROR, "Failed to copy image: " + ex.getMessage());
+                        a.showAndWait();
+                        return;
+                    }
+                }
+
                 Card c = new Card(
                         UUID.randomUUID().toString(),
-                        selectedImagePath,
+                        destinationImagePath,
                         tf_question.getText(),
                         tf_back1.getText(),
                         tf_back2.getText(),
@@ -404,7 +424,6 @@ public class HelloController {
                 // Save the card as a .dat-file in the UserCards folder
                 saveCardToFile(c);
 
-                // Add logic to handle the created card, e.g., saving to a list or database
             } else {
                 Alert a = new Alert(Alert.AlertType.ERROR, "Please fill in at least question and back answer line 1!");
                 a.showAndWait();
@@ -430,6 +449,7 @@ public class HelloController {
         // Show the popup
         popupStage.showAndWait();
     }
+
 
     @FXML
     private void importCustomCard() {
