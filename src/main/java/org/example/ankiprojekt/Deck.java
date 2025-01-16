@@ -73,4 +73,11 @@ public class Deck implements Serializable {
         return String.format("%.2f", (double) unavailableCards.size() / deckDemplate.size() * 100);
     }
 
+    public Double getPercentageOfLearnedCardsDouble() {
+        if (deckDemplate.isEmpty()) {
+            return 0.0;
+        }
+        return unavailableCards.size() / (double) deckDemplate.size() * 100;
+    }
+
 }

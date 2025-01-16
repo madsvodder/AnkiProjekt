@@ -6,8 +6,10 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ProgressBar?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
@@ -24,7 +26,48 @@
       
           <Label fx:id="welcomeText" />
          <TableView fx:id="tbview_decks" prefHeight="395.0" prefWidth="1240.0" />
-         <TitledPane animated="false" text="Statistikker">
+         <TitledPane text="Seneste Decks">
+            <content>
+               <HBox prefHeight="100.0" prefWidth="200.0">
+                  <children>
+                     <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                        <children>
+                           <Label fx:id="label_deck1" text="Deck 1_">
+                              <font>
+                                 <Font size="18.0" />
+                              </font>
+                           </Label>
+                           <ImageView fx:id="img_deck1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" />
+                           <ProgressBar fx:id="progress_deck1" minHeight="15.0" prefWidth="200.0" progress="0.24" />
+                        </children>
+                     </VBox>
+                     <VBox alignment="CENTER" layoutX="21.0" layoutY="21.0" prefHeight="200.0" prefWidth="100.0">
+                        <children>
+                           <Label fx:id="label_deck2" text="Deck 1_">
+                              <font>
+                                 <Font size="18.0" />
+                              </font>
+                           </Label>
+                           <ImageView fx:id="img_deck2" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" />
+                           <ProgressBar fx:id="progress_deck2" minHeight="15.0" prefWidth="200.0" progress="0.24" />
+                        </children>
+                     </VBox>
+                     <VBox alignment="CENTER" layoutX="221.0" layoutY="21.0" prefHeight="200.0" prefWidth="100.0">
+                        <children>
+                           <Label fx:id="label_deck3" text="Deck 1_">
+                              <font>
+                                 <Font size="18.0" />
+                              </font>
+                           </Label>
+                           <ImageView fx:id="img_deck3" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" />
+                           <ProgressBar fx:id="progress_deck3" minHeight="15.0" prefWidth="200.0" progress="0.24" />
+                        </children>
+                     </VBox>
+                  </children>
+               </HBox>
+            </content>
+         </TitledPane>
+         <TitledPane text="Statistikker">
            <content>
              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                   <children>
@@ -56,6 +99,7 @@
                   <MenuItem mnemonicParsing="false" onAction="#createNewCard" text="Opret Kort" />
                   <MenuItem mnemonicParsing="false" onAction="#importCustomCard" text="Importer Kort" />
                   <MenuItem mnemonicParsing="false" onAction="#editUserCards" text="Håndter Kort" />
+                  <MenuItem mnemonicParsing="false" onAction="#initialize" text="Refresh / Initialize" />
             </items>
           </Menu>
         </menus>

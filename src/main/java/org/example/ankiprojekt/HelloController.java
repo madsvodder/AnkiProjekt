@@ -8,6 +8,8 @@ import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseButton;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
@@ -24,6 +26,8 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.UUID;
 
 public class HelloController {
@@ -47,6 +51,33 @@ public class HelloController {
     @FXML
     private BorderPane borderPane_Main;
 
+    @FXML
+    private ImageView img_deck1;
+
+    @FXML
+    private Label label_deck1;
+
+    @FXML
+    private ProgressBar progress_deck1;
+
+    @FXML
+    private ImageView img_deck2;
+
+    @FXML
+    private Label label_deck2;
+
+    @FXML
+    private ProgressBar progress_deck2;
+
+    @FXML
+    private ImageView img_deck3;
+
+    @FXML
+    private Label label_deck3;
+
+    @FXML
+    private ProgressBar progress_deck3;
+
     @Setter
     private Stage ownerStage;
 
@@ -56,8 +87,6 @@ public class HelloController {
     private DecksDatabase decksDatabase = activeUser.getDecksDatabase();
 
     AnkiDeckImporter importer = new AnkiDeckImporter(decksDatabase);
-
-
 
     public void initialize() {
         initializeTableView();
@@ -144,6 +173,8 @@ public class HelloController {
                 }
 
                 if (event.getButton() == MouseButton.PRIMARY && event.getClickCount() == 2) {
+                    // Use the singleton instance to add the deck to the recent decks list
+
                     // Dobbeltklik
                     switchToGameView(selectedDeck);
                 }
