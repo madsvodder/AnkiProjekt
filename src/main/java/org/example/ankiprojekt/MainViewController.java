@@ -26,12 +26,10 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
-import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.UUID;
 
-public class HelloController {
+public class MainViewController {
     @FXML
     private Label welcomeText;
 
@@ -137,14 +135,23 @@ public class HelloController {
         progressBar.setVisible(true);
 
         if (deck.getDeckDemplate() != null && !deck.getDeckDemplate().isEmpty()) {
+
             String imagePath = deck.getDeckDemplate().get(0).getImagePath();
 
             if (imagePath != null && !imagePath.isEmpty()) {
+
+                System.out.println("Setting deck image path: " + imagePath + " For: " + deck.getName());
+
                 Image image = new Image(new File(imagePath).toURI().toString());
                 imageView.setImage(image);
+                imageView.setFitHeight(150);
+                imageView.setFitWidth(200);
+            } else {
+                System.out.println("Setting deck image placeholder!");
+                imageView.setImage(new Image(getClass().getResource("/images/DeckPlaceholder.png").toExternalForm()));
+                imageView.setFitHeight(100);
+                imageView.setFitWidth(100);
             }
-        } else {
-            imageView.setImage(null); // Fjern billede, hvis listen er tom eller null
         }
     }
 
@@ -462,7 +469,7 @@ public class HelloController {
 
         // Use a mutable array to hold the image path
         final String[] imagePath = {null};
-        final String destinationImagePath = "empty";
+        final String destinationImagePath = null;
 
         addImageButton.setOnAction(e -> {
             FileChooser imageChooser = new FileChooser();

@@ -12,8 +12,6 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 import lombok.Setter;
 
-import java.io.File;
-
 public class UserSelectController {
 
     @Setter
@@ -40,10 +38,10 @@ public class UserSelectController {
                         ownerStage.close();
 
                         // Load den nye visning
-                        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("hello-view.fxml"));
+                        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("main-view.fxml"));
                         Parent root = fxmlLoader.load();
 
-                        HelloController helloController = fxmlLoader.getController();
+                        MainViewController helloController = fxmlLoader.getController();
 
                         // Hent brugerens DecksDatabase for visningel
                         helloController.setDecksDatabase(user.getDecksDatabase());

@@ -36,7 +36,7 @@ public class AnkiDeckImporter {
 
         File destinationFolder;
 
-        // Copy the folder to the `decksFolderPath`
+        // Copy the folder to the `decksFolderPath` //
         try {
             destinationFolder = new File(decksFolderPath, selectedDirectory.getName());
             copyFolder(selectedDirectory.toPath(), destinationFolder.toPath());
@@ -45,17 +45,17 @@ public class AnkiDeckImporter {
             throw new RuntimeException("Failed to copy folder to decks folder path", e);
         }
 
-        // Get txt files in the copied directory
+        // Get txt files in the copied directory //
         File[] txtFiles = destinationFolder.listFiles((dir, name) -> name.toLowerCase().endsWith(".txt"));
         if (txtFiles == null || txtFiles.length == 0) {
             throw new IllegalArgumentException("No .txt file found in the selected folder.");
         }
 
-        // Use the paths from the copied folder
+        // Use the paths from the copied folder //
         String txtFilePath = txtFiles[0].getAbsolutePath();
         String imagesPath = destinationFolder.getAbsolutePath();
 
-        // Import it
+        // Import it //
         importAnkiDeck(txtFilePath, imagesPath);
     }
 
@@ -64,10 +64,10 @@ public class AnkiDeckImporter {
 
         directory = imageDirectory;
 
-        // Create the new deck
+        // Create the new deck //
         Deck newDeck = new Deck();
 
-        // add the deck to the database
+        // add the deck to the database //
         User activeUser = UserDatabase.getInstance().getActiveUser();
         activeUser.getDecksDatabase().addDeck(newDeck);
 
@@ -75,21 +75,21 @@ public class AnkiDeckImporter {
             String line;
             List<Card> cards = new ArrayList<>();
 
-            // Skip the metadata lines
+            // Skip the metadata lines //
             while ((line = br.readLine()) != null) {
                 if (line.startsWith("#")) continue;
 
-                // Split by tab
+                // Split by tab //
                 String[] columns = line.split("\t");
 
-                // Check that we have enough columns
+                // Check that we have enough columns //
                 if (columns.length < MIN_COLUMNS) {
                     LOGGER.warning("Skipping line - not enough columns: " + line);
                     continue;
                 }
 
                 try {
-                    // Extract data
+                    // Extract data //
                     String guid = columns[0];
                     String notetype = columns[1];
                     String deck = columns[2];
@@ -98,7 +98,7 @@ public class AnkiDeckImporter {
                     String backTitle = cleanHtmlTags(columns[5]);
                     String backYear = columns[7];
 
-                    // Extract the image
+                    // Extract the image //
                     String imagePath = extractImagePath(frontHtml);
 
                     if (imagePath == null) {
@@ -107,8 +107,7 @@ public class AnkiDeckImporter {
 
                     String fullImagePath = createFullImagePath(imagePath, imageDirectory);
 
-                    // Create a new card object
-
+                    // Create a new card object //
                     Card card = new Card(guid, notetype, deck, fullImagePath, backArtist, backTitle, backYear);
 
                     setCardQuestions(card);
@@ -120,11 +119,11 @@ public class AnkiDeckImporter {
                 }
             }
 
-            // Add all cards to the new deck after processing the file
+            // Add all cards to the new deck after processing the file //
             cards.forEach(newDeck::add);
 
             // Set the name of the deck. Using the first card,
-            // since they all SHOULD have the same name
+            // since they all SHOULD have the same name //
             if (!cards.isEmpty()) {
                 newDeck.setName(cards.getFirst().getDeckName());
             }
@@ -145,12 +144,13 @@ public class AnkiDeckImporter {
     private static String extractImagePath(String html) {
 
         try {
-            // Clean up extra quotes and trim whitespace
+            // Clean up extra quotes and trim whitespace //
             String cleanedHtml = html.replace("\"\"", "\"").trim();  // Replace "" with "
-            // Parse the cleaned HTML content
+
+            // Parse the cleaned HTML content //
             Document doc = Jsoup.parse(cleanedHtml);
 
-            // Select the first <img> element
+            // Select the first <img> element //
             Element img = doc.selectFirst("img");
             if (img != null) {
                 return img.attr("src");
@@ -158,17 +158,17 @@ public class AnkiDeckImporter {
         } catch (Exception e) {
             LOGGER.log(Level.WARNING, "Error extracting image path from HTML: " + html, e);
         }
-        // Return null if no image is found
+        // Return null if no image is found //
         return null;
     }
     private String createFullImagePath(String imageName, String imagePath) {
 
-        // Make sure that the image path is valid
+        // Make sure that the image path is valid //
         if (imagePath == null || imagePath.isEmpty()) {
             return null;
         }
 
-        // Combine
+        // Combine //
         return Paths.get(imagePath, imageName).toString();
     }
     public static String cleanHtmlTags(String input) {
@@ -179,7 +179,7 @@ public class AnkiDeckImporter {
     }
 
 
-    // Utility to copy folder
+    // Utility to copy folder //
     private void copyFolder(Path source, Path destination) throws IOException {
         Files.walk(source).forEach(sourcePath -> {
             try {

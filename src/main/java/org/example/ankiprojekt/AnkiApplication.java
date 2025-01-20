@@ -8,10 +8,10 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class HelloApplication extends Application {
+public class AnkiApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("userselect-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(AnkiApplication.class.getResource("userselect-view.fxml"));
         Application.setUserAgentStylesheet(new PrimerDark().getUserAgentStylesheet());
         Scene scene = new Scene(fxmlLoader.load());
         UserSelectController controller = fxmlLoader.getController();

@@ -35,7 +35,7 @@
          <children>
             <HBox alignment="CENTER">
                <children>
-                  <Button fx:id="btn_ShowAnswer" mnemonicParsing="false" onAction="#showAnswer" text="Show Answer" />
+                  <Button fx:id="btn_ShowAnswer" mnemonicParsing="false" onAction="#showAnswer" text="Se svar" />
                   <Button fx:id="btn_StartGame" layoutX="267.0" layoutY="20.0" mnemonicParsing="false" onAction="#startGame" text="Start Game" />
                </children>
                <padding>

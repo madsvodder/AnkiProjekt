@@ -29,7 +29,8 @@ public class UserDatabase implements Serializable {
     public static synchronized UserDatabase getInstance() {
         // Check if there's no instance already created
         if (instance == null) {
-            instance = new UserDatabase(); // Create a new instance if none exists
+            // Create a new instance if none exists
+            instance = new UserDatabase();
         }
         return instance;
     }
@@ -43,7 +44,7 @@ public class UserDatabase implements Serializable {
 
         System.out.println("Users after loading:");
         for (User user : instance.users) {
-            System.out.println(user); // Calls the Deck's toString method
+            System.out.println(user);
         }
     }
 
@@ -54,5 +55,4 @@ public class UserDatabase implements Serializable {
     public void removeUser(User user) {
         users.remove(user);
     }
-
 }

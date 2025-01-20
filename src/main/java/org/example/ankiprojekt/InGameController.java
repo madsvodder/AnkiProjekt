@@ -105,17 +105,17 @@ public class InGameController {
 
         // Skift tilbage til hovedmenuen
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("hello-view.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("main-view.fxml"));
             BorderPane mainMenuView = loader.load();
 
-            HelloController helloController = loader.getController();
+            MainViewController helloController = loader.getController();
 
             // Udskift hele roden i scenen med hello-view's BorderPane
             btn_StartGame.getScene().setRoot(mainMenuView);
 
         } catch (IOException e) {
             e.printStackTrace();
-            System.err.println("Failed to load hello-view.fxml");
+            System.err.println("Failed to load main-view.fxml");
         }
     }
     @FXML
