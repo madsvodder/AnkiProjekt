@@ -79,7 +79,6 @@ public class MainViewController {
 
     @Setter
     private Stage ownerStage;
-
     User activeUser = UserDatabase.getInstance().getActiveUser();
 
     @Setter
@@ -95,8 +94,7 @@ public class MainViewController {
         updateStatistics();
     }
 
-
-
+    // Methods for handling UI elements //
     private void refreshRecentDecksUI() {
 
         List<Deck> recentDecks = decksDatabase.getRecentDecks();
@@ -128,7 +126,23 @@ public class MainViewController {
             clearDeckUI(label_deck3, progress_deck3, img_deck3);
         }
     }
+    private void updateStatistics() {
 
+        int totalLearnedCards = Statistics.getInstance().getLearnedCards();
+        int notLearnedCards = Statistics.getInstance().getNotLearnedCards();
+
+        label_cardsLearned.setText(
+                "Du har lært " + totalLearnedCards + " kort.\n"
+                        + "Du har " + notLearnedCards + " kort tilbage."
+        );
+
+        refreshRecentDecksUI();
+    }
+    public void populateDecks() {
+        tbview_decks.getItems().clear();
+        tbview_decks.getItems().addAll(decksDatabase.getDecks());
+        System.out.println("Decks: " + decksDatabase.getDecks());
+    }
     private void setDeckUI(Label label, ProgressBar progressBar, ImageView imageView, Deck deck) {
         label.setText(deck.getName());
         progressBar.setProgress(deck.getPercentageOfLearnedCardsDouble() / 100.0);
@@ -154,25 +168,11 @@ public class MainViewController {
             }
         }
     }
-
     private void clearDeckUI(Label label, ProgressBar progressBar, ImageView imageView) {
         label.setText("");
         progressBar.setProgress(0.0);
         progressBar.setVisible(false);
         imageView.setImage(null);
-    }
-
-    private void updateStatistics() {
-
-        int totalLearnedCards = Statistics.getInstance().getLearnedCards();
-        int notLearnedCards = Statistics.getInstance().getNotLearnedCards();
-
-        label_cardsLearned.setText(
-                  "Du har lært " + totalLearnedCards + " kort.\n"
-                + "Du har " + notLearnedCards + " kort tilbage."
-        );
-
-        refreshRecentDecksUI();
     }
     private void initializeTableView() {
         TableColumn<Deck, String> columnName = new TableColumn<>("Navn");
@@ -248,6 +248,8 @@ public class MainViewController {
             return row;
         });
     }
+
+    // Methods for user "editing"
     private void editDeck(Deck selectedDeck) {
         // Create a new stage for the popup
         Stage popupStage = new Stage();
@@ -310,68 +312,6 @@ public class MainViewController {
         });
 
         VBox popupLayout = new VBox(10, listviewLabel, checkListView, okButton, cancelButton, addUserCardButton);
-
-        popupLayout.setStyle("-fx-padding: 20; -fx-alignment: center;");
-
-        // Create and set the scene for the popup stage
-        Scene popupScene = new Scene(popupLayout, 350, 600);
-        popupStage.setScene(popupScene);
-
-        // Show the popup
-        popupStage.showAndWait();
-    }
-
-    @FXML
-    private void editUserCards() {
-        // Create a new stage for the popup
-        Stage popupStage = new Stage();
-        popupStage.setTitle("Fjern kort i bruger database");
-        popupStage.initModality(Modality.APPLICATION_MODAL); // Block events to other windows
-        popupStage.initOwner(ownerStage); // Set the owner stage
-
-        Button okButton = new Button("OK");
-        Button cancelButton = new Button("Cancel");
-        Label listviewLabel = new Label("Kort i bruger database:");
-
-        CheckListView<Card> checkListView = new CheckListView<>();
-
-        checkListView.getItems().addAll(decksDatabase.getUserCards());
-
-        checkListView.getCheckModel().checkAll();
-
-        okButton.setOnAction(e -> {
-            var checkModel = checkListView.getCheckModel();
-
-            // Brug en iterator for sikker fjernelse
-            var iterator = decksDatabase.getUserCards().iterator();
-            while (iterator.hasNext()) {
-                Card card = iterator.next();
-                if (!checkModel.isChecked(card)) {
-                    iterator.remove(); // Fjern kortet sikkert fra listen
-                    System.out.println("Removed card from user database: " + card);
-
-                    // Fjern kortet fra alle decks, der indeholder det
-                    for (Deck deck : decksDatabase.getDecks()) {
-                        deck.remove(card);
-                    }
-                }
-            }
-
-            populateDecks();    // Opdater decks i visningen
-            updateStatistics(); // Opdater statistik
-            save();             // Gem ændringer
-            popupStage.close(); // Luk popup-vinduet
-        });
-
-        cancelButton.setOnAction(e -> {
-
-            populateDecks();
-
-            popupStage.close();
-        });
-
-
-        VBox popupLayout = new VBox(10, listviewLabel, checkListView, okButton, cancelButton);
 
         popupLayout.setStyle("-fx-padding: 20; -fx-alignment: center;");
 
@@ -547,7 +487,6 @@ public class MainViewController {
         popupStage.showAndWait();
     }
 
-
     @FXML
     private void importCustomCard() {
         FileChooser fileChooser = new FileChooser();
@@ -575,47 +514,66 @@ public class MainViewController {
         }
     }
 
-    private void saveCardToFile(Card card) {
-        // Skab filstien baseret på UUID og gem den i UserCards-mappen
-        File cardFile = new File(PathManager.userCardsFolderPath, card.getGuid() + ".dat");
+    @FXML
+    private void editUserCards() {
+        // Create a new stage for the popup
+        Stage popupStage = new Stage();
+        popupStage.setTitle("Fjern kort i bruger database");
+        popupStage.initModality(Modality.APPLICATION_MODAL); // Block events to other windows
+        popupStage.initOwner(ownerStage); // Set the owner stage
 
-        try (FileOutputStream fos = new FileOutputStream(cardFile);
-             ObjectOutputStream oos = new ObjectOutputStream(fos)) {
+        Button okButton = new Button("OK");
+        Button cancelButton = new Button("Cancel");
+        Label listviewLabel = new Label("Kort i bruger database:");
 
-            // Gem Card-objektet som en fil
-            oos.writeObject(card);
-            oos.flush();
+        CheckListView<Card> checkListView = new CheckListView<>();
 
-            System.out.println("Card saved to file: " + cardFile.getAbsolutePath());
-        } catch (IOException e) {
-            e.printStackTrace();
-            Alert alert = new Alert(Alert.AlertType.ERROR, "Failed to save card: " + e.getMessage());
-            alert.showAndWait();
-        }
-    }
-    private void switchToGameView(Deck selectedDeck) {
-        try {
-            // Load the new FXML file
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ingame-view.fxml"));
-            BorderPane gameView = fxmlLoader.load();
+        checkListView.getItems().addAll(decksDatabase.getUserCards());
 
-            // Set the loaded FXML view as the center of the borderPane_Main
-            borderPane_Main.setCenter(gameView);
+        checkListView.getCheckModel().checkAll();
 
-            // Optional: Get the controller of the ingame-view if needed
-            InGameController gameController = fxmlLoader.getController();
-            gameController.customInit(selectedDeck);
+        okButton.setOnAction(e -> {
+            var checkModel = checkListView.getCheckModel();
 
-        } catch (IOException e) {
-            e.printStackTrace();
-            System.err.println("Failed to load ingame-view.fxml");
-        }
-    }
+            // Brug en iterator for sikker fjernelse
+            var iterator = decksDatabase.getUserCards().iterator();
+            while (iterator.hasNext()) {
+                Card card = iterator.next();
+                if (!checkModel.isChecked(card)) {
+                    iterator.remove(); // Fjern kortet sikkert fra listen
+                    System.out.println("Removed card from user database: " + card);
 
-    public void populateDecks() {
-        tbview_decks.getItems().clear();
-        tbview_decks.getItems().addAll(decksDatabase.getDecks());
-        System.out.println("Decks: " + decksDatabase.getDecks());
+                    // Fjern kortet fra alle decks, der indeholder det
+                    for (Deck deck : decksDatabase.getDecks()) {
+                        deck.remove(card);
+                    }
+                }
+            }
+
+            populateDecks();    // Opdater decks i visningen
+            updateStatistics(); // Opdater statistik
+            save();             // Gem ændringer
+            popupStage.close(); // Luk popup-vinduet
+        });
+
+        cancelButton.setOnAction(e -> {
+
+            populateDecks();
+
+            popupStage.close();
+        });
+
+
+        VBox popupLayout = new VBox(10, listviewLabel, checkListView, okButton, cancelButton);
+
+        popupLayout.setStyle("-fx-padding: 20; -fx-alignment: center;");
+
+        // Create and set the scene for the popup stage
+        Scene popupScene = new Scene(popupLayout, 350, 600);
+        popupStage.setScene(popupScene);
+
+        // Show the popup
+        popupStage.showAndWait();
     }
 
     @FXML
@@ -700,22 +658,58 @@ public class MainViewController {
         }
     }
 
+    // Other methods //
+
+    private void saveCardToFile(Card card) {
+        // Skab filstien baseret på UUID og gem den i UserCards-mappen
+        File cardFile = new File(PathManager.userCardsFolderPath, card.getGuid() + ".dat");
+
+        try (FileOutputStream fos = new FileOutputStream(cardFile);
+             ObjectOutputStream oos = new ObjectOutputStream(fos)) {
+
+            // Gem Card-objektet som en fil
+            oos.writeObject(card);
+            oos.flush();
+
+            System.out.println("Card saved to file: " + cardFile.getAbsolutePath());
+        } catch (IOException e) {
+            e.printStackTrace();
+            Alert alert = new Alert(Alert.AlertType.ERROR, "Failed to save card: " + e.getMessage());
+            alert.showAndWait();
+        }
+    }
+    private void switchToGameView(Deck selectedDeck) {
+        try {
+            // Load the new FXML file
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ingame-view.fxml"));
+            BorderPane gameView = fxmlLoader.load();
+
+            // Set the loaded FXML view as the center of the borderPane_Main
+            borderPane_Main.setCenter(gameView);
+
+            // Optional: Get the controller of the ingame-view if needed
+            InGameController gameController = fxmlLoader.getController();
+            gameController.customInit(selectedDeck);
+
+        } catch (IOException e) {
+            e.printStackTrace();
+            System.err.println("Failed to load ingame-view.fxml");
+        }
+    }
+
     @FXML
     private void save() {
         DataSaver.getInstance().save();
     }
 
-
-
     @FXML
     public void load() {
-        // Brug den tildelte decksDatabase til at vise data
+        // Use the given database
         if (decksDatabase != null) {
             tbview_decks.getItems().clear();
             tbview_decks.getItems().addAll(decksDatabase.getDecks());
             System.out.println("Loaded decks for the active user: " + decksDatabase.getDecks());
         }
     }
-
 
 }

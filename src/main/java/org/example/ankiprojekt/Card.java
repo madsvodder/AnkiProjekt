@@ -18,6 +18,8 @@ public class Card implements Serializable {
     private boolean answered;
     @Getter @Setter
     Learned learnedType;
+
+    // Constructor used for importing //
     public Card(String guid, String notetype, String deck, String imagePath, String backAnswer1, String backAnswer2, String backAnswer3) {
         this.guid = guid;
         this.notetype = notetype;
@@ -30,6 +32,7 @@ public class Card implements Serializable {
         learnedType = null;
     }
 
+    // Constructor used for user created card //
     public Card(String guid, String imagePath, String question, String backAnswer1, String backAnswer2, String backAnswer3) {
         this.guid = guid;
         this.question = question;
@@ -41,12 +44,14 @@ public class Card implements Serializable {
         learnedType = null;
     }
 
+    // Clone the card if used in multiple decks //
     @Override
     public Card clone() {
         return new Card(this.guid, this.imagePath, this.question,
                 this.backAnswer1, this.backAnswer2, this.backAnswer3);
     }
 
+    // Reset the card //
     public void resetCard() {
         answered = false;
         learnedType = null;

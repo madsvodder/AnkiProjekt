@@ -13,11 +13,11 @@ public class Deck implements Serializable {
 
     ArrayList<Card> deckDemplate = new ArrayList<Card>();
 
-    // List of cards which are NOT "korrekt"
+    // List of cards which are NOT "korrekt" //
     @Getter
     List<Card> availableCards = new ArrayList<>();
 
-    // Cards which are correct gets moved to this arraylist.
+    // Cards which are correct gets moved to this arraylist. //
     @Getter
     List<Card> unavailableCards = new ArrayList<>();
 
@@ -28,27 +28,23 @@ public class Deck implements Serializable {
         return deckDemplate;
     }
 
-
     public void add(Card card) {
         Card clonedCard = card.clone(); // Lav en kopi af kortet
         clonedCard.resetCard();         // Sørg for at nulstille status
         deckDemplate.add(clonedCard);
     }
-
-
     public void remove(Card card) {
         card.resetCard();
         deckDemplate.remove(card);
         availableCards.remove(card);
         unavailableCards.remove(card);
     }
-
     public boolean doesDeckContainCard(Card card) {
         return deckDemplate.contains(card);
     }
     public int getAmountOfLearnedCards() {
         if (deckDemplate == null || unavailableCards == null) {
-            return 0; // Hvis én af listerne er null, returnér 0
+            return 0;
         }
 
         int learnedCards = 0;

@@ -1,5 +1,7 @@
 package org.example.ankiprojekt;
 
+import javafx.application.Platform;
+import javafx.scene.control.Alert;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -71,6 +73,9 @@ public class AnkiDeckImporter {
         User activeUser = UserDatabase.getInstance().getActiveUser();
         activeUser.getDecksDatabase().addDeck(newDeck);
 
+        int successCount = 0;
+        int failureCount = 0;
+
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
             String line;
             List<Card> cards = new ArrayList<>();
@@ -114,8 +119,11 @@ public class AnkiDeckImporter {
 
                     cards.add(card);
 
+                    successCount++;
+
                 } catch (Exception e) {
                     LOGGER.log(Level.SEVERE, "Error reading line: " + line, e);
+                    failureCount++;
                 }
             }
 
@@ -132,9 +140,26 @@ public class AnkiDeckImporter {
             LOGGER.log(Level.SEVERE, "Failed to read the file: " + filePath, e);
             throw new RuntimeException(e);
         }
+
+        // Show a popup with the results //
+        String deckName = newDeck.getName() != null ? newDeck.getName() : "Unnamed Deck";
+        showImportResultPopup(deckName, successCount, failureCount);
     }
 
-
+    private void showImportResultPopup(String deckName, int successCount, int failureCount) {
+        // Run on the JavaFX Application Thread
+        Platform.runLater(() -> {
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Import Resultater");
+            alert.setHeaderText("Nyt Deck Importeret!");
+            alert.setContentText(
+                    "Deck: " + deckName + "\n" +
+                            "Cards Imported: " + successCount + "\n" +
+                            "Cards Failed: " + failureCount
+            );
+            alert.showAndWait();
+        });
+    }
 
     private void setCardQuestions(Card card) {
         if (card.getNotetype().equals("Art")) {

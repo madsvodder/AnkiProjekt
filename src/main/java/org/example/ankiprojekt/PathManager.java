@@ -9,8 +9,6 @@ public class PathManager {
     public static String saveDataFolderPath;
     public static String decksFolderPath;
     public static String userCardsFolderPath;
-
-    // Initialisering af stier (kald denne én gang ved programmets start)
     public static void initializePaths() {
         // Get the users documents folder
         String userDocumentsPath = System.getProperty("user.home") + File.separator + "Documents";
@@ -27,7 +25,7 @@ public class PathManager {
         decksFolderPath = decksFolder.getAbsolutePath();
         userCardsFolderPath = userCardsFolder.getAbsolutePath();
 
-        // Create the folders, if they dont already exists
+        // Create the folders, if they don't already exists
         if (!ankiKlonFolder.exists() && ankiKlonFolder.mkdirs()) {
             System.out.println("Oprettede mappe: " + ankiKlonFolderPath);
         }

@@ -6,6 +6,8 @@ import java.io.*;
 
 public class DataSaver {
     private static DataSaver instance;
+
+    // Singleton //
     public static synchronized DataSaver getInstance() {
         if (instance == null) {
             instance = new DataSaver();

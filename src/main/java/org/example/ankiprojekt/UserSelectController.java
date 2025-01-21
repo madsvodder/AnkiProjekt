@@ -31,21 +31,21 @@ public class UserSelectController {
                 User user = listview_userList.getSelectionModel().getSelectedItem();
                 if (user != null) {
                     try {
-                        // Sæt den aktive bruger globalt (eksempel via UserDatabase eller en static variabel)
+                        // Set the active user in the userDatabase
                         UserDatabase.getInstance().setActiveUser(user);
 
-                        // Luk det gamle vindue
+                        // Close the old window
                         ownerStage.close();
 
-                        // Load den nye visning
+                        // Load the new window
                         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("main-view.fxml"));
                         Parent root = fxmlLoader.load();
 
-                        MainViewController helloController = fxmlLoader.getController();
+                        MainViewController mainViewController = fxmlLoader.getController();
 
-                        // Hent brugerens DecksDatabase for visningel
-                        helloController.setDecksDatabase(user.getDecksDatabase());
-                        helloController.load();
+                        // Set the userDatabase in the new mainViewController
+                        mainViewController.setDecksDatabase(user.getDecksDatabase());
+                        mainViewController.load();
 
                         Stage newStage = new Stage();
                         Scene scene = new Scene(root);
@@ -74,7 +74,7 @@ public class UserSelectController {
 
     @FXML
     private void createUser() {
-// Create a new stage for the popup
+        // Create a new stage for the popup
         Stage popupStage = new Stage();
         popupStage.setTitle("Opret bruger");
         popupStage.initModality(Modality.APPLICATION_MODAL); // Block events to other windows

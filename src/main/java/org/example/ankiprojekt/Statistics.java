@@ -13,7 +13,8 @@ public class Statistics {
     public static synchronized Statistics getInstance() {
         // Check if there's no instance already created
         if (instance == null) {
-            instance = new Statistics(); // Create a new instance if none exists
+            // Create a new instance if none exists
+            instance = new Statistics();
         }
         return instance;
     }
@@ -42,6 +43,5 @@ public class Statistics {
     public int getTotalCards() {
         return activeUser.getDecksDatabase().getDecks().size() * 10;
     }
-
 
 }
